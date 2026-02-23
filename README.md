@@ -1,4 +1,4 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=24&height=120&section=header" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=ff79c6&height=60" width="100%"/>
 
 <div align="center">
 
@@ -12,7 +12,7 @@
 
 </div>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=24&height=80&section=footer" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=ff79c6&height=6" width="100%"/>
 
 <div align="center">
 
@@ -31,7 +31,7 @@
 
 </div>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=24&height=80&section=header" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=ff79c6&height=6" width="100%"/>
 
 <div align="center">
 
@@ -60,7 +60,7 @@ except KeyboardInterrupt:sys.stdout.write("\033[?25h"+R+"\n")
 
 </div>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=24&height=80&section=footer" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=ff79c6&height=6" width="100%"/>
 
 <div align="center">
 
@@ -72,9 +72,9 @@ except KeyboardInterrupt:sys.stdout.write("\033[?25h"+R+"\n")
 
 </div>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=24&height=80&section=header" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=ff79c6&height=6" width="100%"/>
 
-<div align="center"><sub>🩷 stuff i work on</sub>
+<div align="center"><sub>27 · stuff i work on</sub>
 
 </div>
 
@@ -85,7 +85,7 @@ except KeyboardInterrupt:sys.stdout.write("\033[?25h"+R+"\n")
 
 </div>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=24&height=80&section=footer" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=ff79c6&height=6" width="100%"/>
 
 <div align="center">
 
@@ -94,7 +94,7 @@ except KeyboardInterrupt:sys.stdout.write("\033[?25h"+R+"\n")
 
 </div>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=24&height=80&section=header" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=ff79c6&height=6" width="100%"/>
 
 <div align="center">
 
@@ -102,7 +102,7 @@ except KeyboardInterrupt:sys.stdout.write("\033[?25h"+R+"\n")
 
 </div>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=24&height=80&section=footer" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=ff79c6&height=6" width="100%"/>
 
 <div align="center">
 
@@ -110,7 +110,7 @@ except KeyboardInterrupt:sys.stdout.write("\033[?25h"+R+"\n")
 
 </div>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=24&height=80&section=header" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=ff79c6&height=6" width="100%"/>
 
 <div align="center">
 
@@ -124,7 +124,7 @@ except KeyboardInterrupt:sys.stdout.write("\033[?25h"+R+"\n")
 
 </div>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=24&height=80&section=footer" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=ff79c6&height=6" width="100%"/>
 
 <div align="center">
 
@@ -136,4 +136,4 @@ except KeyboardInterrupt:sys.stdout.write("\033[?25h"+R+"\n")
 
 </div>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=24&height=120&section=footer" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=ff79c6&height=60" width="100%"/>
