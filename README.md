@@ -1,32 +1,35 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=f97316&height=220&section=header&text=goot27&fontSize=70&fontColor=fff&animation=fadeIn&fontAlignY=38&desc=WokSpec%20Dev%20%E2%80%94%20Building%20in%20the%20open&descAlignY=55&descSize=18&descColor=aaaaaa" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=24&height=180&section=header&text=goot27&fontSize=72&fontColor=fff&animation=fadeIn&fontAlignY=50" width="100%"/>
 
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Geist+Mono&weight=600&size=20&pause=1200&color=F97316&center=true&vCenter=true&width=500&lines=WokSpec+Dev+%F0%9F%8D%B3;Building+in+the+open.;JS+%2F+TS+%2F+Next.js;Discord+bots+%26+pixel+art+tools;Open+source+%E2%9D%A4%EF%B8%8F)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Press+Start+2P&size=13&pause=1200&color=FF79C6&center=true&vCenter=true&width=540&height=50&lines=developer.;JS+%2F+TS+%2F+Next.js;open+source+fan+%E2%99%A5;building+cool+things.)](https://git.io/typing-svg)
 
 <br/>
 
-[![Profile Views](https://komarev.com/ghpvc/?username=goot27&style=for-the-badge&color=f97316&label=VISITORS&labelColor=0d0d0d)](https://github.com/goot27)
-[![Twitter](https://img.shields.io/badge/@goot27-000000?style=for-the-badge&logo=x&logoColor=white)](https://twitter.com/goot27)
-[![WokSpec](https://img.shields.io/badge/WokSpec-f97316?style=for-the-badge&logo=github&logoColor=white)](https://github.com/WokSpec)
-[![Website](https://img.shields.io/badge/wokspec.org-0d0d0d?style=for-the-badge&logo=firefox&logoColor=f97316)](https://wokspec.org)
+[![Profile Views](https://komarev.com/ghpvc/?username=goot27&style=for-the-badge&color=ff79c6&label=VISITORS&labelColor=1a1a2e)](https://github.com/goot27)
+[![Twitter](https://img.shields.io/badge/@goot27-ff79c6?style=for-the-badge&logo=x&logoColor=white)](https://twitter.com/goot27)
+[![WokSpec](https://img.shields.io/badge/@WokSpec-ffffff?style=for-the-badge&logo=github&logoColor=1a1a2e)](https://github.com/WokSpec)
 
 </div>
 
 ---
 
-## 🧑‍💻 About me
+<div align="center">
 
-```ts
-const goot27 = {
-  location : "WA, United States 🌲",
-  org      : "WokSpec — Wok Specialists LLC",
-  mission  : "We build in the open.",
-  focus    : ["open-source tooling", "Discord bots", "pixel art pipelines"],
-  stack    : ["TypeScript", "JavaScript", "Next.js", "Node.js"],
-  links    : { web: "wokspec.org", twitter: "@goot27" },
-};
 ```
+██████╗ ███████╗
+╚════██╗╚════██║
+ █████╔╝    ██╔╝
+██╔═══╝    ██╔╝ 
+███████╗  ██╔╝  
+╚══════╝  ╚═╝   
+```
+
+![27](https://img.shields.io/badge/27-ff79c6?style=flat-square) ![27](https://img.shields.io/badge/27-ffffff?style=flat-square) ![27](https://img.shields.io/badge/27-ff79c6?style=flat-square) ![27](https://img.shields.io/badge/27-ffffff?style=flat-square) ![27](https://img.shields.io/badge/27-ff79c6?style=flat-square) ![27](https://img.shields.io/badge/27-ffffff?style=flat-square) ![27](https://img.shields.io/badge/27-ff79c6?style=flat-square) ![27](https://img.shields.io/badge/27-ffffff?style=flat-square) ![27](https://img.shields.io/badge/27-ff79c6?style=flat-square) ![27](https://img.shields.io/badge/27-ffffff?style=flat-square) ![27](https://img.shields.io/badge/27-ff79c6?style=flat-square) ![27](https://img.shields.io/badge/27-ffffff?style=flat-square) ![27](https://img.shields.io/badge/27-ff79c6?style=flat-square) ![27](https://img.shields.io/badge/27-ffffff?style=flat-square) ![27](https://img.shields.io/badge/27-ff79c6?style=flat-square) ![27](https://img.shields.io/badge/27-ffffff?style=flat-square) ![27](https://img.shields.io/badge/27-ff79c6?style=flat-square) ![27](https://img.shields.io/badge/27-ffffff?style=flat-square) ![27](https://img.shields.io/badge/27-ff79c6?style=flat-square) ![27](https://img.shields.io/badge/27-ffffff?style=flat-square)
+![27](https://img.shields.io/badge/27-ffffff?style=flat-square) ![27](https://img.shields.io/badge/27-ff79c6?style=flat-square) ![27](https://img.shields.io/badge/27-ffffff?style=flat-square) ![27](https://img.shields.io/badge/27-ff79c6?style=flat-square) ![27](https://img.shields.io/badge/27-ffffff?style=flat-square) ![27](https://img.shields.io/badge/27-ff79c6?style=flat-square) ![27](https://img.shields.io/badge/27-ffffff?style=flat-square) ![27](https://img.shields.io/badge/27-ff79c6?style=flat-square) ![27](https://img.shields.io/badge/27-ffffff?style=flat-square) ![27](https://img.shields.io/badge/27-ff79c6?style=flat-square) ![27](https://img.shields.io/badge/27-ffffff?style=flat-square) ![27](https://img.shields.io/badge/27-ff79c6?style=flat-square) ![27](https://img.shields.io/badge/27-ffffff?style=flat-square) ![27](https://img.shields.io/badge/27-ff79c6?style=flat-square) ![27](https://img.shields.io/badge/27-ffffff?style=flat-square) ![27](https://img.shields.io/badge/27-ff79c6?style=flat-square) ![27](https://img.shields.io/badge/27-ffffff?style=flat-square) ![27](https://img.shields.io/badge/27-ff79c6?style=flat-square) ![27](https://img.shields.io/badge/27-ffffff?style=flat-square) ![27](https://img.shields.io/badge/27-ff79c6?style=flat-square)
+![27](https://img.shields.io/badge/27-ff79c6?style=flat-square) ![27](https://img.shields.io/badge/27-ffffff?style=flat-square) ![27](https://img.shields.io/badge/27-ff79c6?style=flat-square) ![27](https://img.shields.io/badge/27-ffffff?style=flat-square) ![27](https://img.shields.io/badge/27-ff79c6?style=flat-square) ![27](https://img.shields.io/badge/27-ffffff?style=flat-square) ![27](https://img.shields.io/badge/27-ff79c6?style=flat-square) ![27](https://img.shields.io/badge/27-ffffff?style=flat-square) ![27](https://img.shields.io/badge/27-ff79c6?style=flat-square) ![27](https://img.shields.io/badge/27-ffffff?style=flat-square) ![27](https://img.shields.io/badge/27-ff79c6?style=flat-square) ![27](https://img.shields.io/badge/27-ffffff?style=flat-square) ![27](https://img.shields.io/badge/27-ff79c6?style=flat-square) ![27](https://img.shields.io/badge/27-ffffff?style=flat-square) ![27](https://img.shields.io/badge/27-ff79c6?style=flat-square) ![27](https://img.shields.io/badge/27-ffffff?style=flat-square) ![27](https://img.shields.io/badge/27-ff79c6?style=flat-square) ![27](https://img.shields.io/badge/27-ffffff?style=flat-square) ![27](https://img.shields.io/badge/27-ff79c6?style=flat-square) ![27](https://img.shields.io/badge/27-ffffff?style=flat-square)
+
+</div>
 
 ---
 
