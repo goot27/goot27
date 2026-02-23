@@ -1,4 +1,4 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=24&height=200&section=header&text=goot27&fontSize=72&fontColor=fff&animation=twinkling&fontAlignY=40" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=24&height=120&section=header" width="100%"/>
 
 <div align="center">
 
@@ -7,8 +7,8 @@
 <br/>
 
 [![Profile Views](https://komarev.com/ghpvc/?username=goot27&style=for-the-badge&color=ff79c6&label=VISITORS&labelColor=1a1a2e)](https://github.com/goot27)
-[![Twitter](https://img.shields.io/badge/@goot27-ff79c6?style=for-the-badge&logo=x&logoColor=white)](https://twitter.com/goot27)
-[![WokSpec](https://img.shields.io/badge/@WokSpec-ffffff?style=for-the-badge&logo=github&logoColor=1a1a2e)](https://github.com/WokSpec)
+[![Twitter](https://img.shields.io/badge/twitter-ff79c6?style=for-the-badge&logo=x&logoColor=white)](https://twitter.com/goot27)
+[![WokSpec](https://img.shields.io/badge/WokSpec-ffffff?style=for-the-badge&logo=github&logoColor=1a1a2e)](https://github.com/WokSpec)
 
 </div>
 
@@ -74,7 +74,9 @@ except KeyboardInterrupt:sys.stdout.write("\033[?25h"+R+"\n")
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=24&height=80&section=header" width="100%"/>
 
-## 🩷 stuff i work on
+<div align="center"><sub>🩷 stuff i work on</sub>
+
+</div>
 
 <div align="center">
 
