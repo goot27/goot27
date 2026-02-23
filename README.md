@@ -10,14 +10,14 @@
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=0,2,2,5,30&height=3" width="100%"/>
 
-```python
-import random, time, signal, sys
-signal.signal(signal.SIGINT, lambda s, f: (print('\n\033[0m^C'), sys.exit(0)))
-p = ['\033[95m', '\033[35m', '\033[91m', '\033[97m']
-while True:
-    n = random.randint(40, 80)
-    print(''.join(random.choice(p) + random.choice('27') + '\033[0m' for _ in range(n)), flush=True)
-    time.sleep(random.uniform(0.008, 0.03))
+**Linux / Mac / WSL**
+```sh
+curl -s https://raw.githubusercontent.com/goot27/goot27/main/run_27.py | python3
+```
+
+**Windows PowerShell**
+```powershell
+irm https://raw.githubusercontent.com/goot27/goot27/main/run_27.py | python
 ```
 
 <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=0,2,2,5,30&height=3" width="100%"/>
