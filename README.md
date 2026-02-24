@@ -4,7 +4,7 @@
 
 [![Profile Views](https://komarev.com/ghpvc/?username=goot27&style=for-the-badge&color=ff79c6&label=VISITORS&labelColor=fce4ec)](https://github.com/goot27)
 [![goot27](https://img.shields.io/badge/@goot27-ff4d9e?style=for-the-badge&logo=x&logoColor=fff)](https://twitter.com/goot27)
-[![WokSpec](https://img.shields.io/badge/WokSpec-f48fb1?style=for-the-badge&logo=github&logoColor=fff)](https://github.com/WokSpec)
+[![WokSpec](https://img.shields.io/badge/WokSpec-222222?style=for-the-badge&logo=github&logoColor=ff6600)](https://github.com/WokSpec)
 
 </div>
 
