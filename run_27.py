@@ -18,43 +18,43 @@ SHOW  = '\033[?25h'
 PINK_NC = ['\033[2m\033[35m', '\033[35m']
 GREY_NC = ['\033[90m', '\033[2m\033[37m']
 
-G_WAVE = '\033[95m\033[1m'
-G_LOGO = '\033[97m\033[1m'
-W_WAVE = '\033[38;5;208m\033[1m'
-W_LOGO = '\033[38;5;214m\033[1m'
+G_WAVE = '\033[95m\033[1m'           # magenta wave front
+G_LOGO = '\033[97m\033[1m'           # bright white revealed
 
-# ── glyph font (each char = exactly 3 cols × 4 rows) ──────────────────────
-_F = {
-    'g': ('┌─╮', '│ ┬', '└─┤', '  └'),
-    'o': ('┌─┐', '│ │', '│ │', '└─┘'),
-    't': ('─┬─', ' │ ', ' │ ', '─┴─'),
-    '2': ('┌─┐', ' ─┘', '┌─ ', '└──'),
-    '7': ('──┐', ' ┌┘', ' │ ', ' └ '),
-    'W': ('┬ ┬', '│╲│', '│ │', '└┴┘'),
-    'k': ('│╲ ', '├─╮', '│ ╰', '└  '),
-    'S': ('┌─┐', '└─╮', '╭─┘', '└─┘'),
-    'p': ('┌─╮', '├─┘', '│  ', '└  '),
-    'e': ('┌─┐', '├─ ', '└─┘', '   '),
-    'c': ('╭─┐', '│  ', '│  ', '╰─┘'),
+W_WAVE = '\033[38;5;208m\033[1m'     # orange wave front
+W_LOGO = '\033[38;5;214m\033[1m'     # gold revealed
+
+GLYPHS = {
+    'g': ['╔═══╗','║    ','║  ═╣','║   ║','╚═══╝'],
+    'o': ['╔═══╗','║   ║','║   ║','║   ║','╚═══╝'],
+    't': ['══╦══','  ║  ','  ║  ','  ║  ','  ╩  '],
+    '2': ['╔═══╗','    ║','╔═══╝','║    ','╚════'],
+    '7': ['════╗','    ║','  ╔═╝','  ║  ','  ╩  '],
+    'W': ['╗     ╗','║     ║','╚╗   ╔╝',' ╚╗ ╔╝ ','  ╚═╝  '],
+    'k': ['║   ╔═','║  ╔╝ ','╠══╝  ','║  ╚╗ ','║   ╚═'],
+    'S': ['╔═══╗','║    ','╚═══╗','    ║','╚═══╝'],
+    'p': ['╔═══╗','║   ║','╠═══╝','║    ','╩    '],
+    'e': ['╔═══╗','║   ║','╠═══ ','║    ','╚═══╗'],
+    'c': ['╔═══╗','║    ','║    ','║    ','╚═══╝'],
 }
+SEP = '  '
 
 def make_art(word):
-    rows = [''] * 4
+    rows = ['' for _ in range(5)]
     for i, ch in enumerate(word):
-        if ch not in _F:
+        if ch not in GLYPHS:
             continue
-        for r in range(4):
-            rows[r] += _F[ch][r]
+        for r in range(5):
+            rows[r] += GLYPHS[ch][r]
         if i < len(word) - 1:
-            for r in range(4):
-                rows[r] += ' '
+            for r in range(5):
+                rows[r] += SEP
     w = max(len(r) for r in rows)
     return [r.ljust(w) for r in rows]
 
 GOOT27  = make_art('goot27')
 WOKSPEC = make_art('WokSpec')
 
-# ── runtime ────────────────────────────────────────────────────────────────
 def noise(n, nc):
     return ''.join(random.choice(nc) + random.choice('27') + RESET
                    for _ in range(n))
@@ -77,7 +77,7 @@ def build(reveal, art, wc, lc, nc):
                 if ch == ' ':
                     parts.append(' ' if dist > 0
                                  else random.choice(nc) + random.choice('27') + RESET)
-                elif dist > 3:
+                elif dist > 4:
                     parts.append(lc + ch + RESET)
                 elif dist > 0:
                     parts.append(wc + ch + RESET)
@@ -101,7 +101,7 @@ def transition(secs, a, b):
     W, _ = shutil.get_terminal_size((80, 24))
     end  = time.time() + secs
     while time.time() < end:
-        t  = 1.0 - (end - time.time()) / secs
+        t = 1.0 - (end - time.time()) / secs
         sys.stdout.write(noise(W, b if random.random() < t else a) + '\n')
         sys.stdout.flush()
         time.sleep(0.010)
