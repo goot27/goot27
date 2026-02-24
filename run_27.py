@@ -17,37 +17,35 @@ SHOW  = '\033[?25h'
 
 PINK_NC = ['\033[2m\033[35m', '\033[35m']
 GREY_NC = ['\033[90m', '\033[2m\033[37m']
-
-G_WAVE = '\033[95m\033[1m'           # magenta wave front
-G_LOGO = '\033[97m\033[1m'           # bright white revealed
-
-W_WAVE = '\033[38;5;208m\033[1m'     # orange wave front
-W_LOGO = '\033[38;5;214m\033[1m'     # gold revealed
+G_WAVE  = '\033[95m\033[1m'
+G_LOGO  = '\033[97m\033[1m'
+W_WAVE  = '\033[38;5;208m\033[1m'
+W_LOGO  = '\033[38;5;214m\033[1m'
 
 GLYPHS = {
-    'g': ['╔═══╗','║    ','║  ═╣','║   ║','╚═══╝'],
-    'o': ['╔═══╗','║   ║','║   ║','║   ║','╚═══╝'],
-    't': ['══╦══','  ║  ','  ║  ','  ║  ','  ╩  '],
-    '2': ['╔═══╗','    ║','╔═══╝','║    ','╚════'],
-    '7': ['════╗','    ║','  ╔═╝','  ║  ','  ╩  '],
-    'W': ['╔═════╗','║  ╦  ║','║ ╔╝╚╗║','╚╝   ╚╝','       '],
-    'k': ['║   ╔═','║  ╔╝ ','╠══╝  ','║  ╚╗ ','║   ╚═'],
-    'S': ['╔═══╗','║    ','╚═══╗','    ║','╚═══╝'],
-    'p': ['╔═══╗','║   ║','╠═══╝','║    ','╩    '],
-    'e': ['╔═══╗','║   ║','╠═══ ','║    ','╚═══╗'],
-    'c': ['╔═══╗','║    ','║    ','║    ','╚═══╝'],
+    'g': ['╔═════╗','║     ║','║      ','║ ════╣','║     ║','╚═════╝'],
+    'o': ['╔═════╗','║     ║','║     ║','║     ║','║     ║','╚═════╝'],
+    't': ['═══╦═══','   ║   ','   ║   ','   ║   ','   ║   ','   ╩   '],
+    '2': ['╔═════╗','      ║','╔═════╝','║      ','║      ','╚══════'],
+    '7': ['══════╗','      ║','   ╔══╝','   ║   ','   ║   ','   ╩   '],
+    'W': ['╔═══════╗','║       ║','║   ╦   ║','║  ╔╝╚╗ ║','╚═╝   ╚═╝','         '],
+    'k': ['║     ╔','║    ╔╝','║   ╔╝ ','╠═══╝  ','║   ╚╗ ','║    ╚═'],
+    'S': ['╔═════╗','║      ','║      ','╚═════╗','      ║','╚═════╝'],
+    'p': ['╔═════╗','║     ║','║     ║','╠═════╝','║      ','╩      '],
+    'e': ['╔═════╗','║     ║','╠══════','║      ','║      ','╚═════╗'],
+    'c': ['╔═════╗','║      ','║      ','║      ','║      ','╚═════╝'],
 }
 SEP = '  '
+ROWS = 6
 
 def make_art(word):
-    rows = ['' for _ in range(5)]
+    rows = ['' for _ in range(ROWS)]
     for i, ch in enumerate(word):
-        if ch not in GLYPHS:
-            continue
-        for r in range(5):
+        if ch not in GLYPHS: continue
+        for r in range(ROWS):
             rows[r] += GLYPHS[ch][r]
         if i < len(word) - 1:
-            for r in range(5):
+            for r in range(ROWS):
                 rows[r] += SEP
     w = max(len(r) for r in rows)
     return [r.ljust(w) for r in rows]
@@ -57,19 +55,20 @@ WOKSPEC = make_art('WokSpec')
 
 def noise(n, nc):
     return ''.join(random.choice(nc) + random.choice('27') + RESET
-                   for _ in range(n))
+                   for _ in range(max(n, 0)))
 
 def build(reveal, art, wc, lc, nc):
     W, H = shutil.get_terminal_size((80, 24))
     aw   = max(len(l) for l in art)
     lp   = max(0, (W - aw) // 2)
     rp   = max(0, W - lp - aw)
-    mid  = max(0, (H - len(art)) // 2)
+    # vertical center with a blank buffer row above/below
+    top  = max(0, (H - ROWS - 2) // 2)
     lines = []
     for row in range(H):
-        rel = row - mid
-        if 0 <= rel < len(art):
-            rr   = max(0.0, min(1.0, reveal - rel * 0.12))
+        rel = row - top - 1          # -1 = blank buffer above logo
+        if 0 <= rel < ROWS:
+            rr   = max(0.0, min(1.0, reveal - rel * 0.10))
             wave = rr * aw
             parts = [noise(lp, nc)]
             for col, ch in enumerate(art[rel]):
@@ -77,7 +76,7 @@ def build(reveal, art, wc, lc, nc):
                 if ch == ' ':
                     parts.append(' ' if dist > 0
                                  else random.choice(nc) + random.choice('27') + RESET)
-                elif dist > 4:
+                elif dist > 5:
                     parts.append(lc + ch + RESET)
                 elif dist > 0:
                     parts.append(wc + ch + RESET)
