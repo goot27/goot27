@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """goot27 — Ctrl+C to exit"""
-import os, sys, time, random, signal, shutil
+import os, sys, time, random, signal, shutil, math
 
 # ── Windows ANSI ─────────────────────────────────────────────────────────────
 if sys.platform == 'win32':
@@ -289,6 +289,53 @@ def white_flash(secs=0.3):
         sys.stdout.flush()
         time.sleep(0.04)
 
+# ── Cascade (matrix-rain style) ──────────────────────────────────────────────
+def cascade(secs, nc):
+    """Columns of 2/7 falling at random speeds — neon rain curtain."""
+    TW, TH = shutil.get_terminal_size((80, 24))
+    heads  = [random.uniform(-TH, 0)  for _ in range(TW)]
+    speeds = [random.uniform(1.0, 3.2) for _ in range(TW)]
+    trails = [random.randint(5, 14)   for _ in range(TW)]
+    end    = time.time() + secs
+    sys.stdout.write(CLEAR)
+    while time.time() < end:
+        out = []
+        for row in range(TH):
+            parts = []
+            for col in range(TW):
+                d = row - int(heads[col])
+                if d == 0:
+                    parts.append('\033[97m\033[1m' + random.choice('27') + RESET)
+                elif 1 <= d <= 2:
+                    parts.append(nc[0] + random.choice('27') + RESET)
+                elif 3 <= d <= trails[col]:
+                    parts.append(nc[-1] + random.choice('27') + RESET)
+                else:
+                    parts.append(' ')
+            out.append(''.join(parts))
+        sys.stdout.write(HOME + '\n'.join(out) + '\n')
+        sys.stdout.flush()
+        dt = 0.038
+        for i in range(TW):
+            heads[i] += speeds[i] * dt
+            if heads[i] > TH + trails[i] + 5:
+                heads[i]  = random.uniform(-TH // 2, -2)
+                speeds[i] = random.uniform(1.0, 3.2)
+                trails[i] = random.randint(5, 14)
+        time.sleep(dt)
+
+# ── Glitch burst ──────────────────────────────────────────────────────────────
+def glitch(art, wc, lc, nc, frames=18):
+    """Strobing corruption overlay — logo breaks apart on exit."""
+    fbt = full_bt(art)
+    for f in range(frames):
+        frac = 1.0 - f / frames          # corruption intensifies then fades
+        t    = 0.9 if f % 3 else random.uniform(0.2, 0.65)
+        sys.stdout.write(render(t * frac + (1.0 - frac) * random.uniform(0.05, 0.3),
+                                art, fbt, wc, lc, nc) + '\n')
+        sys.stdout.flush()
+        time.sleep(0.022)
+
 # ── Countdown ────────────────────────────────────────────────────────────────
 def countdown():
     """3 … 2 … 1 — each digit crystallises from pink noise then dissolves."""
@@ -298,31 +345,151 @@ def countdown():
         hold_logo(0.55, art, bt, CD_WAVE, CD_LOGO, PINK_NC)
         particle_out(art, bt, CD_WAVE, CD_LOGO, PINK_NC, steps=14, fps=0.030)
 
+# ── Starfield / warp speed ───────────────────────────────────────────────────
+def starfield(secs, nc):
+    """Stars accelerate outward from centre — warp-speed hyperdrive effect."""
+    TW, TH = shutil.get_terminal_size((80, 24))
+    cx, cy  = TW / 2.0, TH / 2.0
+    MAX_D   = math.hypot(cx, cy * 2.0)
+    N       = 200
+    stars   = [(random.uniform(0, 2 * math.pi),
+                random.uniform(0.3, MAX_D * 0.25),
+                random.uniform(0.4, 1.8)) for _ in range(N)]
+    start   = time.time()
+    end     = start + secs
+    sys.stdout.write(CLEAR)
+    while time.time() < end:
+        elapsed = time.time() - start
+        warp    = 1.0 + elapsed * 3.2
+        grid    = [[' '] * TW for _ in range(TH)]
+        new     = []
+        for angle, dist, spd in stars:
+            nd = dist + spd * warp * 0.55
+            if nd >= MAX_D:
+                nd    = random.uniform(0.2, 1.5)
+                angle = random.uniform(0, 2 * math.pi)
+                spd   = random.uniform(0.4, 1.8)
+            x = int(cx + math.cos(angle) * nd)
+            y = int(cy + math.sin(angle) * nd * 0.5)
+            if 0 <= x < TW and 0 <= y < TH:
+                ratio = nd / MAX_D
+                if ratio < 0.12:
+                    col = nc[-1]; ch = '\xb7'          # dim centre dot
+                elif ratio < 0.55:
+                    col = nc[0];  ch = random.choice('27')
+                else:
+                    col = '\033[97m\033[1m'; ch = random.choice('27')  # hot edge
+                grid[y][x] = col + ch + RESET
+            new.append((angle, nd, spd))
+        stars = new
+        sys.stdout.write(HOME + '\n'.join(''.join(r) for r in grid) + '\n')
+        sys.stdout.flush()
+        time.sleep(0.038)
+
+# ── DNA double helix ──────────────────────────────────────────────────────────
+def dna_helix(secs):
+    """Two interweaving phosphate strands — double helix of 2 and 7."""
+    TW, TH   = shutil.get_terminal_size((80, 24))
+    STRAND_A = '\033[38;5;213m\033[1m'   # hot pink  — strand A
+    STRAND_B = '\033[38;5;51m\033[1m'    # cyan      — strand B
+    RUNG     = '\033[38;5;225m\033[2m'   # pale      — rungs
+    end      = time.time() + secs
+    offset   = 0.0
+    sys.stdout.write(CLEAR)
+    while time.time() < end:
+        out = []
+        for row in range(TH):
+            line  = [' '] * TW
+            phase = row * 0.40 + offset
+            xa    = int((TW / 2) + (TW / 3.2) * math.sin(phase))
+            xb    = int((TW / 2) + (TW / 3.2) * math.sin(phase + math.pi))
+            lo, hi = min(xa, xb), max(xa, xb)
+            for c in range(lo + 1, hi):       # rungs between strands
+                if 0 <= c < TW:
+                    line[c] = RUNG + ('2' if (c + row) % 2 == 0 else '7') + RESET
+            if 0 <= xa < TW:
+                line[xa] = STRAND_A + ('2' if row % 2 == 0 else '7') + RESET
+            if 0 <= xb < TW:
+                line[xb] = STRAND_B + ('7' if row % 2 == 0 else '2') + RESET
+            out.append(''.join(line))
+        sys.stdout.write(HOME + '\n'.join(out) + '\n')
+        sys.stdout.flush()
+        offset += 0.14
+        time.sleep(0.033)
+
+# ── Fireworks ─────────────────────────────────────────────────────────────────
+def fireworks(bursts=5):
+    """Radial particle explosions from random launch points — celebration burst."""
+    TW, TH = shutil.get_terminal_size((80, 24))
+    BURST_COLS = [
+        '\033[97m\033[1m',
+        '\033[38;5;213m\033[1m',
+        '\033[38;5;214m\033[1m',
+        '\033[38;5;226m\033[1m',
+        '\033[38;5;51m\033[1m',
+        '\033[38;5;207m\033[1m',
+        '\033[38;5;196m\033[1m',
+    ]
+    N = 36
+    for _ in range(bursts):
+        cx    = random.randint(TW // 5, 4 * TW // 5)
+        cy    = random.randint(TH // 4, 3 * TH // 4)
+        col   = random.choice(BURST_COLS)
+        angs  = [2 * math.pi * i / N for i in range(N)]
+        max_r = min(cx, TW - cx, cy * 2, (TH - cy) * 2, 28)
+        for r in range(1, max_r + 8):
+            grid = [[' '] * TW for _ in range(TH)]
+            for a in angs:
+                x = int(cx + r * math.cos(a))
+                y = int(cy + r * math.sin(a) * 0.5)
+                if 0 <= x < TW and 0 <= y < TH:
+                    fade = col if r <= max_r else '\033[2m\033[90m'
+                    grid[y][x] = fade + random.choice('27') + RESET
+                tr = r - 4
+                if tr > 0:
+                    tx = int(cx + tr * math.cos(a))
+                    ty = int(cy + tr * math.sin(a) * 0.5)
+                    if 0 <= tx < TW and 0 <= ty < TH:
+                        grid[ty][tx] = '\033[2m\033[35m' + random.choice('27') + RESET
+            sys.stdout.write(HOME + '\n'.join(''.join(row) for row in grid) + '\n')
+            sys.stdout.flush()
+            time.sleep(0.020)
+        time.sleep(0.06)
+
 # ── Signal + main loop ───────────────────────────────────────────────────────
 signal.signal(signal.SIGINT,
               lambda *_: (sys.stdout.write(SHOW + RESET + '\n'), sys.exit(0)))
 sys.stdout.write(HIDE)
 
 while True:
-    # ── ACT I   : Intro chaos + countdown ──────────────────────────────────
-    flood(1.2, PINK_NC)
+    # ── ACT I   : Warp approach → cascade curtain → countdown → launch ───────
+    starfield(2.5, PINK_NC)                             # warp hyperdrive in
+    cascade(1.5, PINK_NC)                               # neon rain opens
     countdown()                                         # 3 → 2 → 1
     shockwave()                                         # launch pulse
 
     # ── ACT II  : goot27 via scan-line reveal ───────────────────────────────
     scan_in (GOOT27, G_WAVE, G_LOGO, PINK_NC)
-    hold_logo(2.5,   GOOT27, None,   G_WAVE, G_LOGO, PINK_NC)
-    scan_out(GOOT27, G_WAVE, G_LOGO, PINK_NC)
+    hold_logo(2.2,   GOOT27, None,   G_WAVE, G_LOGO, PINK_NC)
+    glitch(GOOT27, G_WAVE, G_LOGO, PINK_NC)            # glitch exit
 
     # ── ACT III : WokSpec via particle reveal ───────────────────────────────
-    transition(1.5, PINK_NC, GREY_NC)
+    transition(1.2, PINK_NC, GREY_NC)
     wbt = particle_in(WOKSPEC, W_WAVE, W_LOGO, GREY_NC)
     hold_logo(2.5,  WOKSPEC, wbt, W_WAVE, W_LOGO, GREY_NC)
     particle_out(   WOKSPEC, wbt, W_WAVE, W_LOGO, GREY_NC)
-    transition(1.0, GREY_NC, PINK_NC)
+    transition(0.8, GREY_NC, PINK_NC)
 
-    # ── ACT IV  : Reactor ramps up → climax flash → implosion ──────────────
-    rings(4.5, PINK_RINGS, inward=False, v0=2.5, accel=2.5)  # outward, accelerating
+    # ── ACT IV  : DNA double helix interlude → goot27 particle drop ─────────
+    dna_helix(3.5)                                      # double helix stage
+    gbt = particle_in(GOOT27, G_WAVE, G_LOGO, PINK_NC)
+    hold_logo(1.8, GOOT27, gbt, G_WAVE, G_LOGO, PINK_NC)
+    particle_out(  GOOT27, gbt, G_WAVE, G_LOGO, PINK_NC)
+
+    # ── ACT V   : Reactor surge → climax flash → fireworks → implosion ──────
+    rings(3.5, PINK_RINGS, inward=False, v0=2.5, accel=2.5)  # outward surge
     white_flash(0.3)                                           # peak flash
-    rings(2.0, GOLD_RINGS, inward=True,  v0=8.0, accel=3.0)  # implosion in gold
-    flood(0.8, PINK_NC)                                        # settle
+    fireworks(4)                                               # celebration burst
+    rings(2.0, GOLD_RINGS, inward=True,  v0=8.0, accel=3.0)  # gold implosion
+    shockwave()                                                # final pulse
+    flood(0.6, PINK_NC)                                       # settle
