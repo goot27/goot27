@@ -462,34 +462,30 @@ signal.signal(signal.SIGINT,
 sys.stdout.write(HIDE)
 
 while True:
-    # ── ACT I   : Warp approach → cascade curtain → countdown → launch ───────
-    starfield(2.5, PINK_NC)                             # warp hyperdrive in
-    cascade(1.5, PINK_NC)                               # neon rain opens
-    countdown()                                         # 3 → 2 → 1
-    shockwave()                                         # launch pulse
+    # ── I · APPROACH ─────────────────────────────────────────────────────────
+    # Particles converge from deep space → sequence lock → signal fires
+    starfield(2.5, PINK_NC)
+    countdown()
+    shockwave()
 
-    # ── ACT II  : goot27 via scan-line reveal ───────────────────────────────
-    scan_in (GOOT27, G_WAVE, G_LOGO, PINK_NC)
-    hold_logo(2.2,   GOOT27, None,   G_WAVE, G_LOGO, PINK_NC)
-    glitch(GOOT27, G_WAVE, G_LOGO, PINK_NC)            # glitch exit
+    # ── II · IDENTITY ────────────────────────────────────────────────────────
+    # Logo scorches left → right, holds, then dissolves back to particles
+    scan_in(GOOT27, G_WAVE, G_LOGO, PINK_NC)
+    hold_logo(3.0, GOOT27, None, G_WAVE, G_LOGO, PINK_NC)
+    particle_out(GOOT27, birth_times(GOOT27), G_WAVE, G_LOGO, PINK_NC)
 
-    # ── ACT III : WokSpec via particle reveal ───────────────────────────────
-    transition(1.2, PINK_NC, GREY_NC)
-    wbt = particle_in(WOKSPEC, W_WAVE, W_LOGO, GREY_NC)
-    hold_logo(2.5,  WOKSPEC, wbt, W_WAVE, W_LOGO, GREY_NC)
-    particle_out(   WOKSPEC, wbt, W_WAVE, W_LOGO, GREY_NC)
-    transition(0.8, GREY_NC, PINK_NC)
+    # ── III · ECHO ───────────────────────────────────────────────────────────
+    # Pulse ring expands → WokSpec rises from the noise → dissolves
+    rings(2.5, PINK_RINGS, inward=False, v0=2.0, accel=1.8)
+    wbt = particle_in(WOKSPEC, W_WAVE, W_LOGO, PINK_NC)
+    hold_logo(2.5, WOKSPEC, wbt, W_WAVE, W_LOGO, PINK_NC)
+    particle_out(WOKSPEC, wbt, W_WAVE, W_LOGO, PINK_NC)
 
-    # ── ACT IV  : DNA double helix interlude → goot27 particle drop ─────────
-    dna_helix(3.5)                                      # double helix stage
+    # ── IV · SURGE & RESOLVE ─────────────────────────────────────────────────
+    # Reactor builds → peak flash → gold implosion → goot27 crystallises
+    rings(3.5, PINK_RINGS, inward=False, v0=3.0, accel=3.0)
+    white_flash(0.3)
+    rings(2.0, GOLD_RINGS, inward=True, v0=8.0, accel=3.0)
     gbt = particle_in(GOOT27, G_WAVE, G_LOGO, PINK_NC)
-    hold_logo(1.8, GOOT27, gbt, G_WAVE, G_LOGO, PINK_NC)
-    particle_out(  GOOT27, gbt, G_WAVE, G_LOGO, PINK_NC)
-
-    # ── ACT V   : Reactor surge → climax flash → fireworks → implosion ──────
-    rings(3.5, PINK_RINGS, inward=False, v0=2.5, accel=2.5)  # outward surge
-    white_flash(0.3)                                           # peak flash
-    fireworks(4)                                               # celebration burst
-    rings(2.0, GOLD_RINGS, inward=True,  v0=8.0, accel=3.0)  # gold implosion
-    shockwave()                                                # final pulse
-    flood(0.6, PINK_NC)                                       # settle
+    hold_logo(2.0, GOOT27, gbt, G_WAVE, G_LOGO, PINK_NC)
+    flood(0.6, PINK_NC)
