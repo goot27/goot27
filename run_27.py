@@ -15,37 +15,46 @@ RESET = '\033[0m'
 HIDE  = '\033[?25l'
 SHOW  = '\033[?25h'
 
-# ── noise palettes ─────────────────────────────────────────────────────────
-PINK_NC = ['\033[2m\033[35m', '\033[2m\033[95m', '\033[35m']
-GREY_NC = ['\033[90m', '\033[2m\033[37m', '\033[37m']
+PINK_NC = ['\033[2m\033[35m', '\033[35m']
+GREY_NC = ['\033[90m', '\033[2m\033[37m']
 
-# ── logo colors ────────────────────────────────────────────────────────────
-G_WAVE = '\033[95m\033[1m'          # goot27 wave front  — bright magenta
-G_LOGO = '\033[97m\033[1m'          # goot27 revealed    — bright white
+G_WAVE = '\033[95m\033[1m'
+G_LOGO = '\033[97m\033[1m'
+W_WAVE = '\033[38;5;208m\033[1m'
+W_LOGO = '\033[38;5;214m\033[1m'
 
-W_WAVE = '\033[38;5;208m\033[1m'    # WokSpec wave front — orange
-W_LOGO = '\033[38;5;214m\033[1m'    # WokSpec revealed   — gold/orange
+# ── glyph font (each char = exactly 3 cols × 4 rows) ──────────────────────
+_F = {
+    'g': ('┌─╮', '│ ┬', '└─┤', '  └'),
+    'o': ('┌─┐', '│ │', '│ │', '└─┘'),
+    't': ('─┬─', ' │ ', ' │ ', '─┴─'),
+    '2': ('┌─┐', ' ─┘', '┌─ ', '└──'),
+    '7': ('──┐', ' ┌┘', ' │ ', ' └ '),
+    'W': ('┬ ┬', '│╲│', '│ │', '└┴┘'),
+    'k': ('│╲ ', '├─╮', '│ ╰', '└  '),
+    'S': ('┌─┐', '└─╮', '╭─┘', '└─┘'),
+    'p': ('┌─╮', '├─┘', '│  ', '└  '),
+    'e': ('┌─┐', '├─ ', '└─┘', '   '),
+    'c': ('╭─┐', '│  ', '│  ', '╰─┘'),
+}
 
-# ── art ────────────────────────────────────────────────────────────────────
-GOOT27 = [
-    r" ██████╗  ██████╗  ██████╗ ████████╗██████╗  ███████╗",
-    r"██╔════╝ ██╔═══██╗██╔═══██╗╚══██╔══╝╚════██╗ ╚════██║",
-    r"██║  ███╗██║   ██║██║   ██║   ██║    █████╔╝     ██╔╝",
-    r"██║   ██║██║   ██║██║   ██║   ██║   ██╔═══╝     ██╔╝ ",
-    r"╚██████╔╝╚██████╔╝╚██████╔╝   ██║   ███████╗    ██║  ",
-    r" ╚═════╝  ╚═════╝  ╚═════╝    ╚═╝   ╚══════╝    ╚═╝  ",
-]
+def make_art(word):
+    rows = [''] * 4
+    for i, ch in enumerate(word):
+        if ch not in _F:
+            continue
+        for r in range(4):
+            rows[r] += _F[ch][r]
+        if i < len(word) - 1:
+            for r in range(4):
+                rows[r] += ' '
+    w = max(len(r) for r in rows)
+    return [r.ljust(w) for r in rows]
 
-WOKSPEC = [
-    r" ██╗    ██╗ ██████╗ ██╗  ██╗███████╗██████╗ ███████╗ ██████╗ ",
-    r" ██║    ██║██╔═══██╗██║ ██╔╝██╔════╝██╔══██╗██╔════╝██╔════╝ ",
-    r" ██║ █╗ ██║██║   ██║█████╔╝ ███████╗██████╔╝█████╗  ██║      ",
-    r" ██║███╗██║██║   ██║██╔═██╗ ╚════██║██╔═══╝ ██╔══╝  ██║      ",
-    r" ╚███╔███╔╝╚██████╔╝██║  ██╗███████║██║     ███████╗╚██████╗ ",
-    r"  ╚══╝╚══╝  ╚═════╝ ╚═╝  ╚═╝╚══════╝╚═╝     ╚══════╝ ╚═════╝ ",
-]
+GOOT27  = make_art('goot27')
+WOKSPEC = make_art('WokSpec')
 
-# ── helpers ────────────────────────────────────────────────────────────────
+# ── runtime ────────────────────────────────────────────────────────────────
 def noise(n, nc):
     return ''.join(random.choice(nc) + random.choice('27') + RESET
                    for _ in range(n))
@@ -60,7 +69,7 @@ def build(reveal, art, wc, lc, nc):
     for row in range(H):
         rel = row - mid
         if 0 <= rel < len(art):
-            rr   = max(0.0, min(1.0, reveal - rel * 0.07))
+            rr   = max(0.0, min(1.0, reveal - rel * 0.12))
             wave = rr * aw
             parts = [noise(lp, nc)]
             for col, ch in enumerate(art[rel]):
@@ -68,7 +77,7 @@ def build(reveal, art, wc, lc, nc):
                 if ch == ' ':
                     parts.append(' ' if dist > 0
                                  else random.choice(nc) + random.choice('27') + RESET)
-                elif dist > 6:
+                elif dist > 3:
                     parts.append(lc + ch + RESET)
                 elif dist > 0:
                     parts.append(wc + ch + RESET)
@@ -88,13 +97,12 @@ def flood(secs, nc):
         sys.stdout.flush()
         time.sleep(0.010)
 
-def transition(secs, from_nc, to_nc):
+def transition(secs, a, b):
     W, _ = shutil.get_terminal_size((80, 24))
     end  = time.time() + secs
     while time.time() < end:
         t  = 1.0 - (end - time.time()) / secs
-        nc = to_nc if random.random() < t else from_nc
-        sys.stdout.write(noise(W, nc) + '\n')
+        sys.stdout.write(noise(W, b if random.random() < t else a) + '\n')
         sys.stdout.flush()
         time.sleep(0.010)
 
@@ -118,20 +126,13 @@ signal.signal(signal.SIGINT,
 sys.stdout.write(HIDE)
 
 while True:
-    # ── goot27 ── pink 27 flood → white logo forms → dissolves
     flood(2.5,  PINK_NC)
-    animate(32, 0.0, 1.0, GOOT27, G_WAVE, G_LOGO, PINK_NC)
-    hold(2.5,              GOOT27, G_WAVE, G_LOGO, PINK_NC)
-    animate(22, 1.0, 0.0, GOOT27, G_WAVE, G_LOGO, PINK_NC)
-
-    # ── gradient pink → grey ──
+    animate(32, 0.0, 1.0, GOOT27,  G_WAVE, G_LOGO, PINK_NC)
+    hold(2.5,              GOOT27,  G_WAVE, G_LOGO, PINK_NC)
+    animate(22, 1.0, 0.0, GOOT27,  G_WAVE, G_LOGO, PINK_NC)
     transition(1.5, PINK_NC, GREY_NC)
-
-    # ── WokSpec ── grey 27 flood → orange logo forms → dissolves
     flood(1.0,  GREY_NC)
     animate(32, 0.0, 1.0, WOKSPEC, W_WAVE, W_LOGO, GREY_NC)
     hold(2.5,               WOKSPEC, W_WAVE, W_LOGO, GREY_NC)
     animate(22, 1.0, 0.0, WOKSPEC, W_WAVE, W_LOGO, GREY_NC)
-
-    # ── gradient grey → pink ──
     transition(1.5, GREY_NC, PINK_NC)
