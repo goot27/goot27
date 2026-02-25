@@ -13,6 +13,12 @@
 <br/>
 
 <div align="center">
+<img src="https://raw.githubusercontent.com/goot27/goot27/output/github-contribution-grid-snake-dark.svg" width="100%"/>
+</div>
+
+<br/>
+
+<div align="center">
 
 <table border="0" cellspacing="6" cellpadding="0">
 <tr>
@@ -110,6 +116,22 @@
 
 <br/>
 
+![](https://img.shields.io/badge/27-decimal-ff79c6?style=flat-square&labelColor=0d0d1a)
+&nbsp;
+![](https://img.shields.io/badge/0x1B-hex-d8a0ff?style=flat-square&labelColor=0d0d1a)
+&nbsp;
+![](https://img.shields.io/badge/0b11011-binary-a0c4ff?style=flat-square&labelColor=0d0d1a)
+&nbsp;
+![](https://img.shields.io/badge/0o33-octal-ffd6a5?style=flat-square&labelColor=0d0d1a)
+&nbsp;
+![](https://img.shields.io/badge/XXVII-roman-caffbf?style=flat-square&labelColor=0d0d1a)
+&nbsp;
+![](https://img.shields.io/badge/3³-perfect_cube-fdffb6?style=flat-square&labelColor=0d0d1a)
+&nbsp;
+![](https://img.shields.io/badge/二十七-漢字-ffadad?style=flat-square&labelColor=0d0d1a)
+
+<br/>
+
 [![Zed](https://img.shields.io/badge/Zed-0a0a0a?style=flat-square&logo=zedindustries&logoColor=09acf8)](https://zed.dev)
 &nbsp;
 [![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white)](https://openai.com)
@@ -134,7 +156,6 @@
 
 </div>
 
-<br/>
+<img src="assets/ticker.svg" width="100%"/>
 
 <img src="assets/tiles.svg" width="100%" alt="2 7"/>
-

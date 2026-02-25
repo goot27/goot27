@@ -2,8 +2,10 @@ name: Generate Contribution Snake
 
 on:
   schedule:
-    - cron: "0 0 * * *"   # daily at midnight UTC
-  workflow_dispatch:       # allow manual trigger
+    - cron: "27 2 * * *"   # 02:27 every day 🎯
+  workflow_dispatch:
+  push:
+    branches: [main]
 
 jobs:
   generate:

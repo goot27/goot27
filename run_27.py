@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """goot27 — Ctrl+C to exit"""
-import os, sys, time, random, signal, shutil, math
+import os, sys, time, random, signal, shutil, math, curses
+from collections import deque
 
 # ── Windows ANSI ─────────────────────────────────────────────────────────────
 if sys.platform == 'win32':
@@ -456,6 +457,217 @@ def fireworks(bursts=5):
             time.sleep(0.020)
         time.sleep(0.06)
 
+# ── Snake game ────────────────────────────────────────────────────────────────
+def snake_game():
+    """Full-terminal Snake — arrow keys or WASD · R restart · Q quit."""
+    def _run(stdscr):
+        curses.curs_set(0)
+        curses.start_color()
+        curses.use_default_colors()
+        # base pairs (fallback)
+        curses.init_pair(1, curses.COLOR_MAGENTA, -1)
+        curses.init_pair(2, curses.COLOR_YELLOW,  -1)
+        curses.init_pair(3, curses.COLOR_WHITE,   -1)
+        curses.init_pair(4, curses.COLOR_CYAN,    -1)
+        curses.init_pair(5, curses.COLOR_RED,     -1)
+        if curses.COLORS >= 256:
+            curses.init_pair(1, 213, -1)   # hot pink — snake
+            curses.init_pair(2, 214, -1)   # gold     — food
+            curses.init_pair(4,  51, -1)   # cyan     — HUD
+
+        high = 0
+        while True:   # restart loop
+            sh, sw = stdscr.getmaxyx()
+            PH = max(5, sh - 4)     # play-area height
+            PW = max(10, sw - 2)    # play-area width
+            TY = 2                  # top y of play area
+            LX = 1                  # left x of play area
+
+            # Init snake
+            sy = TY + PH // 2
+            sx = LX + PW // 4
+            snake     = deque([(sy, sx), (sy, sx - 1), (sy, sx - 2)])
+            snake_set = set(snake)
+
+            def place_food():
+                while True:
+                    fy = random.randint(TY, TY + PH - 1)
+                    fx = random.randint(LX, LX + PW - 1)
+                    if (fy, fx) not in snake_set:
+                        return fy, fx
+
+            food      = place_food()
+            food_ch   = random.choice('27')
+            direction = (0, 1)
+            score     = 0
+            speed     = 120
+
+            stdscr.nodelay(True)
+            stdscr.timeout(speed)
+            stdscr.clear()
+
+            def draw():
+                stdscr.erase()
+                # HUD
+                hud = f' goot27 · SNAKE   score: {score}   best: {high} '
+                try:
+                    stdscr.addstr(0, max(0, (sw - len(hud)) // 2), hud,
+                                  curses.color_pair(4) | curses.A_BOLD)
+                except curses.error:
+                    pass
+                # Border
+                dim = curses.color_pair(3) | curses.A_DIM
+                for x in range(LX, LX + PW):
+                    try: stdscr.addch(TY - 1, x, '─', dim)
+                    except curses.error: pass
+                    try: stdscr.addch(TY + PH, x, '─', dim)
+                    except curses.error: pass
+                for y in range(TY, TY + PH):
+                    try: stdscr.addch(y, LX - 1,  '│', dim)
+                    except curses.error: pass
+                    try: stdscr.addch(y, LX + PW, '│', dim)
+                    except curses.error: pass
+                # Food
+                try:
+                    stdscr.addch(food[0], food[1], food_ch,
+                                 curses.color_pair(2) | curses.A_BOLD)
+                except curses.error:
+                    pass
+                # Snake
+                for i, (ry, rx) in enumerate(snake):
+                    try:
+                        stdscr.addch(ry, rx, '2' if i % 2 == 0 else '7',
+                                     curses.color_pair(1) | curses.A_BOLD)
+                    except curses.error:
+                        pass
+                # Controls
+                hint = ' wasd / ↑↓←→   r restart   q quit '
+                try:
+                    stdscr.addstr(sh - 1, max(0, (sw - len(hint)) // 2), hint,
+                                  curses.color_pair(3) | curses.A_DIM)
+                except curses.error:
+                    pass
+                stdscr.refresh()
+
+            game_over = False
+            while not game_over:
+                draw()
+                key = stdscr.getch()
+                dy, dx = direction
+                if   key in (curses.KEY_UP,    ord('w'), ord('W')) and dy !=  1: direction = (-1,  0)
+                elif key in (curses.KEY_DOWN,  ord('s'), ord('S')) and dy != -1: direction = ( 1,  0)
+                elif key in (curses.KEY_LEFT,  ord('a'), ord('A')) and dx !=  1: direction = ( 0, -1)
+                elif key in (curses.KEY_RIGHT, ord('d'), ord('D')) and dx != -1: direction = ( 0,  1)
+                elif key in (ord('q'), ord('Q')):
+                    return
+
+                head = (snake[0][0] + direction[0], snake[0][1] + direction[1])
+                hy, hx = head
+                if hy < TY or hy >= TY + PH or hx < LX or hx >= LX + PW or head in snake_set:
+                    game_over = True
+                    break
+
+                snake.appendleft(head)
+                snake_set.add(head)
+                if head == food:
+                    score += 1
+                    if score > high:
+                        high = score
+                    food    = place_food()
+                    food_ch = random.choice('27')
+                    speed   = max(45, 120 - score * 3)
+                    stdscr.timeout(speed)
+                else:
+                    tail = snake.pop()
+                    snake_set.discard(tail)
+
+            # Game-over screen
+            stdscr.nodelay(False)
+            stdscr.erase()
+            cy = sh // 2
+            for dy2, msg, pair, attr in [
+                (-1, '  ── GAME OVER ──  ', 5, curses.A_BOLD),
+                ( 0, f'  score: {score}   best: {high}  ', 4, curses.A_BOLD),
+                ( 1, '  [r] restart   [q] quit  ', 3, curses.A_DIM),
+            ]:
+                try:
+                    stdscr.addstr(cy + dy2, max(0, (sw - len(msg)) // 2), msg,
+                                  curses.color_pair(pair) | attr)
+                except curses.error:
+                    pass
+            stdscr.refresh()
+            while True:
+                k = stdscr.getch()
+                if k in (ord('r'), ord('R')):
+                    break
+                if k in (ord('q'), ord('Q'), 27, 3):
+                    return
+
+    try:
+        curses.wrapper(_run)
+    except KeyboardInterrupt:
+        pass
+    finally:
+        sys.stdout.write(HIDE)
+        sys.stdout.flush()
+
+
+# ── Prompt screen (between animation and game) ────────────────────────────────
+def prompt_screen():
+    """
+    Show a menu on a noise background.
+    Returns 's' → play snake, None → loop animation.
+    """
+    def _read_key_blocking():
+        if sys.platform == 'win32':
+            try:
+                import msvcrt
+                return msvcrt.getwch()
+            except Exception:
+                return None
+        try:
+            import tty, termios, select as _sel
+            fd  = sys.stdin.fileno()
+            old = termios.tcgetattr(fd)
+            try:
+                tty.setraw(fd)
+                r, _, _ = _sel.select([sys.stdin], [], [], 8.0)
+                return sys.stdin.read(1) if r else None
+            finally:
+                termios.tcsetattr(fd, termios.TCSADRAIN, old)
+        except Exception:
+            return None
+
+    TW, TH = shutil.get_terminal_size((80, 24))
+    box = [
+        G_LOGO + '╔══════════════════════════════════╗' + RESET,
+        G_LOGO + '║                                  ║' + RESET,
+        G_LOGO + '║  ' + '\033[38;5;213m\033[1m[s]\033[0m' + G_LOGO + '  play snake              ║' + RESET,
+        G_LOGO + '║  ' + '\033[97m[↵]\033[0m'            + G_LOGO + '  replay animation        ║' + RESET,
+        G_LOGO + '║  ' + '\033[90m[^C]\033[0m'            + G_LOGO + '  quit                    ║' + RESET,
+        G_LOGO + '║                                  ║' + RESET,
+        G_LOGO + '╚══════════════════════════════════╝' + RESET,
+    ]
+    box_h  = len(box)
+    box_y  = max(0, (TH - box_h) // 2)
+    # Draw noise + overlay
+    sys.stdout.write(CLEAR + SHOW)
+    out = [noise(TW, PINK_NC) for _ in range(TH)]
+    for i, line in enumerate(box):
+        row = box_y + i
+        if 0 <= row < TH:
+            pad = ' ' * max(0, (TW - 36) // 2)
+            out[row] = pad + line
+    sys.stdout.write(HOME + '\n'.join(out) + '\n')
+    sys.stdout.flush()
+
+    ch = _read_key_blocking()
+    sys.stdout.write(HIDE)
+    if ch and ch.lower() == 's':
+        return 's'
+    return None
+
+
 # ── Signal + main loop ───────────────────────────────────────────────────────
 signal.signal(signal.SIGINT,
               lambda *_: (sys.stdout.write(SHOW + RESET + '\n'), sys.exit(0)))
@@ -463,29 +675,33 @@ sys.stdout.write(HIDE)
 
 while True:
     # ── I · APPROACH ─────────────────────────────────────────────────────────
-    # Particles converge from deep space → sequence lock → signal fires
     starfield(2.5, PINK_NC)
     countdown()
     shockwave()
 
     # ── II · IDENTITY ────────────────────────────────────────────────────────
-    # Logo scorches left → right, holds, then dissolves back to particles
     scan_in(GOOT27, G_WAVE, G_LOGO, PINK_NC)
     hold_logo(3.0, GOOT27, None, G_WAVE, G_LOGO, PINK_NC)
     particle_out(GOOT27, birth_times(GOOT27), G_WAVE, G_LOGO, PINK_NC)
 
     # ── III · ECHO ───────────────────────────────────────────────────────────
-    # Pulse ring expands → WokSpec rises from the noise → dissolves
     rings(2.5, PINK_RINGS, inward=False, v0=2.0, accel=1.8)
     wbt = particle_in(WOKSPEC, W_WAVE, W_LOGO, PINK_NC)
     hold_logo(2.5, WOKSPEC, wbt, W_WAVE, W_LOGO, PINK_NC)
     particle_out(WOKSPEC, wbt, W_WAVE, W_LOGO, PINK_NC)
 
     # ── IV · SURGE & RESOLVE ─────────────────────────────────────────────────
-    # Reactor builds → peak flash → gold implosion → goot27 crystallises
     rings(3.5, PINK_RINGS, inward=False, v0=3.0, accel=3.0)
     white_flash(0.3)
     rings(2.0, GOLD_RINGS, inward=True, v0=8.0, accel=3.0)
     gbt = particle_in(GOOT27, G_WAVE, G_LOGO, PINK_NC)
     hold_logo(2.0, GOOT27, gbt, G_WAVE, G_LOGO, PINK_NC)
     flood(0.6, PINK_NC)
+
+    # ── PROMPT ───────────────────────────────────────────────────────────────
+    choice = prompt_screen()
+    if choice == 's':
+        sys.stdout.write(SHOW + RESET + '\n')
+        snake_game()
+        sys.stdout.write(SHOW + RESET + '\n')
+        sys.exit(0)
