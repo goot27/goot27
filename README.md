@@ -14,11 +14,13 @@
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=py,ts,js,nodejs,react,nextjs,rust,bash,git,linux,vscode&theme=dark" alt="tech stack"/>
+<img src="https://skillicons.dev/icons?i=py,ts,js,html,css,react,nextjs,nodejs,tailwind,bun,vite,git,github,linux,bash,vscode,rust&perline=9&theme=dark"/>
+<br/>
+[![Zed](https://img.shields.io/badge/Zed-0a0a0a?style=flat-square&logo=zedindustries&logoColor=09acf8)](https://zed.dev)
 
-<br/><br/>
+<br/>
 
-*learning along the way &nbsp;·&nbsp; 🍚 i love chicken rice*
+*🍚 i love chicken rice*
 
 </div>
 
