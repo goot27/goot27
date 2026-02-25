@@ -14,7 +14,9 @@
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=py,ts,js,html,css,react,nextjs,nodejs,tailwind,bun,vite,fastapi,flask,django,express,nestjs,git,github,githubactions,linux,bash,vscode,docker,kubernetes,nginx,aws,gcp,cloudflare,vercel,netlify,firebase,supabase,postgres,mongodb,redis,mysql,prisma,graphql,redux,electron,tauri,sass,figma,jest,vitest,deno,neovim,vim,pnpm,rust,pytorch,tensorflow,sklearn,opencv,threejs&perline=9&theme=dark"/>
+<img src="https://skillicons.dev/icons?i=py,ts,js,html,css,go,kotlin,swift,dart,c,cpp,cs,java,ruby,lua,scala,r,zig,elixir,haskell,rust,solidity,react,nextjs,vue,nuxtjs,svelte,solidjs,angular,astro,remix,htmx,gatsby,alpinejs,tailwind,bootstrap,materialui,sass,redux,graphql,prisma,fastapi,flask,django,laravel,express,nestjs,adonis,electron,tauri,flutter&perline=9&theme=dark"/>
+
+<img src="https://skillicons.dev/icons?i=git,github,githubactions,linux,bash,vscode,vim,neovim,androidstudio,idea,webstorm,docker,kubernetes,nginx,aws,gcp,azure,cloudflare,vercel,netlify,firebase,supabase,postgres,mongodb,redis,mysql,sqlite,cassandra,dynamodb,elasticsearch,kafka,rabbitmq,terraform,ansible,grafana,prometheus,sentry,bun,vite,deno,pnpm,yarn,npm,webpack,babel,rollupjs,jest,vitest,selenium,wasm,threejs,d3,p5js,blender,figma,unity,godot,unreal,arduino,raspberrypi,replit,codepen,discord,notion,obsidian,pytorch,tensorflow,sklearn,opencv&perline=9&theme=dark"/>
 
 <br/>
 
@@ -37,6 +39,14 @@
 [![Ollama](https://img.shields.io/badge/Ollama-000000?style=flat-square&logo=ollama&logoColor=white)](https://ollama.com)
 &nbsp;
 [![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=flat-square&logo=huggingface&logoColor=black)](https://huggingface.co)
+&nbsp;
+[![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat-square&logo=langchain&logoColor=white)](https://langchain.com)
+&nbsp;
+[![Grok](https://img.shields.io/badge/Grok-000000?style=flat-square&logo=xai&logoColor=white)](https://x.ai)
+&nbsp;
+[![Stability AI](https://img.shields.io/badge/Stability_AI-FFCA28?style=flat-square&logo=stabilityai&logoColor=black)](https://stability.ai)
+&nbsp;
+[![Replicate](https://img.shields.io/badge/Replicate-000000?style=flat-square&logo=replicate&logoColor=white)](https://replicate.com)
 
 <br/>
 
