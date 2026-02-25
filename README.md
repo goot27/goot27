@@ -14,7 +14,7 @@
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=py,ts,js,html,css,react,nextjs,nodejs,tailwind,bun,vite,git,github,linux,bash,vscode,docker,vercel,supabase,postgres,mongodb,prisma,graphql,rust,pytorch,tensorflow,sklearn,opencv&perline=7&theme=dark"/>
+<img src="https://skillicons.dev/icons?i=py,ts,js,html,css,react,nextjs,nodejs,tailwind,bun,vite,fastapi,flask,django,express,nestjs,git,github,githubactions,linux,bash,vscode,docker,kubernetes,nginx,aws,gcp,cloudflare,vercel,netlify,firebase,supabase,postgres,mongodb,redis,mysql,prisma,graphql,redux,electron,tauri,sass,figma,jest,vitest,deno,neovim,vim,pnpm,rust,pytorch,tensorflow,sklearn,opencv,threejs&perline=9&theme=dark"/>
 
 <br/>
 
@@ -24,9 +24,19 @@
 &nbsp;
 [![Claude](https://img.shields.io/badge/Claude-CC785C?style=flat-square&logo=anthropic&logoColor=white)](https://anthropic.com)
 &nbsp;
-[![Hugging Face](https://img.shields.io/badge/HuggingFace-FFD21E?style=flat-square&logo=huggingface&logoColor=black)](https://huggingface.co)
+[![Gemini](https://img.shields.io/badge/Gemini-8E75B2?style=flat-square&logo=googlegemini&logoColor=white)](https://gemini.google.com)
+&nbsp;
+[![Copilot](https://img.shields.io/badge/Copilot-000000?style=flat-square&logo=githubcopilot&logoColor=white)](https://github.com/features/copilot)
 &nbsp;
 [![Cursor](https://img.shields.io/badge/Cursor-0a0a0a?style=flat-square&logo=cursor&logoColor=white)](https://cursor.sh)
+&nbsp;
+[![Perplexity](https://img.shields.io/badge/Perplexity-1FB8CD?style=flat-square&logo=perplexityai&logoColor=white)](https://perplexity.ai)
+&nbsp;
+[![Mistral](https://img.shields.io/badge/Mistral-FF7000?style=flat-square&logo=mistral&logoColor=white)](https://mistral.ai)
+&nbsp;
+[![Ollama](https://img.shields.io/badge/Ollama-000000?style=flat-square&logo=ollama&logoColor=white)](https://ollama.com)
+&nbsp;
+[![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD21E?style=flat-square&logo=huggingface&logoColor=black)](https://huggingface.co)
 
 <br/>
 
