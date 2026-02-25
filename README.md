@@ -116,19 +116,7 @@
 
 <br/>
 
-![](https://img.shields.io/badge/27-decimal-ff79c6?style=flat-square&labelColor=0d0d1a)
-&nbsp;
-![](https://img.shields.io/badge/0x1B-hex-d8a0ff?style=flat-square&labelColor=0d0d1a)
-&nbsp;
-![](https://img.shields.io/badge/0b11011-binary-a0c4ff?style=flat-square&labelColor=0d0d1a)
-&nbsp;
-![](https://img.shields.io/badge/0o33-octal-ffd6a5?style=flat-square&labelColor=0d0d1a)
-&nbsp;
-![](https://img.shields.io/badge/XXVII-roman-caffbf?style=flat-square&labelColor=0d0d1a)
-&nbsp;
-![](https://img.shields.io/badge/3³-perfect_cube-fdffb6?style=flat-square&labelColor=0d0d1a)
-&nbsp;
-![](https://img.shields.io/badge/二十七-漢字-ffadad?style=flat-square&labelColor=0d0d1a)
+*two · seven &nbsp;·&nbsp; dos · siete &nbsp;·&nbsp; deux · sept &nbsp;·&nbsp; zwei · sieben &nbsp;·&nbsp; 二 · 七 &nbsp;·&nbsp; に · なな &nbsp;·&nbsp; 둘 · 일곱*
 
 <br/>
 
