@@ -1,0 +1,1521 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="190" viewBox="0 0 880 190">
+<defs>
+<clipPath id="vp"><rect width="880" height="190"/></clipPath>
+<filter id="textglow" x="-40%" y="-60%" width="180%" height="220%">
+  <feGaussianBlur stdDeviation="7" result="b"/>
+  <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+</filter>
+<linearGradient id="fadeT" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="0%"   stop-color="#06000d" stop-opacity="1"/>
+  <stop offset="35%"  stop-color="#06000d" stop-opacity="0"/>
+</linearGradient>
+<linearGradient id="fadeB" x1="0" y1="0" x2="0" y2="1">
+  <stop offset="65%"  stop-color="#06000d" stop-opacity="0"/>
+  <stop offset="100%" stop-color="#06000d" stop-opacity="1"/>
+</linearGradient>
+<style>
+.mc{font-family:"Courier New",Courier,monospace;font-size:13px;}
+@keyframes borderPulse{0%,100%{stroke-opacity:0.45}50%{stroke-opacity:0.9}}
+@keyframes d0{from{transform:translateY(-260px)}to{transform:translateY(203px)}}
+.c0{animation:d0 2.82s -3.13s linear infinite;}
+@keyframes d1{from{transform:translateY(-260px)}to{transform:translateY(203px)}}
+.c1{animation:d1 1.94s -2.79s linear infinite;}
+@keyframes d2{from{transform:translateY(-260px)}to{transform:translateY(203px)}}
+.c2{animation:d2 1.84s -3.31s linear infinite;}
+@keyframes d3{from{transform:translateY(-260px)}to{transform:translateY(203px)}}
+.c3{animation:d3 2.71s -4.93s linear infinite;}
+@keyframes d4{from{transform:translateY(-260px)}to{transform:translateY(203px)}}
+.c4{animation:d4 2.58s -6.33s linear infinite;}
+@keyframes d5{from{transform:translateY(-260px)}to{transform:translateY(203px)}}
+.c5{animation:d5 4.02s -0.47s linear infinite;}
+@keyframes d6{from{transform:translateY(-260px)}to{transform:translateY(203px)}}
+.c6{animation:d6 2.82s -3.86s linear infinite;}
+@keyframes d7{from{transform:translateY(-260px)}to{transform:translateY(203px)}}
+.c7{animation:d7 1.97s -4.89s linear infinite;}
+@keyframes d8{from{transform:translateY(-260px)}to{transform:translateY(203px)}}
+.c8{animation:d8 4.05s -0.62s linear infinite;}
+@keyframes d9{from{transform:translateY(-260px)}to{transform:translateY(203px)}}
+.c9{animation:d9 3.92s -1.03s linear infinite;}
+@keyframes d10{from{transform:translateY(-260px)}to{transform:translateY(203px)}}
+.c10{animation:d10 4.95s -3.43s linear infinite;}
+@keyframes d11{from{transform:translateY(-260px)}to{transform:translateY(203px)}}
+.c11{animation:d11 4.78s -1.29s linear infinite;}
+@keyframes d12{from{transform:translateY(-260px)}to{transform:translateY(203px)}}
+.c12{animation:d12 3.53s -2.24s linear infinite;}
+@keyframes d13{from{transform:translateY(-260px)}to{transform:translateY(203px)}}
+.c13{animation:d13 4.5s -4.87s linear infinite;}
+@keyframes d14{from{transform:translateY(-260px)}to{transform:translateY(203px)}}
+.c14{animation:d14 3.57s -6.67s linear infinite;}
+@keyframes d15{from{transform:translateY(-260px)}to{transform:translateY(203px)}}
+.c15{animation:d15 2.65s -4.87s linear infinite;}
+@keyframes d16{from{transform:translateY(-260px)}to{transform:translateY(203px)}}
+.c16{animation:d16 2.59s -5.63s linear infinite;}
+@keyframes d17{from{transform:translateY(-260px)}to{transform:translateY(203px)}}
+.c17{animation:d17 2.17s -2.49s linear infinite;}
+@keyframes d18{from{transform:translateY(-260px)}to{transform:translateY(203px)}}
+.c18{animation:d18 2.08s -1.66s linear infinite;}
+@keyframes d19{from{transform:translateY(-260px)}to{transform:translateY(203px)}}
+.c19{animation:d19 3.87s -5.84s linear infinite;}
+@keyframes d20{from{transform:translateY(-260px)}to{transform:translateY(203px)}}
+.c20{animation:d20 3.3s -0.21s linear infinite;}
+@keyframes d21{from{transform:translateY(-260px)}to{transform:translateY(203px)}}
+.c21{animation:d21 5.32s -6.53s linear infinite;}
+@keyframes d22{from{transform:translateY(-260px)}to{transform:translateY(203px)}}
+.c22{animation:d22 5.09s -0.92s linear infinite;}
+@keyframes d23{from{transform:translateY(-260px)}to{transform:translateY(203px)}}
+.c23{animation:d23 4.14s -0.81s linear infinite;}
+@keyframes d24{from{transform:translateY(-260px)}to{transform:translateY(203px)}}
+.c24{animation:d24 3.56s -2.21s linear infinite;}
+@keyframes d25{from{transform:translateY(-260px)}to{transform:translateY(203px)}}
+.c25{animation:d25 2.57s -3.94s linear infinite;}
+@keyframes d26{from{transform:translateY(-260px)}to{transform:translateY(203px)}}
+.c26{animation:d26 2.59s -3.55s linear infinite;}
+@keyframes d27{from{transform:translateY(-260px)}to{transform:translateY(203px)}}
+.c27{animation:d27 4.86s -1.25s linear infinite;}
+@keyframes d28{from{transform:translateY(-260px)}to{transform:translateY(203px)}}
+.c28{animation:d28 4.86s -1.04s linear infinite;}
+@keyframes d29{from{transform:translateY(-260px)}to{transform:translateY(203px)}}
+.c29{animation:d29 3.78s -0.35s linear infinite;}
+@keyframes d30{from{transform:translateY(-260px)}to{transform:translateY(203px)}}
+.c30{animation:d30 4.79s -3.76s linear infinite;}
+@keyframes d31{from{transform:translateY(-260px)}to{transform:translateY(203px)}}
+.c31{animation:d31 1.85s -1.84s linear infinite;}
+@keyframes d32{from{transform:translateY(-260px)}to{transform:translateY(203px)}}
+.c32{animation:d32 3.89s -2.69s linear infinite;}
+@keyframes d33{from{transform:translateY(-260px)}to{transform:translateY(203px)}}
+.c33{animation:d33 4.76s -5.15s linear infinite;}
+@keyframes d34{from{transform:translateY(-260px)}to{transform:translateY(203px)}}
+.c34{animation:d34 5.14s -1.55s linear infinite;}
+@keyframes d35{from{transform:translateY(-260px)}to{transform:translateY(203px)}}
+.c35{animation:d35 4.05s -1.47s linear infinite;}
+@keyframes d36{from{transform:translateY(-260px)}to{transform:translateY(203px)}}
+.c36{animation:d36 4.89s -1.26s linear infinite;}
+@keyframes d37{from{transform:translateY(-260px)}to{transform:translateY(203px)}}
+.c37{animation:d37 2.69s -3.34s linear infinite;}
+@keyframes d38{from{transform:translateY(-260px)}to{transform:translateY(203px)}}
+.c38{animation:d38 4.62s -4.2s linear infinite;}
+@keyframes d39{from{transform:translateY(-260px)}to{transform:translateY(203px)}}
+.c39{animation:d39 2.34s -2.07s linear infinite;}
+@keyframes d40{from{transform:translateY(-260px)}to{transform:translateY(203px)}}
+.c40{animation:d40 3.1s -0.82s linear infinite;}
+@keyframes d41{from{transform:translateY(-260px)}to{transform:translateY(203px)}}
+.c41{animation:d41 4.92s -2.6s linear infinite;}
+@keyframes d42{from{transform:translateY(-260px)}to{transform:translateY(203px)}}
+.c42{animation:d42 2.1s -0.86s linear infinite;}
+@keyframes d43{from{transform:translateY(-260px)}to{transform:translateY(203px)}}
+.c43{animation:d43 5.06s -0.45s linear infinite;}
+@keyframes d44{from{transform:translateY(-260px)}to{transform:translateY(203px)}}
+.c44{animation:d44 3.1s -3.7s linear infinite;}
+@keyframes d45{from{transform:translateY(-260px)}to{transform:translateY(203px)}}
+.c45{animation:d45 4.95s -1.94s linear infinite;}
+@keyframes d46{from{transform:translateY(-260px)}to{transform:translateY(203px)}}
+.c46{animation:d46 2.21s -2.8s linear infinite;}
+@keyframes d47{from{transform:translateY(-260px)}to{transform:translateY(203px)}}
+.c47{animation:d47 3.18s -2.07s linear infinite;}
+@keyframes d48{from{transform:translateY(-260px)}to{transform:translateY(203px)}}
+.c48{animation:d48 3.86s -0.07s linear infinite;}
+@keyframes d49{from{transform:translateY(-260px)}to{transform:translateY(203px)}}
+.c49{animation:d49 2.34s -2.31s linear infinite;}
+@keyframes d50{from{transform:translateY(-260px)}to{transform:translateY(203px)}}
+.c50{animation:d50 2.6s -4.04s linear infinite;}
+@keyframes d51{from{transform:translateY(-260px)}to{transform:translateY(203px)}}
+.c51{animation:d51 2.35s -6.55s linear infinite;}
+@keyframes d52{from{transform:translateY(-260px)}to{transform:translateY(203px)}}
+.c52{animation:d52 2.81s -1.85s linear infinite;}
+@keyframes d53{from{transform:translateY(-260px)}to{transform:translateY(203px)}}
+.c53{animation:d53 4.98s -2.89s linear infinite;}
+@keyframes d54{from{transform:translateY(-260px)}to{transform:translateY(203px)}}
+.c54{animation:d54 2.15s -0.38s linear infinite;}
+@keyframes d55{from{transform:translateY(-260px)}to{transform:translateY(203px)}}
+.c55{animation:d55 2.22s -5.07s linear infinite;}
+@keyframes d56{from{transform:translateY(-260px)}to{transform:translateY(203px)}}
+.c56{animation:d56 3.8s -1.01s linear infinite;}
+@keyframes d57{from{transform:translateY(-260px)}to{transform:translateY(203px)}}
+.c57{animation:d57 2.34s -4.96s linear infinite;}
+@keyframes d58{from{transform:translateY(-260px)}to{transform:translateY(203px)}}
+.c58{animation:d58 5.19s -2.32s linear infinite;}
+@keyframes d59{from{transform:translateY(-260px)}to{transform:translateY(203px)}}
+.c59{animation:d59 1.99s -4.77s linear infinite;}
+@keyframes d60{from{transform:translateY(-260px)}to{transform:translateY(203px)}}
+.c60{animation:d60 2.86s -4.47s linear infinite;}
+@keyframes d61{from{transform:translateY(-260px)}to{transform:translateY(203px)}}
+.c61{animation:d61 4.02s -2.48s linear infinite;}
+</style>
+</defs>
+<rect width="880" height="190" fill="#06000d"/>
+<g clip-path="url(#vp)">
+<g class="c0">
+<text class="mc" x="7" y="13" fill="#1a001a" opacity="0.06" text-anchor="middle">⠑</text>
+<text class="mc" x="7" y="26" fill="#1a001a" opacity="0.06" text-anchor="middle">⠪</text>
+<text class="mc" x="7" y="39" fill="#330033" opacity="0.12" text-anchor="middle">⠔</text>
+<text class="mc" x="7" y="52" fill="#330033" opacity="0.12" text-anchor="middle">⠟</text>
+<text class="mc" x="7" y="65" fill="#661166" opacity="0.22" text-anchor="middle">⠠</text>
+<text class="mc" x="7" y="78" fill="#661166" opacity="0.22" text-anchor="middle">⠨</text>
+<text class="mc" x="7" y="91" fill="#661166" opacity="0.22" text-anchor="middle">⠋</text>
+<text class="mc" x="7" y="104" fill="#993388" opacity="0.40" text-anchor="middle">⠃</text>
+<text class="mc" x="7" y="117" fill="#993388" opacity="0.40" text-anchor="middle">⠧</text>
+<text class="mc" x="7" y="130" fill="#993388" opacity="0.40" text-anchor="middle">⠐</text>
+<text class="mc" x="7" y="143" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠎</text>
+<text class="mc" x="7" y="156" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠶</text>
+<text class="mc" x="7" y="169" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠒</text>
+<text class="mc" x="7" y="182" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠅</text>
+<text class="mc" x="7" y="195" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠩</text>
+<text class="mc" x="7" y="208" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠙</text>
+<text class="mc" x="7" y="221" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠓</text>
+<text class="mc" x="7" y="234" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠞</text>
+<text class="mc" x="7" y="247" fill="#ffffff" opacity="1.00" text-anchor="middle">⠄</text>
+<text class="mc" x="7" y="260" fill="#ffffff" opacity="1.00" text-anchor="middle">⠫</text>
+</g>
+<g class="c1">
+<text class="mc" x="21" y="13" fill="#1a001a" opacity="0.06" text-anchor="middle">⠐</text>
+<text class="mc" x="21" y="26" fill="#1a001a" opacity="0.06" text-anchor="middle">⠥</text>
+<text class="mc" x="21" y="39" fill="#330033" opacity="0.12" text-anchor="middle">⠞</text>
+<text class="mc" x="21" y="52" fill="#330033" opacity="0.12" text-anchor="middle">⠗</text>
+<text class="mc" x="21" y="65" fill="#661166" opacity="0.22" text-anchor="middle">⣻</text>
+<text class="mc" x="21" y="78" fill="#661166" opacity="0.22" text-anchor="middle">⠓</text>
+<text class="mc" x="21" y="91" fill="#661166" opacity="0.22" text-anchor="middle">⠼</text>
+<text class="mc" x="21" y="104" fill="#993388" opacity="0.40" text-anchor="middle">⣸</text>
+<text class="mc" x="21" y="117" fill="#993388" opacity="0.40" text-anchor="middle">⠭</text>
+<text class="mc" x="21" y="130" fill="#993388" opacity="0.40" text-anchor="middle">⠝</text>
+<text class="mc" x="21" y="143" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠠</text>
+<text class="mc" x="21" y="156" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠟</text>
+<text class="mc" x="21" y="169" fill="#cc44aa" opacity="0.65" text-anchor="middle">⣸</text>
+<text class="mc" x="21" y="182" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠹</text>
+<text class="mc" x="21" y="195" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠫</text>
+<text class="mc" x="21" y="208" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠙</text>
+<text class="mc" x="21" y="221" fill="#ff79c6" opacity="1.00" text-anchor="middle">⣻</text>
+<text class="mc" x="21" y="234" fill="#ff79c6" opacity="1.00" text-anchor="middle">⣶</text>
+<text class="mc" x="21" y="247" fill="#ffffff" opacity="1.00" text-anchor="middle">⣷</text>
+<text class="mc" x="21" y="260" fill="#ffffff" opacity="1.00" text-anchor="middle">⠘</text>
+</g>
+<g class="c2">
+<text class="mc" x="35" y="13" fill="#1a001a" opacity="0.06" text-anchor="middle">⠜</text>
+<text class="mc" x="35" y="26" fill="#1a001a" opacity="0.06" text-anchor="middle">⠠</text>
+<text class="mc" x="35" y="39" fill="#330033" opacity="0.12" text-anchor="middle">⠢</text>
+<text class="mc" x="35" y="52" fill="#330033" opacity="0.12" text-anchor="middle">⠰</text>
+<text class="mc" x="35" y="65" fill="#661166" opacity="0.22" text-anchor="middle">⠉</text>
+<text class="mc" x="35" y="78" fill="#661166" opacity="0.22" text-anchor="middle">⠷</text>
+<text class="mc" x="35" y="91" fill="#661166" opacity="0.22" text-anchor="middle">⠛</text>
+<text class="mc" x="35" y="104" fill="#993388" opacity="0.40" text-anchor="middle">⠶</text>
+<text class="mc" x="35" y="117" fill="#993388" opacity="0.40" text-anchor="middle">⠽</text>
+<text class="mc" x="35" y="130" fill="#993388" opacity="0.40" text-anchor="middle">⠐</text>
+<text class="mc" x="35" y="143" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠰</text>
+<text class="mc" x="35" y="156" fill="#cc44aa" opacity="0.65" text-anchor="middle">⣹</text>
+<text class="mc" x="35" y="169" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠕</text>
+<text class="mc" x="35" y="182" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠦</text>
+<text class="mc" x="35" y="195" fill="#ff79c6" opacity="0.85" text-anchor="middle">⣻</text>
+<text class="mc" x="35" y="208" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠰</text>
+<text class="mc" x="35" y="221" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠣</text>
+<text class="mc" x="35" y="234" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠔</text>
+<text class="mc" x="35" y="247" fill="#ffffff" opacity="1.00" text-anchor="middle">⠗</text>
+<text class="mc" x="35" y="260" fill="#ffffff" opacity="1.00" text-anchor="middle">⠉</text>
+</g>
+<g class="c3">
+<text class="mc" x="49" y="13" fill="#1a001a" opacity="0.06" text-anchor="middle">⠗</text>
+<text class="mc" x="49" y="26" fill="#1a001a" opacity="0.06" text-anchor="middle">⠝</text>
+<text class="mc" x="49" y="39" fill="#330033" opacity="0.12" text-anchor="middle">⠈</text>
+<text class="mc" x="49" y="52" fill="#330033" opacity="0.12" text-anchor="middle">⠁</text>
+<text class="mc" x="49" y="65" fill="#661166" opacity="0.22" text-anchor="middle">⠚</text>
+<text class="mc" x="49" y="78" fill="#661166" opacity="0.22" text-anchor="middle">⠵</text>
+<text class="mc" x="49" y="91" fill="#661166" opacity="0.22" text-anchor="middle">⠍</text>
+<text class="mc" x="49" y="104" fill="#993388" opacity="0.40" text-anchor="middle">⣹</text>
+<text class="mc" x="49" y="117" fill="#993388" opacity="0.40" text-anchor="middle">⠮</text>
+<text class="mc" x="49" y="130" fill="#993388" opacity="0.40" text-anchor="middle">⠕</text>
+<text class="mc" x="49" y="143" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠽</text>
+<text class="mc" x="49" y="156" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠵</text>
+<text class="mc" x="49" y="169" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠈</text>
+<text class="mc" x="49" y="182" fill="#ff79c6" opacity="0.85" text-anchor="middle">⣶</text>
+<text class="mc" x="49" y="195" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠅</text>
+<text class="mc" x="49" y="208" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠷</text>
+<text class="mc" x="49" y="221" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠨</text>
+<text class="mc" x="49" y="234" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠐</text>
+<text class="mc" x="49" y="247" fill="#ffffff" opacity="1.00" text-anchor="middle">⣵</text>
+<text class="mc" x="49" y="260" fill="#ffffff" opacity="1.00" text-anchor="middle">⠔</text>
+</g>
+<g class="c4">
+<text class="mc" x="63" y="13" fill="#1a001a" opacity="0.06" text-anchor="middle">⠪</text>
+<text class="mc" x="63" y="26" fill="#1a001a" opacity="0.06" text-anchor="middle">⠬</text>
+<text class="mc" x="63" y="39" fill="#330033" opacity="0.12" text-anchor="middle">⠮</text>
+<text class="mc" x="63" y="52" fill="#330033" opacity="0.12" text-anchor="middle">⠗</text>
+<text class="mc" x="63" y="65" fill="#661166" opacity="0.22" text-anchor="middle">⠝</text>
+<text class="mc" x="63" y="78" fill="#661166" opacity="0.22" text-anchor="middle">⠥</text>
+<text class="mc" x="63" y="91" fill="#661166" opacity="0.22" text-anchor="middle">⠔</text>
+<text class="mc" x="63" y="104" fill="#993388" opacity="0.40" text-anchor="middle">⠡</text>
+<text class="mc" x="63" y="117" fill="#993388" opacity="0.40" text-anchor="middle">⠛</text>
+<text class="mc" x="63" y="130" fill="#993388" opacity="0.40" text-anchor="middle">⠬</text>
+<text class="mc" x="63" y="143" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠇</text>
+<text class="mc" x="63" y="156" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠰</text>
+<text class="mc" x="63" y="169" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠁</text>
+<text class="mc" x="63" y="182" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠾</text>
+<text class="mc" x="63" y="195" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠟</text>
+<text class="mc" x="63" y="208" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠅</text>
+<text class="mc" x="63" y="221" fill="#ff79c6" opacity="1.00" text-anchor="middle">⣵</text>
+<text class="mc" x="63" y="234" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠏</text>
+<text class="mc" x="63" y="247" fill="#ffffff" opacity="1.00" text-anchor="middle">⠢</text>
+<text class="mc" x="63" y="260" fill="#ffffff" opacity="1.00" text-anchor="middle">⣿</text>
+</g>
+<g class="c5">
+<text class="mc" x="77" y="13" fill="#1a001a" opacity="0.06" text-anchor="middle">⠩</text>
+<text class="mc" x="77" y="26" fill="#1a001a" opacity="0.06" text-anchor="middle">⠍</text>
+<text class="mc" x="77" y="39" fill="#330033" opacity="0.12" text-anchor="middle">⣽</text>
+<text class="mc" x="77" y="52" fill="#330033" opacity="0.12" text-anchor="middle">⠇</text>
+<text class="mc" x="77" y="65" fill="#661166" opacity="0.22" text-anchor="middle">⠻</text>
+<text class="mc" x="77" y="78" fill="#661166" opacity="0.22" text-anchor="middle">⠪</text>
+<text class="mc" x="77" y="91" fill="#661166" opacity="0.22" text-anchor="middle">⠌</text>
+<text class="mc" x="77" y="104" fill="#993388" opacity="0.40" text-anchor="middle">⠥</text>
+<text class="mc" x="77" y="117" fill="#993388" opacity="0.40" text-anchor="middle">⠿</text>
+<text class="mc" x="77" y="130" fill="#993388" opacity="0.40" text-anchor="middle">⠡</text>
+<text class="mc" x="77" y="143" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠩</text>
+<text class="mc" x="77" y="156" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠊</text>
+<text class="mc" x="77" y="169" fill="#cc44aa" opacity="0.65" text-anchor="middle">⣺</text>
+<text class="mc" x="77" y="182" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠌</text>
+<text class="mc" x="77" y="195" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠕</text>
+<text class="mc" x="77" y="208" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠫</text>
+<text class="mc" x="77" y="221" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠙</text>
+<text class="mc" x="77" y="234" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠨</text>
+<text class="mc" x="77" y="247" fill="#ffffff" opacity="1.00" text-anchor="middle">⠻</text>
+<text class="mc" x="77" y="260" fill="#ffffff" opacity="1.00" text-anchor="middle">⠺</text>
+</g>
+<g class="c6">
+<text class="mc" x="91" y="13" fill="#1a001a" opacity="0.06" text-anchor="middle">⠡</text>
+<text class="mc" x="91" y="26" fill="#1a001a" opacity="0.06" text-anchor="middle">⠇</text>
+<text class="mc" x="91" y="39" fill="#330033" opacity="0.12" text-anchor="middle">⠉</text>
+<text class="mc" x="91" y="52" fill="#330033" opacity="0.12" text-anchor="middle">⠫</text>
+<text class="mc" x="91" y="65" fill="#661166" opacity="0.22" text-anchor="middle">⠭</text>
+<text class="mc" x="91" y="78" fill="#661166" opacity="0.22" text-anchor="middle">⠇</text>
+<text class="mc" x="91" y="91" fill="#661166" opacity="0.22" text-anchor="middle">⠰</text>
+<text class="mc" x="91" y="104" fill="#993388" opacity="0.40" text-anchor="middle">⠉</text>
+<text class="mc" x="91" y="117" fill="#993388" opacity="0.40" text-anchor="middle">⣻</text>
+<text class="mc" x="91" y="130" fill="#993388" opacity="0.40" text-anchor="middle">⠤</text>
+<text class="mc" x="91" y="143" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠄</text>
+<text class="mc" x="91" y="156" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠝</text>
+<text class="mc" x="91" y="169" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠕</text>
+<text class="mc" x="91" y="182" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠸</text>
+<text class="mc" x="91" y="195" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠛</text>
+<text class="mc" x="91" y="208" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠉</text>
+<text class="mc" x="91" y="221" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠎</text>
+<text class="mc" x="91" y="234" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠺</text>
+<text class="mc" x="91" y="247" fill="#ffffff" opacity="1.00" text-anchor="middle">⠏</text>
+<text class="mc" x="91" y="260" fill="#ffffff" opacity="1.00" text-anchor="middle">⠜</text>
+</g>
+<g class="c7">
+<text class="mc" x="105" y="13" fill="#1a001a" opacity="0.06" text-anchor="middle">⠤</text>
+<text class="mc" x="105" y="26" fill="#1a001a" opacity="0.06" text-anchor="middle">⠔</text>
+<text class="mc" x="105" y="39" fill="#330033" opacity="0.12" text-anchor="middle">⠊</text>
+<text class="mc" x="105" y="52" fill="#330033" opacity="0.12" text-anchor="middle">⠕</text>
+<text class="mc" x="105" y="65" fill="#661166" opacity="0.22" text-anchor="middle">⠥</text>
+<text class="mc" x="105" y="78" fill="#661166" opacity="0.22" text-anchor="middle">⠂</text>
+<text class="mc" x="105" y="91" fill="#661166" opacity="0.22" text-anchor="middle">⠙</text>
+<text class="mc" x="105" y="104" fill="#993388" opacity="0.40" text-anchor="middle">⠽</text>
+<text class="mc" x="105" y="117" fill="#993388" opacity="0.40" text-anchor="middle">⠰</text>
+<text class="mc" x="105" y="130" fill="#993388" opacity="0.40" text-anchor="middle">⠺</text>
+<text class="mc" x="105" y="143" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠛</text>
+<text class="mc" x="105" y="156" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠈</text>
+<text class="mc" x="105" y="169" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠓</text>
+<text class="mc" x="105" y="182" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠖</text>
+<text class="mc" x="105" y="195" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠷</text>
+<text class="mc" x="105" y="208" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠠</text>
+<text class="mc" x="105" y="221" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠔</text>
+<text class="mc" x="105" y="234" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠂</text>
+<text class="mc" x="105" y="247" fill="#ffffff" opacity="1.00" text-anchor="middle">⣸</text>
+<text class="mc" x="105" y="260" fill="#ffffff" opacity="1.00" text-anchor="middle">⠴</text>
+</g>
+<g class="c8">
+<text class="mc" x="119" y="13" fill="#1a001a" opacity="0.06" text-anchor="middle">⠞</text>
+<text class="mc" x="119" y="26" fill="#1a001a" opacity="0.06" text-anchor="middle">⠴</text>
+<text class="mc" x="119" y="39" fill="#330033" opacity="0.12" text-anchor="middle">⠞</text>
+<text class="mc" x="119" y="52" fill="#330033" opacity="0.12" text-anchor="middle">⠨</text>
+<text class="mc" x="119" y="65" fill="#661166" opacity="0.22" text-anchor="middle">⠽</text>
+<text class="mc" x="119" y="78" fill="#661166" opacity="0.22" text-anchor="middle">⠙</text>
+<text class="mc" x="119" y="91" fill="#661166" opacity="0.22" text-anchor="middle">⠂</text>
+<text class="mc" x="119" y="104" fill="#993388" opacity="0.40" text-anchor="middle">⣿</text>
+<text class="mc" x="119" y="117" fill="#993388" opacity="0.40" text-anchor="middle">⠑</text>
+<text class="mc" x="119" y="130" fill="#993388" opacity="0.40" text-anchor="middle">⠣</text>
+<text class="mc" x="119" y="143" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠣</text>
+<text class="mc" x="119" y="156" fill="#cc44aa" opacity="0.65" text-anchor="middle">⣹</text>
+<text class="mc" x="119" y="169" fill="#cc44aa" opacity="0.65" text-anchor="middle">⣶</text>
+<text class="mc" x="119" y="182" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠕</text>
+<text class="mc" x="119" y="195" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠈</text>
+<text class="mc" x="119" y="208" fill="#ff79c6" opacity="0.85" text-anchor="middle">⣴</text>
+<text class="mc" x="119" y="221" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠤</text>
+<text class="mc" x="119" y="234" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠴</text>
+<text class="mc" x="119" y="247" fill="#ffffff" opacity="1.00" text-anchor="middle">⠨</text>
+<text class="mc" x="119" y="260" fill="#ffffff" opacity="1.00" text-anchor="middle">⠒</text>
+</g>
+<g class="c9">
+<text class="mc" x="133" y="13" fill="#1a001a" opacity="0.06" text-anchor="middle">⠣</text>
+<text class="mc" x="133" y="26" fill="#1a001a" opacity="0.06" text-anchor="middle">⠐</text>
+<text class="mc" x="133" y="39" fill="#330033" opacity="0.12" text-anchor="middle">⠸</text>
+<text class="mc" x="133" y="52" fill="#330033" opacity="0.12" text-anchor="middle">⠙</text>
+<text class="mc" x="133" y="65" fill="#661166" opacity="0.22" text-anchor="middle">⠦</text>
+<text class="mc" x="133" y="78" fill="#661166" opacity="0.22" text-anchor="middle">⠴</text>
+<text class="mc" x="133" y="91" fill="#661166" opacity="0.22" text-anchor="middle">⠂</text>
+<text class="mc" x="133" y="104" fill="#993388" opacity="0.40" text-anchor="middle">⠹</text>
+<text class="mc" x="133" y="117" fill="#993388" opacity="0.40" text-anchor="middle">⠜</text>
+<text class="mc" x="133" y="130" fill="#993388" opacity="0.40" text-anchor="middle">⠫</text>
+<text class="mc" x="133" y="143" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠣</text>
+<text class="mc" x="133" y="156" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠒</text>
+<text class="mc" x="133" y="169" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠕</text>
+<text class="mc" x="133" y="182" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠐</text>
+<text class="mc" x="133" y="195" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠃</text>
+<text class="mc" x="133" y="208" fill="#ff79c6" opacity="0.85" text-anchor="middle">⣸</text>
+<text class="mc" x="133" y="221" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠿</text>
+<text class="mc" x="133" y="234" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠕</text>
+<text class="mc" x="133" y="247" fill="#ffffff" opacity="1.00" text-anchor="middle">⠐</text>
+<text class="mc" x="133" y="260" fill="#ffffff" opacity="1.00" text-anchor="middle">⠉</text>
+</g>
+<g class="c10">
+<text class="mc" x="147" y="13" fill="#1a001a" opacity="0.06" text-anchor="middle">⠷</text>
+<text class="mc" x="147" y="26" fill="#1a001a" opacity="0.06" text-anchor="middle">⠾</text>
+<text class="mc" x="147" y="39" fill="#330033" opacity="0.12" text-anchor="middle">⠂</text>
+<text class="mc" x="147" y="52" fill="#330033" opacity="0.12" text-anchor="middle">⠟</text>
+<text class="mc" x="147" y="65" fill="#661166" opacity="0.22" text-anchor="middle">⣹</text>
+<text class="mc" x="147" y="78" fill="#661166" opacity="0.22" text-anchor="middle">⠊</text>
+<text class="mc" x="147" y="91" fill="#661166" opacity="0.22" text-anchor="middle">⠁</text>
+<text class="mc" x="147" y="104" fill="#993388" opacity="0.40" text-anchor="middle">⠇</text>
+<text class="mc" x="147" y="117" fill="#993388" opacity="0.40" text-anchor="middle">⣽</text>
+<text class="mc" x="147" y="130" fill="#993388" opacity="0.40" text-anchor="middle">⠭</text>
+<text class="mc" x="147" y="143" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠏</text>
+<text class="mc" x="147" y="156" fill="#cc44aa" opacity="0.65" text-anchor="middle">⣻</text>
+<text class="mc" x="147" y="169" fill="#cc44aa" opacity="0.65" text-anchor="middle">⣺</text>
+<text class="mc" x="147" y="182" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠩</text>
+<text class="mc" x="147" y="195" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠤</text>
+<text class="mc" x="147" y="208" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠧</text>
+<text class="mc" x="147" y="221" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠘</text>
+<text class="mc" x="147" y="234" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠨</text>
+<text class="mc" x="147" y="247" fill="#ffffff" opacity="1.00" text-anchor="middle">⠧</text>
+<text class="mc" x="147" y="260" fill="#ffffff" opacity="1.00" text-anchor="middle">⠫</text>
+</g>
+<g class="c11">
+<text class="mc" x="161" y="13" fill="#1a001a" opacity="0.06" text-anchor="middle">⠓</text>
+<text class="mc" x="161" y="26" fill="#1a001a" opacity="0.06" text-anchor="middle">⠳</text>
+<text class="mc" x="161" y="39" fill="#330033" opacity="0.12" text-anchor="middle">⠳</text>
+<text class="mc" x="161" y="52" fill="#330033" opacity="0.12" text-anchor="middle">⠅</text>
+<text class="mc" x="161" y="65" fill="#661166" opacity="0.22" text-anchor="middle">⣾</text>
+<text class="mc" x="161" y="78" fill="#661166" opacity="0.22" text-anchor="middle">⠏</text>
+<text class="mc" x="161" y="91" fill="#661166" opacity="0.22" text-anchor="middle">⠙</text>
+<text class="mc" x="161" y="104" fill="#993388" opacity="0.40" text-anchor="middle">⠮</text>
+<text class="mc" x="161" y="117" fill="#993388" opacity="0.40" text-anchor="middle">⠄</text>
+<text class="mc" x="161" y="130" fill="#993388" opacity="0.40" text-anchor="middle">⠢</text>
+<text class="mc" x="161" y="143" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠯</text>
+<text class="mc" x="161" y="156" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠦</text>
+<text class="mc" x="161" y="169" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠁</text>
+<text class="mc" x="161" y="182" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠐</text>
+<text class="mc" x="161" y="195" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠭</text>
+<text class="mc" x="161" y="208" fill="#ff79c6" opacity="0.85" text-anchor="middle">⣴</text>
+<text class="mc" x="161" y="221" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠡</text>
+<text class="mc" x="161" y="234" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠁</text>
+<text class="mc" x="161" y="247" fill="#ffffff" opacity="1.00" text-anchor="middle">⠥</text>
+<text class="mc" x="161" y="260" fill="#ffffff" opacity="1.00" text-anchor="middle">⠊</text>
+</g>
+<g class="c12">
+<text class="mc" x="175" y="13" fill="#1a001a" opacity="0.06" text-anchor="middle">⣿</text>
+<text class="mc" x="175" y="26" fill="#1a001a" opacity="0.06" text-anchor="middle">⣾</text>
+<text class="mc" x="175" y="39" fill="#330033" opacity="0.12" text-anchor="middle">⣹</text>
+<text class="mc" x="175" y="52" fill="#330033" opacity="0.12" text-anchor="middle">⣾</text>
+<text class="mc" x="175" y="65" fill="#661166" opacity="0.22" text-anchor="middle">⠃</text>
+<text class="mc" x="175" y="78" fill="#661166" opacity="0.22" text-anchor="middle">⠓</text>
+<text class="mc" x="175" y="91" fill="#661166" opacity="0.22" text-anchor="middle">⠎</text>
+<text class="mc" x="175" y="104" fill="#993388" opacity="0.40" text-anchor="middle">⠚</text>
+<text class="mc" x="175" y="117" fill="#993388" opacity="0.40" text-anchor="middle">⠞</text>
+<text class="mc" x="175" y="130" fill="#993388" opacity="0.40" text-anchor="middle">⠅</text>
+<text class="mc" x="175" y="143" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠁</text>
+<text class="mc" x="175" y="156" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠜</text>
+<text class="mc" x="175" y="169" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠙</text>
+<text class="mc" x="175" y="182" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠒</text>
+<text class="mc" x="175" y="195" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠼</text>
+<text class="mc" x="175" y="208" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠨</text>
+<text class="mc" x="175" y="221" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠿</text>
+<text class="mc" x="175" y="234" fill="#ff79c6" opacity="1.00" text-anchor="middle">⣴</text>
+<text class="mc" x="175" y="247" fill="#ffffff" opacity="1.00" text-anchor="middle">⠴</text>
+<text class="mc" x="175" y="260" fill="#ffffff" opacity="1.00" text-anchor="middle">⠛</text>
+</g>
+<g class="c13">
+<text class="mc" x="189" y="13" fill="#1a001a" opacity="0.06" text-anchor="middle">⠅</text>
+<text class="mc" x="189" y="26" fill="#1a001a" opacity="0.06" text-anchor="middle">⠶</text>
+<text class="mc" x="189" y="39" fill="#330033" opacity="0.12" text-anchor="middle">⠌</text>
+<text class="mc" x="189" y="52" fill="#330033" opacity="0.12" text-anchor="middle">⠩</text>
+<text class="mc" x="189" y="65" fill="#661166" opacity="0.22" text-anchor="middle">⠐</text>
+<text class="mc" x="189" y="78" fill="#661166" opacity="0.22" text-anchor="middle">⠢</text>
+<text class="mc" x="189" y="91" fill="#661166" opacity="0.22" text-anchor="middle">⠓</text>
+<text class="mc" x="189" y="104" fill="#993388" opacity="0.40" text-anchor="middle">⠪</text>
+<text class="mc" x="189" y="117" fill="#993388" opacity="0.40" text-anchor="middle">⣴</text>
+<text class="mc" x="189" y="130" fill="#993388" opacity="0.40" text-anchor="middle">⠤</text>
+<text class="mc" x="189" y="143" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠿</text>
+<text class="mc" x="189" y="156" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠨</text>
+<text class="mc" x="189" y="169" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠓</text>
+<text class="mc" x="189" y="182" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠲</text>
+<text class="mc" x="189" y="195" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠙</text>
+<text class="mc" x="189" y="208" fill="#ff79c6" opacity="0.85" text-anchor="middle">⣼</text>
+<text class="mc" x="189" y="221" fill="#ff79c6" opacity="1.00" text-anchor="middle">⣽</text>
+<text class="mc" x="189" y="234" fill="#ff79c6" opacity="1.00" text-anchor="middle">⣾</text>
+<text class="mc" x="189" y="247" fill="#ffffff" opacity="1.00" text-anchor="middle">⠫</text>
+<text class="mc" x="189" y="260" fill="#ffffff" opacity="1.00" text-anchor="middle">⠶</text>
+</g>
+<g class="c14">
+<text class="mc" x="203" y="13" fill="#1a001a" opacity="0.06" text-anchor="middle">⠝</text>
+<text class="mc" x="203" y="26" fill="#1a001a" opacity="0.06" text-anchor="middle">⠒</text>
+<text class="mc" x="203" y="39" fill="#330033" opacity="0.12" text-anchor="middle">⠈</text>
+<text class="mc" x="203" y="52" fill="#330033" opacity="0.12" text-anchor="middle">⠰</text>
+<text class="mc" x="203" y="65" fill="#661166" opacity="0.22" text-anchor="middle">⠐</text>
+<text class="mc" x="203" y="78" fill="#661166" opacity="0.22" text-anchor="middle">⠳</text>
+<text class="mc" x="203" y="91" fill="#661166" opacity="0.22" text-anchor="middle">⠊</text>
+<text class="mc" x="203" y="104" fill="#993388" opacity="0.40" text-anchor="middle">⠗</text>
+<text class="mc" x="203" y="117" fill="#993388" opacity="0.40" text-anchor="middle">⠩</text>
+<text class="mc" x="203" y="130" fill="#993388" opacity="0.40" text-anchor="middle">⠲</text>
+<text class="mc" x="203" y="143" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠹</text>
+<text class="mc" x="203" y="156" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠾</text>
+<text class="mc" x="203" y="169" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠅</text>
+<text class="mc" x="203" y="182" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠉</text>
+<text class="mc" x="203" y="195" fill="#ff79c6" opacity="0.85" text-anchor="middle">⣶</text>
+<text class="mc" x="203" y="208" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠯</text>
+<text class="mc" x="203" y="221" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠮</text>
+<text class="mc" x="203" y="234" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠲</text>
+<text class="mc" x="203" y="247" fill="#ffffff" opacity="1.00" text-anchor="middle">⠦</text>
+<text class="mc" x="203" y="260" fill="#ffffff" opacity="1.00" text-anchor="middle">⠓</text>
+</g>
+<g class="c15">
+<text class="mc" x="217" y="13" fill="#1a001a" opacity="0.06" text-anchor="middle">⠋</text>
+<text class="mc" x="217" y="26" fill="#1a001a" opacity="0.06" text-anchor="middle">⠄</text>
+<text class="mc" x="217" y="39" fill="#330033" opacity="0.12" text-anchor="middle">⠝</text>
+<text class="mc" x="217" y="52" fill="#330033" opacity="0.12" text-anchor="middle">⣾</text>
+<text class="mc" x="217" y="65" fill="#661166" opacity="0.22" text-anchor="middle">⠔</text>
+<text class="mc" x="217" y="78" fill="#661166" opacity="0.22" text-anchor="middle">⠘</text>
+<text class="mc" x="217" y="91" fill="#661166" opacity="0.22" text-anchor="middle">⠵</text>
+<text class="mc" x="217" y="104" fill="#993388" opacity="0.40" text-anchor="middle">⠣</text>
+<text class="mc" x="217" y="117" fill="#993388" opacity="0.40" text-anchor="middle">⠖</text>
+<text class="mc" x="217" y="130" fill="#993388" opacity="0.40" text-anchor="middle">⠹</text>
+<text class="mc" x="217" y="143" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠗</text>
+<text class="mc" x="217" y="156" fill="#cc44aa" opacity="0.65" text-anchor="middle">⣳</text>
+<text class="mc" x="217" y="169" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠛</text>
+<text class="mc" x="217" y="182" fill="#ff79c6" opacity="0.85" text-anchor="middle">⣴</text>
+<text class="mc" x="217" y="195" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠖</text>
+<text class="mc" x="217" y="208" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠈</text>
+<text class="mc" x="217" y="221" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠲</text>
+<text class="mc" x="217" y="234" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠎</text>
+<text class="mc" x="217" y="247" fill="#ffffff" opacity="1.00" text-anchor="middle">⠟</text>
+<text class="mc" x="217" y="260" fill="#ffffff" opacity="1.00" text-anchor="middle">⣿</text>
+</g>
+<g class="c16">
+<text class="mc" x="231" y="13" fill="#1a001a" opacity="0.06" text-anchor="middle">⠬</text>
+<text class="mc" x="231" y="26" fill="#1a001a" opacity="0.06" text-anchor="middle">⣻</text>
+<text class="mc" x="231" y="39" fill="#330033" opacity="0.12" text-anchor="middle">⠇</text>
+<text class="mc" x="231" y="52" fill="#330033" opacity="0.12" text-anchor="middle">⣳</text>
+<text class="mc" x="231" y="65" fill="#661166" opacity="0.22" text-anchor="middle">⠲</text>
+<text class="mc" x="231" y="78" fill="#661166" opacity="0.22" text-anchor="middle">⣶</text>
+<text class="mc" x="231" y="91" fill="#661166" opacity="0.22" text-anchor="middle">⠺</text>
+<text class="mc" x="231" y="104" fill="#993388" opacity="0.40" text-anchor="middle">⣸</text>
+<text class="mc" x="231" y="117" fill="#993388" opacity="0.40" text-anchor="middle">⠇</text>
+<text class="mc" x="231" y="130" fill="#993388" opacity="0.40" text-anchor="middle">⠡</text>
+<text class="mc" x="231" y="143" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠵</text>
+<text class="mc" x="231" y="156" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠳</text>
+<text class="mc" x="231" y="169" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠄</text>
+<text class="mc" x="231" y="182" fill="#ff79c6" opacity="0.85" text-anchor="middle">⣽</text>
+<text class="mc" x="231" y="195" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠕</text>
+<text class="mc" x="231" y="208" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠅</text>
+<text class="mc" x="231" y="221" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠍</text>
+<text class="mc" x="231" y="234" fill="#ff79c6" opacity="1.00" text-anchor="middle">⣼</text>
+<text class="mc" x="231" y="247" fill="#ffffff" opacity="1.00" text-anchor="middle">⠖</text>
+<text class="mc" x="231" y="260" fill="#ffffff" opacity="1.00" text-anchor="middle">⠂</text>
+</g>
+<g class="c17">
+<text class="mc" x="245" y="13" fill="#1a001a" opacity="0.06" text-anchor="middle">⠿</text>
+<text class="mc" x="245" y="26" fill="#1a001a" opacity="0.06" text-anchor="middle">⠓</text>
+<text class="mc" x="245" y="39" fill="#330033" opacity="0.12" text-anchor="middle">⣴</text>
+<text class="mc" x="245" y="52" fill="#330033" opacity="0.12" text-anchor="middle">⠔</text>
+<text class="mc" x="245" y="65" fill="#661166" opacity="0.22" text-anchor="middle">⣺</text>
+<text class="mc" x="245" y="78" fill="#661166" opacity="0.22" text-anchor="middle">⠟</text>
+<text class="mc" x="245" y="91" fill="#661166" opacity="0.22" text-anchor="middle">⠜</text>
+<text class="mc" x="245" y="104" fill="#993388" opacity="0.40" text-anchor="middle">⠝</text>
+<text class="mc" x="245" y="117" fill="#993388" opacity="0.40" text-anchor="middle">⠅</text>
+<text class="mc" x="245" y="130" fill="#993388" opacity="0.40" text-anchor="middle">⠄</text>
+<text class="mc" x="245" y="143" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠗</text>
+<text class="mc" x="245" y="156" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠰</text>
+<text class="mc" x="245" y="169" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠨</text>
+<text class="mc" x="245" y="182" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠲</text>
+<text class="mc" x="245" y="195" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠋</text>
+<text class="mc" x="245" y="208" fill="#ff79c6" opacity="0.85" text-anchor="middle">⣴</text>
+<text class="mc" x="245" y="221" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠴</text>
+<text class="mc" x="245" y="234" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠊</text>
+<text class="mc" x="245" y="247" fill="#ffffff" opacity="1.00" text-anchor="middle">⠋</text>
+<text class="mc" x="245" y="260" fill="#ffffff" opacity="1.00" text-anchor="middle">⠽</text>
+</g>
+<g class="c18">
+<text class="mc" x="259" y="13" fill="#1a001a" opacity="0.06" text-anchor="middle">⠜</text>
+<text class="mc" x="259" y="26" fill="#1a001a" opacity="0.06" text-anchor="middle">⣼</text>
+<text class="mc" x="259" y="39" fill="#330033" opacity="0.12" text-anchor="middle">⣶</text>
+<text class="mc" x="259" y="52" fill="#330033" opacity="0.12" text-anchor="middle">⠥</text>
+<text class="mc" x="259" y="65" fill="#661166" opacity="0.22" text-anchor="middle">⠁</text>
+<text class="mc" x="259" y="78" fill="#661166" opacity="0.22" text-anchor="middle">⠣</text>
+<text class="mc" x="259" y="91" fill="#661166" opacity="0.22" text-anchor="middle">⠃</text>
+<text class="mc" x="259" y="104" fill="#993388" opacity="0.40" text-anchor="middle">⣷</text>
+<text class="mc" x="259" y="117" fill="#993388" opacity="0.40" text-anchor="middle">⠡</text>
+<text class="mc" x="259" y="130" fill="#993388" opacity="0.40" text-anchor="middle">⣺</text>
+<text class="mc" x="259" y="143" fill="#cc44aa" opacity="0.65" text-anchor="middle">⣳</text>
+<text class="mc" x="259" y="156" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠓</text>
+<text class="mc" x="259" y="169" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠿</text>
+<text class="mc" x="259" y="182" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠲</text>
+<text class="mc" x="259" y="195" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠎</text>
+<text class="mc" x="259" y="208" fill="#ff79c6" opacity="0.85" text-anchor="middle">⣳</text>
+<text class="mc" x="259" y="221" fill="#ff79c6" opacity="1.00" text-anchor="middle">⣶</text>
+<text class="mc" x="259" y="234" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠑</text>
+<text class="mc" x="259" y="247" fill="#ffffff" opacity="1.00" text-anchor="middle">⠳</text>
+<text class="mc" x="259" y="260" fill="#ffffff" opacity="1.00" text-anchor="middle">⠾</text>
+</g>
+<g class="c19">
+<text class="mc" x="273" y="13" fill="#1a001a" opacity="0.06" text-anchor="middle">⣾</text>
+<text class="mc" x="273" y="26" fill="#1a001a" opacity="0.06" text-anchor="middle">⠓</text>
+<text class="mc" x="273" y="39" fill="#330033" opacity="0.12" text-anchor="middle">⠻</text>
+<text class="mc" x="273" y="52" fill="#330033" opacity="0.12" text-anchor="middle">⠘</text>
+<text class="mc" x="273" y="65" fill="#661166" opacity="0.22" text-anchor="middle">⣹</text>
+<text class="mc" x="273" y="78" fill="#661166" opacity="0.22" text-anchor="middle">⣵</text>
+<text class="mc" x="273" y="91" fill="#661166" opacity="0.22" text-anchor="middle">⣶</text>
+<text class="mc" x="273" y="104" fill="#993388" opacity="0.40" text-anchor="middle">⠴</text>
+<text class="mc" x="273" y="117" fill="#993388" opacity="0.40" text-anchor="middle">⠉</text>
+<text class="mc" x="273" y="130" fill="#993388" opacity="0.40" text-anchor="middle">⠔</text>
+<text class="mc" x="273" y="143" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠬</text>
+<text class="mc" x="273" y="156" fill="#cc44aa" opacity="0.65" text-anchor="middle">⣽</text>
+<text class="mc" x="273" y="169" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠢</text>
+<text class="mc" x="273" y="182" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠬</text>
+<text class="mc" x="273" y="195" fill="#ff79c6" opacity="0.85" text-anchor="middle">⣷</text>
+<text class="mc" x="273" y="208" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠝</text>
+<text class="mc" x="273" y="221" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠕</text>
+<text class="mc" x="273" y="234" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠯</text>
+<text class="mc" x="273" y="247" fill="#ffffff" opacity="1.00" text-anchor="middle">⠷</text>
+<text class="mc" x="273" y="260" fill="#ffffff" opacity="1.00" text-anchor="middle">⠝</text>
+</g>
+<g class="c20">
+<text class="mc" x="287" y="13" fill="#1a001a" opacity="0.06" text-anchor="middle">⠢</text>
+<text class="mc" x="287" y="26" fill="#1a001a" opacity="0.06" text-anchor="middle">⠣</text>
+<text class="mc" x="287" y="39" fill="#330033" opacity="0.12" text-anchor="middle">⠃</text>
+<text class="mc" x="287" y="52" fill="#330033" opacity="0.12" text-anchor="middle">⠱</text>
+<text class="mc" x="287" y="65" fill="#661166" opacity="0.22" text-anchor="middle">⣼</text>
+<text class="mc" x="287" y="78" fill="#661166" opacity="0.22" text-anchor="middle">⠰</text>
+<text class="mc" x="287" y="91" fill="#661166" opacity="0.22" text-anchor="middle">⠼</text>
+<text class="mc" x="287" y="104" fill="#993388" opacity="0.40" text-anchor="middle">⠨</text>
+<text class="mc" x="287" y="117" fill="#993388" opacity="0.40" text-anchor="middle">⠥</text>
+<text class="mc" x="287" y="130" fill="#993388" opacity="0.40" text-anchor="middle">⠝</text>
+<text class="mc" x="287" y="143" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠠</text>
+<text class="mc" x="287" y="156" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠮</text>
+<text class="mc" x="287" y="169" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠸</text>
+<text class="mc" x="287" y="182" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠻</text>
+<text class="mc" x="287" y="195" fill="#ff79c6" opacity="0.85" text-anchor="middle">⣾</text>
+<text class="mc" x="287" y="208" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠏</text>
+<text class="mc" x="287" y="221" fill="#ff79c6" opacity="1.00" text-anchor="middle">⣺</text>
+<text class="mc" x="287" y="234" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠇</text>
+<text class="mc" x="287" y="247" fill="#ffffff" opacity="1.00" text-anchor="middle">⠍</text>
+<text class="mc" x="287" y="260" fill="#ffffff" opacity="1.00" text-anchor="middle">⠍</text>
+</g>
+<g class="c21">
+<text class="mc" x="301" y="13" fill="#1a001a" opacity="0.06" text-anchor="middle">⠐</text>
+<text class="mc" x="301" y="26" fill="#1a001a" opacity="0.06" text-anchor="middle">⠩</text>
+<text class="mc" x="301" y="39" fill="#330033" opacity="0.12" text-anchor="middle">⣿</text>
+<text class="mc" x="301" y="52" fill="#330033" opacity="0.12" text-anchor="middle">⠦</text>
+<text class="mc" x="301" y="65" fill="#661166" opacity="0.22" text-anchor="middle">⣻</text>
+<text class="mc" x="301" y="78" fill="#661166" opacity="0.22" text-anchor="middle">⠷</text>
+<text class="mc" x="301" y="91" fill="#661166" opacity="0.22" text-anchor="middle">⠵</text>
+<text class="mc" x="301" y="104" fill="#993388" opacity="0.40" text-anchor="middle">⠈</text>
+<text class="mc" x="301" y="117" fill="#993388" opacity="0.40" text-anchor="middle">⠟</text>
+<text class="mc" x="301" y="130" fill="#993388" opacity="0.40" text-anchor="middle">⠑</text>
+<text class="mc" x="301" y="143" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠱</text>
+<text class="mc" x="301" y="156" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠟</text>
+<text class="mc" x="301" y="169" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠂</text>
+<text class="mc" x="301" y="182" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠼</text>
+<text class="mc" x="301" y="195" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠳</text>
+<text class="mc" x="301" y="208" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠂</text>
+<text class="mc" x="301" y="221" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠏</text>
+<text class="mc" x="301" y="234" fill="#ff79c6" opacity="1.00" text-anchor="middle">⣽</text>
+<text class="mc" x="301" y="247" fill="#ffffff" opacity="1.00" text-anchor="middle">⣿</text>
+<text class="mc" x="301" y="260" fill="#ffffff" opacity="1.00" text-anchor="middle">⣸</text>
+</g>
+<g class="c22">
+<text class="mc" x="315" y="13" fill="#1a001a" opacity="0.06" text-anchor="middle">⠒</text>
+<text class="mc" x="315" y="26" fill="#1a001a" opacity="0.06" text-anchor="middle">⠲</text>
+<text class="mc" x="315" y="39" fill="#330033" opacity="0.12" text-anchor="middle">⠤</text>
+<text class="mc" x="315" y="52" fill="#330033" opacity="0.12" text-anchor="middle">⠡</text>
+<text class="mc" x="315" y="65" fill="#661166" opacity="0.22" text-anchor="middle">⠓</text>
+<text class="mc" x="315" y="78" fill="#661166" opacity="0.22" text-anchor="middle">⠈</text>
+<text class="mc" x="315" y="91" fill="#661166" opacity="0.22" text-anchor="middle">⣻</text>
+<text class="mc" x="315" y="104" fill="#993388" opacity="0.40" text-anchor="middle">⠠</text>
+<text class="mc" x="315" y="117" fill="#993388" opacity="0.40" text-anchor="middle">⣼</text>
+<text class="mc" x="315" y="130" fill="#993388" opacity="0.40" text-anchor="middle">⣼</text>
+<text class="mc" x="315" y="143" fill="#cc44aa" opacity="0.65" text-anchor="middle">⣼</text>
+<text class="mc" x="315" y="156" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠺</text>
+<text class="mc" x="315" y="169" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠾</text>
+<text class="mc" x="315" y="182" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠱</text>
+<text class="mc" x="315" y="195" fill="#ff79c6" opacity="0.85" text-anchor="middle">⣼</text>
+<text class="mc" x="315" y="208" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠟</text>
+<text class="mc" x="315" y="221" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠛</text>
+<text class="mc" x="315" y="234" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠬</text>
+<text class="mc" x="315" y="247" fill="#ffffff" opacity="1.00" text-anchor="middle">⠍</text>
+<text class="mc" x="315" y="260" fill="#ffffff" opacity="1.00" text-anchor="middle">⠌</text>
+</g>
+<g class="c23">
+<text class="mc" x="329" y="13" fill="#1a001a" opacity="0.06" text-anchor="middle">⠠</text>
+<text class="mc" x="329" y="26" fill="#1a001a" opacity="0.06" text-anchor="middle">⣺</text>
+<text class="mc" x="329" y="39" fill="#330033" opacity="0.12" text-anchor="middle">⣼</text>
+<text class="mc" x="329" y="52" fill="#330033" opacity="0.12" text-anchor="middle">⠜</text>
+<text class="mc" x="329" y="65" fill="#661166" opacity="0.22" text-anchor="middle">⠿</text>
+<text class="mc" x="329" y="78" fill="#661166" opacity="0.22" text-anchor="middle">⠺</text>
+<text class="mc" x="329" y="91" fill="#661166" opacity="0.22" text-anchor="middle">⠥</text>
+<text class="mc" x="329" y="104" fill="#993388" opacity="0.40" text-anchor="middle">⠄</text>
+<text class="mc" x="329" y="117" fill="#993388" opacity="0.40" text-anchor="middle">⠮</text>
+<text class="mc" x="329" y="130" fill="#993388" opacity="0.40" text-anchor="middle">⠦</text>
+<text class="mc" x="329" y="143" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠳</text>
+<text class="mc" x="329" y="156" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠵</text>
+<text class="mc" x="329" y="169" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠯</text>
+<text class="mc" x="329" y="182" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠦</text>
+<text class="mc" x="329" y="195" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠷</text>
+<text class="mc" x="329" y="208" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠉</text>
+<text class="mc" x="329" y="221" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠚</text>
+<text class="mc" x="329" y="234" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠞</text>
+<text class="mc" x="329" y="247" fill="#ffffff" opacity="1.00" text-anchor="middle">⣴</text>
+<text class="mc" x="329" y="260" fill="#ffffff" opacity="1.00" text-anchor="middle">⠎</text>
+</g>
+<g class="c24">
+<text class="mc" x="343" y="13" fill="#1a001a" opacity="0.06" text-anchor="middle">⠇</text>
+<text class="mc" x="343" y="26" fill="#1a001a" opacity="0.06" text-anchor="middle">⠑</text>
+<text class="mc" x="343" y="39" fill="#330033" opacity="0.12" text-anchor="middle">⠦</text>
+<text class="mc" x="343" y="52" fill="#330033" opacity="0.12" text-anchor="middle">⠩</text>
+<text class="mc" x="343" y="65" fill="#661166" opacity="0.22" text-anchor="middle">⠁</text>
+<text class="mc" x="343" y="78" fill="#661166" opacity="0.22" text-anchor="middle">⠯</text>
+<text class="mc" x="343" y="91" fill="#661166" opacity="0.22" text-anchor="middle">⠇</text>
+<text class="mc" x="343" y="104" fill="#993388" opacity="0.40" text-anchor="middle">⠪</text>
+<text class="mc" x="343" y="117" fill="#993388" opacity="0.40" text-anchor="middle">⠠</text>
+<text class="mc" x="343" y="130" fill="#993388" opacity="0.40" text-anchor="middle">⠴</text>
+<text class="mc" x="343" y="143" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠎</text>
+<text class="mc" x="343" y="156" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠥</text>
+<text class="mc" x="343" y="169" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠻</text>
+<text class="mc" x="343" y="182" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠳</text>
+<text class="mc" x="343" y="195" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠎</text>
+<text class="mc" x="343" y="208" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠹</text>
+<text class="mc" x="343" y="221" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠓</text>
+<text class="mc" x="343" y="234" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠻</text>
+<text class="mc" x="343" y="247" fill="#ffffff" opacity="1.00" text-anchor="middle">⠕</text>
+<text class="mc" x="343" y="260" fill="#ffffff" opacity="1.00" text-anchor="middle">⠁</text>
+</g>
+<g class="c25">
+<text class="mc" x="357" y="13" fill="#1a001a" opacity="0.06" text-anchor="middle">⠃</text>
+<text class="mc" x="357" y="26" fill="#1a001a" opacity="0.06" text-anchor="middle">⠻</text>
+<text class="mc" x="357" y="39" fill="#330033" opacity="0.12" text-anchor="middle">⣿</text>
+<text class="mc" x="357" y="52" fill="#330033" opacity="0.12" text-anchor="middle">⠍</text>
+<text class="mc" x="357" y="65" fill="#661166" opacity="0.22" text-anchor="middle">⠆</text>
+<text class="mc" x="357" y="78" fill="#661166" opacity="0.22" text-anchor="middle">⠑</text>
+<text class="mc" x="357" y="91" fill="#661166" opacity="0.22" text-anchor="middle">⠠</text>
+<text class="mc" x="357" y="104" fill="#993388" opacity="0.40" text-anchor="middle">⠻</text>
+<text class="mc" x="357" y="117" fill="#993388" opacity="0.40" text-anchor="middle">⠏</text>
+<text class="mc" x="357" y="130" fill="#993388" opacity="0.40" text-anchor="middle">⠧</text>
+<text class="mc" x="357" y="143" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠪</text>
+<text class="mc" x="357" y="156" fill="#cc44aa" opacity="0.65" text-anchor="middle">⣾</text>
+<text class="mc" x="357" y="169" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠏</text>
+<text class="mc" x="357" y="182" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠰</text>
+<text class="mc" x="357" y="195" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠡</text>
+<text class="mc" x="357" y="208" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠵</text>
+<text class="mc" x="357" y="221" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠹</text>
+<text class="mc" x="357" y="234" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠵</text>
+<text class="mc" x="357" y="247" fill="#ffffff" opacity="1.00" text-anchor="middle">⠿</text>
+<text class="mc" x="357" y="260" fill="#ffffff" opacity="1.00" text-anchor="middle">⠼</text>
+</g>
+<g class="c26">
+<text class="mc" x="371" y="13" fill="#1a001a" opacity="0.06" text-anchor="middle">⠗</text>
+<text class="mc" x="371" y="26" fill="#1a001a" opacity="0.06" text-anchor="middle">⠎</text>
+<text class="mc" x="371" y="39" fill="#330033" opacity="0.12" text-anchor="middle">⠪</text>
+<text class="mc" x="371" y="52" fill="#330033" opacity="0.12" text-anchor="middle">⠓</text>
+<text class="mc" x="371" y="65" fill="#661166" opacity="0.22" text-anchor="middle">⠲</text>
+<text class="mc" x="371" y="78" fill="#661166" opacity="0.22" text-anchor="middle">⠻</text>
+<text class="mc" x="371" y="91" fill="#661166" opacity="0.22" text-anchor="middle">⠏</text>
+<text class="mc" x="371" y="104" fill="#993388" opacity="0.40" text-anchor="middle">⠙</text>
+<text class="mc" x="371" y="117" fill="#993388" opacity="0.40" text-anchor="middle">⠏</text>
+<text class="mc" x="371" y="130" fill="#993388" opacity="0.40" text-anchor="middle">⠦</text>
+<text class="mc" x="371" y="143" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠓</text>
+<text class="mc" x="371" y="156" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠤</text>
+<text class="mc" x="371" y="169" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠰</text>
+<text class="mc" x="371" y="182" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠇</text>
+<text class="mc" x="371" y="195" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠣</text>
+<text class="mc" x="371" y="208" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠷</text>
+<text class="mc" x="371" y="221" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠰</text>
+<text class="mc" x="371" y="234" fill="#ff79c6" opacity="1.00" text-anchor="middle">⣻</text>
+<text class="mc" x="371" y="247" fill="#ffffff" opacity="1.00" text-anchor="middle">⠨</text>
+<text class="mc" x="371" y="260" fill="#ffffff" opacity="1.00" text-anchor="middle">⣷</text>
+</g>
+<g class="c27">
+<text class="mc" x="385" y="13" fill="#1a001a" opacity="0.06" text-anchor="middle">⣿</text>
+<text class="mc" x="385" y="26" fill="#1a001a" opacity="0.06" text-anchor="middle">⠄</text>
+<text class="mc" x="385" y="39" fill="#330033" opacity="0.12" text-anchor="middle">⠥</text>
+<text class="mc" x="385" y="52" fill="#330033" opacity="0.12" text-anchor="middle">⠡</text>
+<text class="mc" x="385" y="65" fill="#661166" opacity="0.22" text-anchor="middle">⣹</text>
+<text class="mc" x="385" y="78" fill="#661166" opacity="0.22" text-anchor="middle">⠳</text>
+<text class="mc" x="385" y="91" fill="#661166" opacity="0.22" text-anchor="middle">⠕</text>
+<text class="mc" x="385" y="104" fill="#993388" opacity="0.40" text-anchor="middle">⠘</text>
+<text class="mc" x="385" y="117" fill="#993388" opacity="0.40" text-anchor="middle">⠓</text>
+<text class="mc" x="385" y="130" fill="#993388" opacity="0.40" text-anchor="middle">⣸</text>
+<text class="mc" x="385" y="143" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠵</text>
+<text class="mc" x="385" y="156" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠵</text>
+<text class="mc" x="385" y="169" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠑</text>
+<text class="mc" x="385" y="182" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠭</text>
+<text class="mc" x="385" y="195" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠆</text>
+<text class="mc" x="385" y="208" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠙</text>
+<text class="mc" x="385" y="221" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠪</text>
+<text class="mc" x="385" y="234" fill="#ff79c6" opacity="1.00" text-anchor="middle">⣽</text>
+<text class="mc" x="385" y="247" fill="#ffffff" opacity="1.00" text-anchor="middle">⠬</text>
+<text class="mc" x="385" y="260" fill="#ffffff" opacity="1.00" text-anchor="middle">⠅</text>
+</g>
+<g class="c28">
+<text class="mc" x="399" y="13" fill="#1a001a" opacity="0.06" text-anchor="middle">⠾</text>
+<text class="mc" x="399" y="26" fill="#1a001a" opacity="0.06" text-anchor="middle">⠡</text>
+<text class="mc" x="399" y="39" fill="#330033" opacity="0.12" text-anchor="middle">⠹</text>
+<text class="mc" x="399" y="52" fill="#330033" opacity="0.12" text-anchor="middle">⠨</text>
+<text class="mc" x="399" y="65" fill="#661166" opacity="0.22" text-anchor="middle">⠏</text>
+<text class="mc" x="399" y="78" fill="#661166" opacity="0.22" text-anchor="middle">⠠</text>
+<text class="mc" x="399" y="91" fill="#661166" opacity="0.22" text-anchor="middle">⠻</text>
+<text class="mc" x="399" y="104" fill="#993388" opacity="0.40" text-anchor="middle">⣹</text>
+<text class="mc" x="399" y="117" fill="#993388" opacity="0.40" text-anchor="middle">⠚</text>
+<text class="mc" x="399" y="130" fill="#993388" opacity="0.40" text-anchor="middle">⠅</text>
+<text class="mc" x="399" y="143" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠫</text>
+<text class="mc" x="399" y="156" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠋</text>
+<text class="mc" x="399" y="169" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠴</text>
+<text class="mc" x="399" y="182" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠅</text>
+<text class="mc" x="399" y="195" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠵</text>
+<text class="mc" x="399" y="208" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠝</text>
+<text class="mc" x="399" y="221" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠳</text>
+<text class="mc" x="399" y="234" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠋</text>
+<text class="mc" x="399" y="247" fill="#ffffff" opacity="1.00" text-anchor="middle">⠚</text>
+<text class="mc" x="399" y="260" fill="#ffffff" opacity="1.00" text-anchor="middle">⠄</text>
+</g>
+<g class="c29">
+<text class="mc" x="413" y="13" fill="#1a001a" opacity="0.06" text-anchor="middle">⠫</text>
+<text class="mc" x="413" y="26" fill="#1a001a" opacity="0.06" text-anchor="middle">⠝</text>
+<text class="mc" x="413" y="39" fill="#330033" opacity="0.12" text-anchor="middle">⣳</text>
+<text class="mc" x="413" y="52" fill="#330033" opacity="0.12" text-anchor="middle">⣿</text>
+<text class="mc" x="413" y="65" fill="#661166" opacity="0.22" text-anchor="middle">⠚</text>
+<text class="mc" x="413" y="78" fill="#661166" opacity="0.22" text-anchor="middle">⣵</text>
+<text class="mc" x="413" y="91" fill="#661166" opacity="0.22" text-anchor="middle">⠟</text>
+<text class="mc" x="413" y="104" fill="#993388" opacity="0.40" text-anchor="middle">⠠</text>
+<text class="mc" x="413" y="117" fill="#993388" opacity="0.40" text-anchor="middle">⠃</text>
+<text class="mc" x="413" y="130" fill="#993388" opacity="0.40" text-anchor="middle">⠳</text>
+<text class="mc" x="413" y="143" fill="#cc44aa" opacity="0.65" text-anchor="middle">⣹</text>
+<text class="mc" x="413" y="156" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠋</text>
+<text class="mc" x="413" y="169" fill="#cc44aa" opacity="0.65" text-anchor="middle">⣾</text>
+<text class="mc" x="413" y="182" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠑</text>
+<text class="mc" x="413" y="195" fill="#ff79c6" opacity="0.85" text-anchor="middle">⣾</text>
+<text class="mc" x="413" y="208" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠍</text>
+<text class="mc" x="413" y="221" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠎</text>
+<text class="mc" x="413" y="234" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠣</text>
+<text class="mc" x="413" y="247" fill="#ffffff" opacity="1.00" text-anchor="middle">⠽</text>
+<text class="mc" x="413" y="260" fill="#ffffff" opacity="1.00" text-anchor="middle">⠤</text>
+</g>
+<g class="c30">
+<text class="mc" x="427" y="13" fill="#1a001a" opacity="0.06" text-anchor="middle">⣶</text>
+<text class="mc" x="427" y="26" fill="#1a001a" opacity="0.06" text-anchor="middle">⠠</text>
+<text class="mc" x="427" y="39" fill="#330033" opacity="0.12" text-anchor="middle">⠭</text>
+<text class="mc" x="427" y="52" fill="#330033" opacity="0.12" text-anchor="middle">⠽</text>
+<text class="mc" x="427" y="65" fill="#661166" opacity="0.22" text-anchor="middle">⠩</text>
+<text class="mc" x="427" y="78" fill="#661166" opacity="0.22" text-anchor="middle">⠐</text>
+<text class="mc" x="427" y="91" fill="#661166" opacity="0.22" text-anchor="middle">⠄</text>
+<text class="mc" x="427" y="104" fill="#993388" opacity="0.40" text-anchor="middle">⠌</text>
+<text class="mc" x="427" y="117" fill="#993388" opacity="0.40" text-anchor="middle">⠠</text>
+<text class="mc" x="427" y="130" fill="#993388" opacity="0.40" text-anchor="middle">⠔</text>
+<text class="mc" x="427" y="143" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠡</text>
+<text class="mc" x="427" y="156" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠮</text>
+<text class="mc" x="427" y="169" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠦</text>
+<text class="mc" x="427" y="182" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠈</text>
+<text class="mc" x="427" y="195" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠄</text>
+<text class="mc" x="427" y="208" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠝</text>
+<text class="mc" x="427" y="221" fill="#ff79c6" opacity="1.00" text-anchor="middle">⣷</text>
+<text class="mc" x="427" y="234" fill="#ff79c6" opacity="1.00" text-anchor="middle">⣵</text>
+<text class="mc" x="427" y="247" fill="#ffffff" opacity="1.00" text-anchor="middle">⠎</text>
+<text class="mc" x="427" y="260" fill="#ffffff" opacity="1.00" text-anchor="middle">⠖</text>
+</g>
+<g class="c31">
+<text class="mc" x="441" y="13" fill="#1a001a" opacity="0.06" text-anchor="middle">⣶</text>
+<text class="mc" x="441" y="26" fill="#1a001a" opacity="0.06" text-anchor="middle">⠊</text>
+<text class="mc" x="441" y="39" fill="#330033" opacity="0.12" text-anchor="middle">⠟</text>
+<text class="mc" x="441" y="52" fill="#330033" opacity="0.12" text-anchor="middle">⠽</text>
+<text class="mc" x="441" y="65" fill="#661166" opacity="0.22" text-anchor="middle">⣼</text>
+<text class="mc" x="441" y="78" fill="#661166" opacity="0.22" text-anchor="middle">⠥</text>
+<text class="mc" x="441" y="91" fill="#661166" opacity="0.22" text-anchor="middle">⠚</text>
+<text class="mc" x="441" y="104" fill="#993388" opacity="0.40" text-anchor="middle">⠼</text>
+<text class="mc" x="441" y="117" fill="#993388" opacity="0.40" text-anchor="middle">⠙</text>
+<text class="mc" x="441" y="130" fill="#993388" opacity="0.40" text-anchor="middle">⠣</text>
+<text class="mc" x="441" y="143" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠕</text>
+<text class="mc" x="441" y="156" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠣</text>
+<text class="mc" x="441" y="169" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠑</text>
+<text class="mc" x="441" y="182" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠁</text>
+<text class="mc" x="441" y="195" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠽</text>
+<text class="mc" x="441" y="208" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠕</text>
+<text class="mc" x="441" y="221" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠴</text>
+<text class="mc" x="441" y="234" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠽</text>
+<text class="mc" x="441" y="247" fill="#ffffff" opacity="1.00" text-anchor="middle">⠢</text>
+<text class="mc" x="441" y="260" fill="#ffffff" opacity="1.00" text-anchor="middle">⠮</text>
+</g>
+<g class="c32">
+<text class="mc" x="455" y="13" fill="#1a001a" opacity="0.06" text-anchor="middle">⠟</text>
+<text class="mc" x="455" y="26" fill="#1a001a" opacity="0.06" text-anchor="middle">⠪</text>
+<text class="mc" x="455" y="39" fill="#330033" opacity="0.12" text-anchor="middle">⠞</text>
+<text class="mc" x="455" y="52" fill="#330033" opacity="0.12" text-anchor="middle">⠬</text>
+<text class="mc" x="455" y="65" fill="#661166" opacity="0.22" text-anchor="middle">⠞</text>
+<text class="mc" x="455" y="78" fill="#661166" opacity="0.22" text-anchor="middle">⠛</text>
+<text class="mc" x="455" y="91" fill="#661166" opacity="0.22" text-anchor="middle">⠱</text>
+<text class="mc" x="455" y="104" fill="#993388" opacity="0.40" text-anchor="middle">⠘</text>
+<text class="mc" x="455" y="117" fill="#993388" opacity="0.40" text-anchor="middle">⠆</text>
+<text class="mc" x="455" y="130" fill="#993388" opacity="0.40" text-anchor="middle">⠡</text>
+<text class="mc" x="455" y="143" fill="#cc44aa" opacity="0.65" text-anchor="middle">⣾</text>
+<text class="mc" x="455" y="156" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠟</text>
+<text class="mc" x="455" y="169" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠪</text>
+<text class="mc" x="455" y="182" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠌</text>
+<text class="mc" x="455" y="195" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠔</text>
+<text class="mc" x="455" y="208" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠟</text>
+<text class="mc" x="455" y="221" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠤</text>
+<text class="mc" x="455" y="234" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠻</text>
+<text class="mc" x="455" y="247" fill="#ffffff" opacity="1.00" text-anchor="middle">⠅</text>
+<text class="mc" x="455" y="260" fill="#ffffff" opacity="1.00" text-anchor="middle">⠢</text>
+</g>
+<g class="c33">
+<text class="mc" x="469" y="13" fill="#1a001a" opacity="0.06" text-anchor="middle">⠳</text>
+<text class="mc" x="469" y="26" fill="#1a001a" opacity="0.06" text-anchor="middle">⠒</text>
+<text class="mc" x="469" y="39" fill="#330033" opacity="0.12" text-anchor="middle">⠘</text>
+<text class="mc" x="469" y="52" fill="#330033" opacity="0.12" text-anchor="middle">⠠</text>
+<text class="mc" x="469" y="65" fill="#661166" opacity="0.22" text-anchor="middle">⠂</text>
+<text class="mc" x="469" y="78" fill="#661166" opacity="0.22" text-anchor="middle">⠷</text>
+<text class="mc" x="469" y="91" fill="#661166" opacity="0.22" text-anchor="middle">⠏</text>
+<text class="mc" x="469" y="104" fill="#993388" opacity="0.40" text-anchor="middle">⠊</text>
+<text class="mc" x="469" y="117" fill="#993388" opacity="0.40" text-anchor="middle">⠩</text>
+<text class="mc" x="469" y="130" fill="#993388" opacity="0.40" text-anchor="middle">⣵</text>
+<text class="mc" x="469" y="143" fill="#cc44aa" opacity="0.65" text-anchor="middle">⣵</text>
+<text class="mc" x="469" y="156" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠥</text>
+<text class="mc" x="469" y="169" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠁</text>
+<text class="mc" x="469" y="182" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠆</text>
+<text class="mc" x="469" y="195" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠓</text>
+<text class="mc" x="469" y="208" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠳</text>
+<text class="mc" x="469" y="221" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠡</text>
+<text class="mc" x="469" y="234" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠠</text>
+<text class="mc" x="469" y="247" fill="#ffffff" opacity="1.00" text-anchor="middle">⠴</text>
+<text class="mc" x="469" y="260" fill="#ffffff" opacity="1.00" text-anchor="middle">⠊</text>
+</g>
+<g class="c34">
+<text class="mc" x="483" y="13" fill="#1a001a" opacity="0.06" text-anchor="middle">⠂</text>
+<text class="mc" x="483" y="26" fill="#1a001a" opacity="0.06" text-anchor="middle">⠇</text>
+<text class="mc" x="483" y="39" fill="#330033" opacity="0.12" text-anchor="middle">⠎</text>
+<text class="mc" x="483" y="52" fill="#330033" opacity="0.12" text-anchor="middle">⠑</text>
+<text class="mc" x="483" y="65" fill="#661166" opacity="0.22" text-anchor="middle">⠹</text>
+<text class="mc" x="483" y="78" fill="#661166" opacity="0.22" text-anchor="middle">⠵</text>
+<text class="mc" x="483" y="91" fill="#661166" opacity="0.22" text-anchor="middle">⠘</text>
+<text class="mc" x="483" y="104" fill="#993388" opacity="0.40" text-anchor="middle">⠆</text>
+<text class="mc" x="483" y="117" fill="#993388" opacity="0.40" text-anchor="middle">⠍</text>
+<text class="mc" x="483" y="130" fill="#993388" opacity="0.40" text-anchor="middle">⠨</text>
+<text class="mc" x="483" y="143" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠦</text>
+<text class="mc" x="483" y="156" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠬</text>
+<text class="mc" x="483" y="169" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠿</text>
+<text class="mc" x="483" y="182" fill="#ff79c6" opacity="0.85" text-anchor="middle">⣺</text>
+<text class="mc" x="483" y="195" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠼</text>
+<text class="mc" x="483" y="208" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠌</text>
+<text class="mc" x="483" y="221" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠗</text>
+<text class="mc" x="483" y="234" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠩</text>
+<text class="mc" x="483" y="247" fill="#ffffff" opacity="1.00" text-anchor="middle">⠠</text>
+<text class="mc" x="483" y="260" fill="#ffffff" opacity="1.00" text-anchor="middle">⠐</text>
+</g>
+<g class="c35">
+<text class="mc" x="497" y="13" fill="#1a001a" opacity="0.06" text-anchor="middle">⠔</text>
+<text class="mc" x="497" y="26" fill="#1a001a" opacity="0.06" text-anchor="middle">⠑</text>
+<text class="mc" x="497" y="39" fill="#330033" opacity="0.12" text-anchor="middle">⠊</text>
+<text class="mc" x="497" y="52" fill="#330033" opacity="0.12" text-anchor="middle">⠄</text>
+<text class="mc" x="497" y="65" fill="#661166" opacity="0.22" text-anchor="middle">⠫</text>
+<text class="mc" x="497" y="78" fill="#661166" opacity="0.22" text-anchor="middle">⠠</text>
+<text class="mc" x="497" y="91" fill="#661166" opacity="0.22" text-anchor="middle">⣴</text>
+<text class="mc" x="497" y="104" fill="#993388" opacity="0.40" text-anchor="middle">⠎</text>
+<text class="mc" x="497" y="117" fill="#993388" opacity="0.40" text-anchor="middle">⣳</text>
+<text class="mc" x="497" y="130" fill="#993388" opacity="0.40" text-anchor="middle">⠴</text>
+<text class="mc" x="497" y="143" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠱</text>
+<text class="mc" x="497" y="156" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠤</text>
+<text class="mc" x="497" y="169" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠧</text>
+<text class="mc" x="497" y="182" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠶</text>
+<text class="mc" x="497" y="195" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠱</text>
+<text class="mc" x="497" y="208" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠑</text>
+<text class="mc" x="497" y="221" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠈</text>
+<text class="mc" x="497" y="234" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠧</text>
+<text class="mc" x="497" y="247" fill="#ffffff" opacity="1.00" text-anchor="middle">⣺</text>
+<text class="mc" x="497" y="260" fill="#ffffff" opacity="1.00" text-anchor="middle">⠥</text>
+</g>
+<g class="c36">
+<text class="mc" x="511" y="13" fill="#1a001a" opacity="0.06" text-anchor="middle">⠆</text>
+<text class="mc" x="511" y="26" fill="#1a001a" opacity="0.06" text-anchor="middle">⠞</text>
+<text class="mc" x="511" y="39" fill="#330033" opacity="0.12" text-anchor="middle">⠚</text>
+<text class="mc" x="511" y="52" fill="#330033" opacity="0.12" text-anchor="middle">⠩</text>
+<text class="mc" x="511" y="65" fill="#661166" opacity="0.22" text-anchor="middle">⠖</text>
+<text class="mc" x="511" y="78" fill="#661166" opacity="0.22" text-anchor="middle">⠹</text>
+<text class="mc" x="511" y="91" fill="#661166" opacity="0.22" text-anchor="middle">⣺</text>
+<text class="mc" x="511" y="104" fill="#993388" opacity="0.40" text-anchor="middle">⠚</text>
+<text class="mc" x="511" y="117" fill="#993388" opacity="0.40" text-anchor="middle">⠭</text>
+<text class="mc" x="511" y="130" fill="#993388" opacity="0.40" text-anchor="middle">⠽</text>
+<text class="mc" x="511" y="143" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠤</text>
+<text class="mc" x="511" y="156" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠲</text>
+<text class="mc" x="511" y="169" fill="#cc44aa" opacity="0.65" text-anchor="middle">⣾</text>
+<text class="mc" x="511" y="182" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠰</text>
+<text class="mc" x="511" y="195" fill="#ff79c6" opacity="0.85" text-anchor="middle">⣳</text>
+<text class="mc" x="511" y="208" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠤</text>
+<text class="mc" x="511" y="221" fill="#ff79c6" opacity="1.00" text-anchor="middle">⣻</text>
+<text class="mc" x="511" y="234" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠿</text>
+<text class="mc" x="511" y="247" fill="#ffffff" opacity="1.00" text-anchor="middle">⠏</text>
+<text class="mc" x="511" y="260" fill="#ffffff" opacity="1.00" text-anchor="middle">⠛</text>
+</g>
+<g class="c37">
+<text class="mc" x="525" y="13" fill="#1a001a" opacity="0.06" text-anchor="middle">⠥</text>
+<text class="mc" x="525" y="26" fill="#1a001a" opacity="0.06" text-anchor="middle">⠧</text>
+<text class="mc" x="525" y="39" fill="#330033" opacity="0.12" text-anchor="middle">⣾</text>
+<text class="mc" x="525" y="52" fill="#330033" opacity="0.12" text-anchor="middle">⠷</text>
+<text class="mc" x="525" y="65" fill="#661166" opacity="0.22" text-anchor="middle">⣷</text>
+<text class="mc" x="525" y="78" fill="#661166" opacity="0.22" text-anchor="middle">⠉</text>
+<text class="mc" x="525" y="91" fill="#661166" opacity="0.22" text-anchor="middle">⠧</text>
+<text class="mc" x="525" y="104" fill="#993388" opacity="0.40" text-anchor="middle">⠅</text>
+<text class="mc" x="525" y="117" fill="#993388" opacity="0.40" text-anchor="middle">⠃</text>
+<text class="mc" x="525" y="130" fill="#993388" opacity="0.40" text-anchor="middle">⣾</text>
+<text class="mc" x="525" y="143" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠣</text>
+<text class="mc" x="525" y="156" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠟</text>
+<text class="mc" x="525" y="169" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠪</text>
+<text class="mc" x="525" y="182" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠣</text>
+<text class="mc" x="525" y="195" fill="#ff79c6" opacity="0.85" text-anchor="middle">⣷</text>
+<text class="mc" x="525" y="208" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠵</text>
+<text class="mc" x="525" y="221" fill="#ff79c6" opacity="1.00" text-anchor="middle">⣼</text>
+<text class="mc" x="525" y="234" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠥</text>
+<text class="mc" x="525" y="247" fill="#ffffff" opacity="1.00" text-anchor="middle">⠴</text>
+<text class="mc" x="525" y="260" fill="#ffffff" opacity="1.00" text-anchor="middle">⠞</text>
+</g>
+<g class="c38">
+<text class="mc" x="539" y="13" fill="#1a001a" opacity="0.06" text-anchor="middle">⠅</text>
+<text class="mc" x="539" y="26" fill="#1a001a" opacity="0.06" text-anchor="middle">⠓</text>
+<text class="mc" x="539" y="39" fill="#330033" opacity="0.12" text-anchor="middle">⠝</text>
+<text class="mc" x="539" y="52" fill="#330033" opacity="0.12" text-anchor="middle">⠷</text>
+<text class="mc" x="539" y="65" fill="#661166" opacity="0.22" text-anchor="middle">⠋</text>
+<text class="mc" x="539" y="78" fill="#661166" opacity="0.22" text-anchor="middle">⠈</text>
+<text class="mc" x="539" y="91" fill="#661166" opacity="0.22" text-anchor="middle">⠡</text>
+<text class="mc" x="539" y="104" fill="#993388" opacity="0.40" text-anchor="middle">⠾</text>
+<text class="mc" x="539" y="117" fill="#993388" opacity="0.40" text-anchor="middle">⠤</text>
+<text class="mc" x="539" y="130" fill="#993388" opacity="0.40" text-anchor="middle">⠳</text>
+<text class="mc" x="539" y="143" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠯</text>
+<text class="mc" x="539" y="156" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠯</text>
+<text class="mc" x="539" y="169" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠳</text>
+<text class="mc" x="539" y="182" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠼</text>
+<text class="mc" x="539" y="195" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠷</text>
+<text class="mc" x="539" y="208" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠓</text>
+<text class="mc" x="539" y="221" fill="#ff79c6" opacity="1.00" text-anchor="middle">⣷</text>
+<text class="mc" x="539" y="234" fill="#ff79c6" opacity="1.00" text-anchor="middle">⣾</text>
+<text class="mc" x="539" y="247" fill="#ffffff" opacity="1.00" text-anchor="middle">⠮</text>
+<text class="mc" x="539" y="260" fill="#ffffff" opacity="1.00" text-anchor="middle">⠄</text>
+</g>
+<g class="c39">
+<text class="mc" x="553" y="13" fill="#1a001a" opacity="0.06" text-anchor="middle">⠁</text>
+<text class="mc" x="553" y="26" fill="#1a001a" opacity="0.06" text-anchor="middle">⠳</text>
+<text class="mc" x="553" y="39" fill="#330033" opacity="0.12" text-anchor="middle">⠟</text>
+<text class="mc" x="553" y="52" fill="#330033" opacity="0.12" text-anchor="middle">⠁</text>
+<text class="mc" x="553" y="65" fill="#661166" opacity="0.22" text-anchor="middle">⠺</text>
+<text class="mc" x="553" y="78" fill="#661166" opacity="0.22" text-anchor="middle">⠭</text>
+<text class="mc" x="553" y="91" fill="#661166" opacity="0.22" text-anchor="middle">⠙</text>
+<text class="mc" x="553" y="104" fill="#993388" opacity="0.40" text-anchor="middle">⠾</text>
+<text class="mc" x="553" y="117" fill="#993388" opacity="0.40" text-anchor="middle">⠟</text>
+<text class="mc" x="553" y="130" fill="#993388" opacity="0.40" text-anchor="middle">⠝</text>
+<text class="mc" x="553" y="143" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠤</text>
+<text class="mc" x="553" y="156" fill="#cc44aa" opacity="0.65" text-anchor="middle">⣷</text>
+<text class="mc" x="553" y="169" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠈</text>
+<text class="mc" x="553" y="182" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠶</text>
+<text class="mc" x="553" y="195" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠬</text>
+<text class="mc" x="553" y="208" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠷</text>
+<text class="mc" x="553" y="221" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠡</text>
+<text class="mc" x="553" y="234" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠰</text>
+<text class="mc" x="553" y="247" fill="#ffffff" opacity="1.00" text-anchor="middle">⠌</text>
+<text class="mc" x="553" y="260" fill="#ffffff" opacity="1.00" text-anchor="middle">⠡</text>
+</g>
+<g class="c40">
+<text class="mc" x="567" y="13" fill="#1a001a" opacity="0.06" text-anchor="middle">⣻</text>
+<text class="mc" x="567" y="26" fill="#1a001a" opacity="0.06" text-anchor="middle">⠞</text>
+<text class="mc" x="567" y="39" fill="#330033" opacity="0.12" text-anchor="middle">⠵</text>
+<text class="mc" x="567" y="52" fill="#330033" opacity="0.12" text-anchor="middle">⠐</text>
+<text class="mc" x="567" y="65" fill="#661166" opacity="0.22" text-anchor="middle">⣸</text>
+<text class="mc" x="567" y="78" fill="#661166" opacity="0.22" text-anchor="middle">⠳</text>
+<text class="mc" x="567" y="91" fill="#661166" opacity="0.22" text-anchor="middle">⠢</text>
+<text class="mc" x="567" y="104" fill="#993388" opacity="0.40" text-anchor="middle">⠳</text>
+<text class="mc" x="567" y="117" fill="#993388" opacity="0.40" text-anchor="middle">⠹</text>
+<text class="mc" x="567" y="130" fill="#993388" opacity="0.40" text-anchor="middle">⣷</text>
+<text class="mc" x="567" y="143" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠁</text>
+<text class="mc" x="567" y="156" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠞</text>
+<text class="mc" x="567" y="169" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠍</text>
+<text class="mc" x="567" y="182" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠈</text>
+<text class="mc" x="567" y="195" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠲</text>
+<text class="mc" x="567" y="208" fill="#ff79c6" opacity="0.85" text-anchor="middle">⣳</text>
+<text class="mc" x="567" y="221" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠋</text>
+<text class="mc" x="567" y="234" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠴</text>
+<text class="mc" x="567" y="247" fill="#ffffff" opacity="1.00" text-anchor="middle">⠷</text>
+<text class="mc" x="567" y="260" fill="#ffffff" opacity="1.00" text-anchor="middle">⠘</text>
+</g>
+<g class="c41">
+<text class="mc" x="581" y="13" fill="#1a001a" opacity="0.06" text-anchor="middle">⠃</text>
+<text class="mc" x="581" y="26" fill="#1a001a" opacity="0.06" text-anchor="middle">⣼</text>
+<text class="mc" x="581" y="39" fill="#330033" opacity="0.12" text-anchor="middle">⣴</text>
+<text class="mc" x="581" y="52" fill="#330033" opacity="0.12" text-anchor="middle">⠄</text>
+<text class="mc" x="581" y="65" fill="#661166" opacity="0.22" text-anchor="middle">⠧</text>
+<text class="mc" x="581" y="78" fill="#661166" opacity="0.22" text-anchor="middle">⠯</text>
+<text class="mc" x="581" y="91" fill="#661166" opacity="0.22" text-anchor="middle">⠅</text>
+<text class="mc" x="581" y="104" fill="#993388" opacity="0.40" text-anchor="middle">⣾</text>
+<text class="mc" x="581" y="117" fill="#993388" opacity="0.40" text-anchor="middle">⠃</text>
+<text class="mc" x="581" y="130" fill="#993388" opacity="0.40" text-anchor="middle">⠗</text>
+<text class="mc" x="581" y="143" fill="#cc44aa" opacity="0.65" text-anchor="middle">⣻</text>
+<text class="mc" x="581" y="156" fill="#cc44aa" opacity="0.65" text-anchor="middle">⣿</text>
+<text class="mc" x="581" y="169" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠂</text>
+<text class="mc" x="581" y="182" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠏</text>
+<text class="mc" x="581" y="195" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠓</text>
+<text class="mc" x="581" y="208" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠊</text>
+<text class="mc" x="581" y="221" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠎</text>
+<text class="mc" x="581" y="234" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠱</text>
+<text class="mc" x="581" y="247" fill="#ffffff" opacity="1.00" text-anchor="middle">⠬</text>
+<text class="mc" x="581" y="260" fill="#ffffff" opacity="1.00" text-anchor="middle">⠱</text>
+</g>
+<g class="c42">
+<text class="mc" x="595" y="13" fill="#1a001a" opacity="0.06" text-anchor="middle">⣵</text>
+<text class="mc" x="595" y="26" fill="#1a001a" opacity="0.06" text-anchor="middle">⠏</text>
+<text class="mc" x="595" y="39" fill="#330033" opacity="0.12" text-anchor="middle">⠾</text>
+<text class="mc" x="595" y="52" fill="#330033" opacity="0.12" text-anchor="middle">⠦</text>
+<text class="mc" x="595" y="65" fill="#661166" opacity="0.22" text-anchor="middle">⠄</text>
+<text class="mc" x="595" y="78" fill="#661166" opacity="0.22" text-anchor="middle">⠫</text>
+<text class="mc" x="595" y="91" fill="#661166" opacity="0.22" text-anchor="middle">⣵</text>
+<text class="mc" x="595" y="104" fill="#993388" opacity="0.40" text-anchor="middle">⠇</text>
+<text class="mc" x="595" y="117" fill="#993388" opacity="0.40" text-anchor="middle">⠧</text>
+<text class="mc" x="595" y="130" fill="#993388" opacity="0.40" text-anchor="middle">⠰</text>
+<text class="mc" x="595" y="143" fill="#cc44aa" opacity="0.65" text-anchor="middle">⣿</text>
+<text class="mc" x="595" y="156" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠋</text>
+<text class="mc" x="595" y="169" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠴</text>
+<text class="mc" x="595" y="182" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠌</text>
+<text class="mc" x="595" y="195" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠝</text>
+<text class="mc" x="595" y="208" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠅</text>
+<text class="mc" x="595" y="221" fill="#ff79c6" opacity="1.00" text-anchor="middle">⣸</text>
+<text class="mc" x="595" y="234" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠎</text>
+<text class="mc" x="595" y="247" fill="#ffffff" opacity="1.00" text-anchor="middle">⠰</text>
+<text class="mc" x="595" y="260" fill="#ffffff" opacity="1.00" text-anchor="middle">⠨</text>
+</g>
+<g class="c43">
+<text class="mc" x="609" y="13" fill="#1a001a" opacity="0.06" text-anchor="middle">⠤</text>
+<text class="mc" x="609" y="26" fill="#1a001a" opacity="0.06" text-anchor="middle">⠹</text>
+<text class="mc" x="609" y="39" fill="#330033" opacity="0.12" text-anchor="middle">⣽</text>
+<text class="mc" x="609" y="52" fill="#330033" opacity="0.12" text-anchor="middle">⣽</text>
+<text class="mc" x="609" y="65" fill="#661166" opacity="0.22" text-anchor="middle">⣷</text>
+<text class="mc" x="609" y="78" fill="#661166" opacity="0.22" text-anchor="middle">⠦</text>
+<text class="mc" x="609" y="91" fill="#661166" opacity="0.22" text-anchor="middle">⠲</text>
+<text class="mc" x="609" y="104" fill="#993388" opacity="0.40" text-anchor="middle">⠏</text>
+<text class="mc" x="609" y="117" fill="#993388" opacity="0.40" text-anchor="middle">⠞</text>
+<text class="mc" x="609" y="130" fill="#993388" opacity="0.40" text-anchor="middle">⠗</text>
+<text class="mc" x="609" y="143" fill="#cc44aa" opacity="0.65" text-anchor="middle">⣴</text>
+<text class="mc" x="609" y="156" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠦</text>
+<text class="mc" x="609" y="169" fill="#cc44aa" opacity="0.65" text-anchor="middle">⣽</text>
+<text class="mc" x="609" y="182" fill="#ff79c6" opacity="0.85" text-anchor="middle">⣶</text>
+<text class="mc" x="609" y="195" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠫</text>
+<text class="mc" x="609" y="208" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠊</text>
+<text class="mc" x="609" y="221" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠑</text>
+<text class="mc" x="609" y="234" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠺</text>
+<text class="mc" x="609" y="247" fill="#ffffff" opacity="1.00" text-anchor="middle">⠈</text>
+<text class="mc" x="609" y="260" fill="#ffffff" opacity="1.00" text-anchor="middle">⠏</text>
+</g>
+<g class="c44">
+<text class="mc" x="623" y="13" fill="#1a001a" opacity="0.06" text-anchor="middle">⠊</text>
+<text class="mc" x="623" y="26" fill="#1a001a" opacity="0.06" text-anchor="middle">⠅</text>
+<text class="mc" x="623" y="39" fill="#330033" opacity="0.12" text-anchor="middle">⠢</text>
+<text class="mc" x="623" y="52" fill="#330033" opacity="0.12" text-anchor="middle">⠊</text>
+<text class="mc" x="623" y="65" fill="#661166" opacity="0.22" text-anchor="middle">⠞</text>
+<text class="mc" x="623" y="78" fill="#661166" opacity="0.22" text-anchor="middle">⠏</text>
+<text class="mc" x="623" y="91" fill="#661166" opacity="0.22" text-anchor="middle">⠸</text>
+<text class="mc" x="623" y="104" fill="#993388" opacity="0.40" text-anchor="middle">⠖</text>
+<text class="mc" x="623" y="117" fill="#993388" opacity="0.40" text-anchor="middle">⣵</text>
+<text class="mc" x="623" y="130" fill="#993388" opacity="0.40" text-anchor="middle">⠁</text>
+<text class="mc" x="623" y="143" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠚</text>
+<text class="mc" x="623" y="156" fill="#cc44aa" opacity="0.65" text-anchor="middle">⣳</text>
+<text class="mc" x="623" y="169" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠸</text>
+<text class="mc" x="623" y="182" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠽</text>
+<text class="mc" x="623" y="195" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠜</text>
+<text class="mc" x="623" y="208" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠸</text>
+<text class="mc" x="623" y="221" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠻</text>
+<text class="mc" x="623" y="234" fill="#ff79c6" opacity="1.00" text-anchor="middle">⣺</text>
+<text class="mc" x="623" y="247" fill="#ffffff" opacity="1.00" text-anchor="middle">⣸</text>
+<text class="mc" x="623" y="260" fill="#ffffff" opacity="1.00" text-anchor="middle">⠊</text>
+</g>
+<g class="c45">
+<text class="mc" x="637" y="13" fill="#1a001a" opacity="0.06" text-anchor="middle">⠤</text>
+<text class="mc" x="637" y="26" fill="#1a001a" opacity="0.06" text-anchor="middle">⣶</text>
+<text class="mc" x="637" y="39" fill="#330033" opacity="0.12" text-anchor="middle">⠱</text>
+<text class="mc" x="637" y="52" fill="#330033" opacity="0.12" text-anchor="middle">⠇</text>
+<text class="mc" x="637" y="65" fill="#661166" opacity="0.22" text-anchor="middle">⠖</text>
+<text class="mc" x="637" y="78" fill="#661166" opacity="0.22" text-anchor="middle">⠝</text>
+<text class="mc" x="637" y="91" fill="#661166" opacity="0.22" text-anchor="middle">⠘</text>
+<text class="mc" x="637" y="104" fill="#993388" opacity="0.40" text-anchor="middle">⣾</text>
+<text class="mc" x="637" y="117" fill="#993388" opacity="0.40" text-anchor="middle">⠪</text>
+<text class="mc" x="637" y="130" fill="#993388" opacity="0.40" text-anchor="middle">⠠</text>
+<text class="mc" x="637" y="143" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠸</text>
+<text class="mc" x="637" y="156" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠚</text>
+<text class="mc" x="637" y="169" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠙</text>
+<text class="mc" x="637" y="182" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠋</text>
+<text class="mc" x="637" y="195" fill="#ff79c6" opacity="0.85" text-anchor="middle">⣶</text>
+<text class="mc" x="637" y="208" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠤</text>
+<text class="mc" x="637" y="221" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠷</text>
+<text class="mc" x="637" y="234" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠰</text>
+<text class="mc" x="637" y="247" fill="#ffffff" opacity="1.00" text-anchor="middle">⠌</text>
+<text class="mc" x="637" y="260" fill="#ffffff" opacity="1.00" text-anchor="middle">⠶</text>
+</g>
+<g class="c46">
+<text class="mc" x="651" y="13" fill="#1a001a" opacity="0.06" text-anchor="middle">⠖</text>
+<text class="mc" x="651" y="26" fill="#1a001a" opacity="0.06" text-anchor="middle">⠵</text>
+<text class="mc" x="651" y="39" fill="#330033" opacity="0.12" text-anchor="middle">⠎</text>
+<text class="mc" x="651" y="52" fill="#330033" opacity="0.12" text-anchor="middle">⠻</text>
+<text class="mc" x="651" y="65" fill="#661166" opacity="0.22" text-anchor="middle">⠺</text>
+<text class="mc" x="651" y="78" fill="#661166" opacity="0.22" text-anchor="middle">⠚</text>
+<text class="mc" x="651" y="91" fill="#661166" opacity="0.22" text-anchor="middle">⣶</text>
+<text class="mc" x="651" y="104" fill="#993388" opacity="0.40" text-anchor="middle">⠊</text>
+<text class="mc" x="651" y="117" fill="#993388" opacity="0.40" text-anchor="middle">⠔</text>
+<text class="mc" x="651" y="130" fill="#993388" opacity="0.40" text-anchor="middle">⠗</text>
+<text class="mc" x="651" y="143" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠭</text>
+<text class="mc" x="651" y="156" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠚</text>
+<text class="mc" x="651" y="169" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠗</text>
+<text class="mc" x="651" y="182" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠊</text>
+<text class="mc" x="651" y="195" fill="#ff79c6" opacity="0.85" text-anchor="middle">⣾</text>
+<text class="mc" x="651" y="208" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠡</text>
+<text class="mc" x="651" y="221" fill="#ff79c6" opacity="1.00" text-anchor="middle">⣻</text>
+<text class="mc" x="651" y="234" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠲</text>
+<text class="mc" x="651" y="247" fill="#ffffff" opacity="1.00" text-anchor="middle">⠙</text>
+<text class="mc" x="651" y="260" fill="#ffffff" opacity="1.00" text-anchor="middle">⠕</text>
+</g>
+<g class="c47">
+<text class="mc" x="665" y="13" fill="#1a001a" opacity="0.06" text-anchor="middle">⠐</text>
+<text class="mc" x="665" y="26" fill="#1a001a" opacity="0.06" text-anchor="middle">⠜</text>
+<text class="mc" x="665" y="39" fill="#330033" opacity="0.12" text-anchor="middle">⠓</text>
+<text class="mc" x="665" y="52" fill="#330033" opacity="0.12" text-anchor="middle">⠚</text>
+<text class="mc" x="665" y="65" fill="#661166" opacity="0.22" text-anchor="middle">⠈</text>
+<text class="mc" x="665" y="78" fill="#661166" opacity="0.22" text-anchor="middle">⠮</text>
+<text class="mc" x="665" y="91" fill="#661166" opacity="0.22" text-anchor="middle">⠊</text>
+<text class="mc" x="665" y="104" fill="#993388" opacity="0.40" text-anchor="middle">⠅</text>
+<text class="mc" x="665" y="117" fill="#993388" opacity="0.40" text-anchor="middle">⠓</text>
+<text class="mc" x="665" y="130" fill="#993388" opacity="0.40" text-anchor="middle">⠂</text>
+<text class="mc" x="665" y="143" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠻</text>
+<text class="mc" x="665" y="156" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠍</text>
+<text class="mc" x="665" y="169" fill="#cc44aa" opacity="0.65" text-anchor="middle">⣸</text>
+<text class="mc" x="665" y="182" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠁</text>
+<text class="mc" x="665" y="195" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠉</text>
+<text class="mc" x="665" y="208" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠼</text>
+<text class="mc" x="665" y="221" fill="#ff79c6" opacity="1.00" text-anchor="middle">⣾</text>
+<text class="mc" x="665" y="234" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠓</text>
+<text class="mc" x="665" y="247" fill="#ffffff" opacity="1.00" text-anchor="middle">⠲</text>
+<text class="mc" x="665" y="260" fill="#ffffff" opacity="1.00" text-anchor="middle">⠣</text>
+</g>
+<g class="c48">
+<text class="mc" x="679" y="13" fill="#1a001a" opacity="0.06" text-anchor="middle">⠆</text>
+<text class="mc" x="679" y="26" fill="#1a001a" opacity="0.06" text-anchor="middle">⣾</text>
+<text class="mc" x="679" y="39" fill="#330033" opacity="0.12" text-anchor="middle">⠡</text>
+<text class="mc" x="679" y="52" fill="#330033" opacity="0.12" text-anchor="middle">⠭</text>
+<text class="mc" x="679" y="65" fill="#661166" opacity="0.22" text-anchor="middle">⠁</text>
+<text class="mc" x="679" y="78" fill="#661166" opacity="0.22" text-anchor="middle">⠄</text>
+<text class="mc" x="679" y="91" fill="#661166" opacity="0.22" text-anchor="middle">⠘</text>
+<text class="mc" x="679" y="104" fill="#993388" opacity="0.40" text-anchor="middle">⠣</text>
+<text class="mc" x="679" y="117" fill="#993388" opacity="0.40" text-anchor="middle">⠫</text>
+<text class="mc" x="679" y="130" fill="#993388" opacity="0.40" text-anchor="middle">⠑</text>
+<text class="mc" x="679" y="143" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠌</text>
+<text class="mc" x="679" y="156" fill="#cc44aa" opacity="0.65" text-anchor="middle">⣹</text>
+<text class="mc" x="679" y="169" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠐</text>
+<text class="mc" x="679" y="182" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠐</text>
+<text class="mc" x="679" y="195" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠑</text>
+<text class="mc" x="679" y="208" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠼</text>
+<text class="mc" x="679" y="221" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠴</text>
+<text class="mc" x="679" y="234" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠽</text>
+<text class="mc" x="679" y="247" fill="#ffffff" opacity="1.00" text-anchor="middle">⠼</text>
+<text class="mc" x="679" y="260" fill="#ffffff" opacity="1.00" text-anchor="middle">⠻</text>
+</g>
+<g class="c49">
+<text class="mc" x="693" y="13" fill="#1a001a" opacity="0.06" text-anchor="middle">⠜</text>
+<text class="mc" x="693" y="26" fill="#1a001a" opacity="0.06" text-anchor="middle">⠁</text>
+<text class="mc" x="693" y="39" fill="#330033" opacity="0.12" text-anchor="middle">⣻</text>
+<text class="mc" x="693" y="52" fill="#330033" opacity="0.12" text-anchor="middle">⠠</text>
+<text class="mc" x="693" y="65" fill="#661166" opacity="0.22" text-anchor="middle">⠱</text>
+<text class="mc" x="693" y="78" fill="#661166" opacity="0.22" text-anchor="middle">⠻</text>
+<text class="mc" x="693" y="91" fill="#661166" opacity="0.22" text-anchor="middle">⣿</text>
+<text class="mc" x="693" y="104" fill="#993388" opacity="0.40" text-anchor="middle">⠑</text>
+<text class="mc" x="693" y="117" fill="#993388" opacity="0.40" text-anchor="middle">⠆</text>
+<text class="mc" x="693" y="130" fill="#993388" opacity="0.40" text-anchor="middle">⠞</text>
+<text class="mc" x="693" y="143" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠶</text>
+<text class="mc" x="693" y="156" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠊</text>
+<text class="mc" x="693" y="169" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠉</text>
+<text class="mc" x="693" y="182" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠑</text>
+<text class="mc" x="693" y="195" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠾</text>
+<text class="mc" x="693" y="208" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠻</text>
+<text class="mc" x="693" y="221" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠘</text>
+<text class="mc" x="693" y="234" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠄</text>
+<text class="mc" x="693" y="247" fill="#ffffff" opacity="1.00" text-anchor="middle">⣿</text>
+<text class="mc" x="693" y="260" fill="#ffffff" opacity="1.00" text-anchor="middle">⣷</text>
+</g>
+<g class="c50">
+<text class="mc" x="707" y="13" fill="#1a001a" opacity="0.06" text-anchor="middle">⠂</text>
+<text class="mc" x="707" y="26" fill="#1a001a" opacity="0.06" text-anchor="middle">⠗</text>
+<text class="mc" x="707" y="39" fill="#330033" opacity="0.12" text-anchor="middle">⠧</text>
+<text class="mc" x="707" y="52" fill="#330033" opacity="0.12" text-anchor="middle">⠯</text>
+<text class="mc" x="707" y="65" fill="#661166" opacity="0.22" text-anchor="middle">⠹</text>
+<text class="mc" x="707" y="78" fill="#661166" opacity="0.22" text-anchor="middle">⠓</text>
+<text class="mc" x="707" y="91" fill="#661166" opacity="0.22" text-anchor="middle">⠕</text>
+<text class="mc" x="707" y="104" fill="#993388" opacity="0.40" text-anchor="middle">⠧</text>
+<text class="mc" x="707" y="117" fill="#993388" opacity="0.40" text-anchor="middle">⠶</text>
+<text class="mc" x="707" y="130" fill="#993388" opacity="0.40" text-anchor="middle">⠰</text>
+<text class="mc" x="707" y="143" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠁</text>
+<text class="mc" x="707" y="156" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠐</text>
+<text class="mc" x="707" y="169" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠪</text>
+<text class="mc" x="707" y="182" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠗</text>
+<text class="mc" x="707" y="195" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠵</text>
+<text class="mc" x="707" y="208" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠔</text>
+<text class="mc" x="707" y="221" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠮</text>
+<text class="mc" x="707" y="234" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠹</text>
+<text class="mc" x="707" y="247" fill="#ffffff" opacity="1.00" text-anchor="middle">⠄</text>
+<text class="mc" x="707" y="260" fill="#ffffff" opacity="1.00" text-anchor="middle">⠐</text>
+</g>
+<g class="c51">
+<text class="mc" x="721" y="13" fill="#1a001a" opacity="0.06" text-anchor="middle">⠶</text>
+<text class="mc" x="721" y="26" fill="#1a001a" opacity="0.06" text-anchor="middle">⠊</text>
+<text class="mc" x="721" y="39" fill="#330033" opacity="0.12" text-anchor="middle">⣵</text>
+<text class="mc" x="721" y="52" fill="#330033" opacity="0.12" text-anchor="middle">⠐</text>
+<text class="mc" x="721" y="65" fill="#661166" opacity="0.22" text-anchor="middle">⠘</text>
+<text class="mc" x="721" y="78" fill="#661166" opacity="0.22" text-anchor="middle">⠥</text>
+<text class="mc" x="721" y="91" fill="#661166" opacity="0.22" text-anchor="middle">⠝</text>
+<text class="mc" x="721" y="104" fill="#993388" opacity="0.40" text-anchor="middle">⠝</text>
+<text class="mc" x="721" y="117" fill="#993388" opacity="0.40" text-anchor="middle">⣵</text>
+<text class="mc" x="721" y="130" fill="#993388" opacity="0.40" text-anchor="middle">⠘</text>
+<text class="mc" x="721" y="143" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠶</text>
+<text class="mc" x="721" y="156" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠯</text>
+<text class="mc" x="721" y="169" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠥</text>
+<text class="mc" x="721" y="182" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠸</text>
+<text class="mc" x="721" y="195" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠷</text>
+<text class="mc" x="721" y="208" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠶</text>
+<text class="mc" x="721" y="221" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠒</text>
+<text class="mc" x="721" y="234" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠬</text>
+<text class="mc" x="721" y="247" fill="#ffffff" opacity="1.00" text-anchor="middle">⠏</text>
+<text class="mc" x="721" y="260" fill="#ffffff" opacity="1.00" text-anchor="middle">⠦</text>
+</g>
+<g class="c52">
+<text class="mc" x="735" y="13" fill="#1a001a" opacity="0.06" text-anchor="middle">⠰</text>
+<text class="mc" x="735" y="26" fill="#1a001a" opacity="0.06" text-anchor="middle">⠭</text>
+<text class="mc" x="735" y="39" fill="#330033" opacity="0.12" text-anchor="middle">⠇</text>
+<text class="mc" x="735" y="52" fill="#330033" opacity="0.12" text-anchor="middle">⠡</text>
+<text class="mc" x="735" y="65" fill="#661166" opacity="0.22" text-anchor="middle">⠩</text>
+<text class="mc" x="735" y="78" fill="#661166" opacity="0.22" text-anchor="middle">⣶</text>
+<text class="mc" x="735" y="91" fill="#661166" opacity="0.22" text-anchor="middle">⠎</text>
+<text class="mc" x="735" y="104" fill="#993388" opacity="0.40" text-anchor="middle">⠔</text>
+<text class="mc" x="735" y="117" fill="#993388" opacity="0.40" text-anchor="middle">⠷</text>
+<text class="mc" x="735" y="130" fill="#993388" opacity="0.40" text-anchor="middle">⠫</text>
+<text class="mc" x="735" y="143" fill="#cc44aa" opacity="0.65" text-anchor="middle">⣽</text>
+<text class="mc" x="735" y="156" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠷</text>
+<text class="mc" x="735" y="169" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠸</text>
+<text class="mc" x="735" y="182" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠬</text>
+<text class="mc" x="735" y="195" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠉</text>
+<text class="mc" x="735" y="208" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠷</text>
+<text class="mc" x="735" y="221" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠃</text>
+<text class="mc" x="735" y="234" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠺</text>
+<text class="mc" x="735" y="247" fill="#ffffff" opacity="1.00" text-anchor="middle">⠹</text>
+<text class="mc" x="735" y="260" fill="#ffffff" opacity="1.00" text-anchor="middle">⠌</text>
+</g>
+<g class="c53">
+<text class="mc" x="749" y="13" fill="#1a001a" opacity="0.06" text-anchor="middle">⣾</text>
+<text class="mc" x="749" y="26" fill="#1a001a" opacity="0.06" text-anchor="middle">⠅</text>
+<text class="mc" x="749" y="39" fill="#330033" opacity="0.12" text-anchor="middle">⣹</text>
+<text class="mc" x="749" y="52" fill="#330033" opacity="0.12" text-anchor="middle">⠩</text>
+<text class="mc" x="749" y="65" fill="#661166" opacity="0.22" text-anchor="middle">⠂</text>
+<text class="mc" x="749" y="78" fill="#661166" opacity="0.22" text-anchor="middle">⣹</text>
+<text class="mc" x="749" y="91" fill="#661166" opacity="0.22" text-anchor="middle">⣺</text>
+<text class="mc" x="749" y="104" fill="#993388" opacity="0.40" text-anchor="middle">⠺</text>
+<text class="mc" x="749" y="117" fill="#993388" opacity="0.40" text-anchor="middle">⠛</text>
+<text class="mc" x="749" y="130" fill="#993388" opacity="0.40" text-anchor="middle">⠿</text>
+<text class="mc" x="749" y="143" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠁</text>
+<text class="mc" x="749" y="156" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠠</text>
+<text class="mc" x="749" y="169" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠃</text>
+<text class="mc" x="749" y="182" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠴</text>
+<text class="mc" x="749" y="195" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠱</text>
+<text class="mc" x="749" y="208" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠅</text>
+<text class="mc" x="749" y="221" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠁</text>
+<text class="mc" x="749" y="234" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠞</text>
+<text class="mc" x="749" y="247" fill="#ffffff" opacity="1.00" text-anchor="middle">⠍</text>
+<text class="mc" x="749" y="260" fill="#ffffff" opacity="1.00" text-anchor="middle">⠋</text>
+</g>
+<g class="c54">
+<text class="mc" x="763" y="13" fill="#1a001a" opacity="0.06" text-anchor="middle">⣻</text>
+<text class="mc" x="763" y="26" fill="#1a001a" opacity="0.06" text-anchor="middle">⠷</text>
+<text class="mc" x="763" y="39" fill="#330033" opacity="0.12" text-anchor="middle">⠴</text>
+<text class="mc" x="763" y="52" fill="#330033" opacity="0.12" text-anchor="middle">⠭</text>
+<text class="mc" x="763" y="65" fill="#661166" opacity="0.22" text-anchor="middle">⠂</text>
+<text class="mc" x="763" y="78" fill="#661166" opacity="0.22" text-anchor="middle">⠦</text>
+<text class="mc" x="763" y="91" fill="#661166" opacity="0.22" text-anchor="middle">⠃</text>
+<text class="mc" x="763" y="104" fill="#993388" opacity="0.40" text-anchor="middle">⠹</text>
+<text class="mc" x="763" y="117" fill="#993388" opacity="0.40" text-anchor="middle">⠱</text>
+<text class="mc" x="763" y="130" fill="#993388" opacity="0.40" text-anchor="middle">⠜</text>
+<text class="mc" x="763" y="143" fill="#cc44aa" opacity="0.65" text-anchor="middle">⣼</text>
+<text class="mc" x="763" y="156" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠺</text>
+<text class="mc" x="763" y="169" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠟</text>
+<text class="mc" x="763" y="182" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠑</text>
+<text class="mc" x="763" y="195" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠗</text>
+<text class="mc" x="763" y="208" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠕</text>
+<text class="mc" x="763" y="221" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠻</text>
+<text class="mc" x="763" y="234" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠬</text>
+<text class="mc" x="763" y="247" fill="#ffffff" opacity="1.00" text-anchor="middle">⠷</text>
+<text class="mc" x="763" y="260" fill="#ffffff" opacity="1.00" text-anchor="middle">⠷</text>
+</g>
+<g class="c55">
+<text class="mc" x="777" y="13" fill="#1a001a" opacity="0.06" text-anchor="middle">⠽</text>
+<text class="mc" x="777" y="26" fill="#1a001a" opacity="0.06" text-anchor="middle">⠽</text>
+<text class="mc" x="777" y="39" fill="#330033" opacity="0.12" text-anchor="middle">⠅</text>
+<text class="mc" x="777" y="52" fill="#330033" opacity="0.12" text-anchor="middle">⣺</text>
+<text class="mc" x="777" y="65" fill="#661166" opacity="0.22" text-anchor="middle">⠡</text>
+<text class="mc" x="777" y="78" fill="#661166" opacity="0.22" text-anchor="middle">⠝</text>
+<text class="mc" x="777" y="91" fill="#661166" opacity="0.22" text-anchor="middle">⠛</text>
+<text class="mc" x="777" y="104" fill="#993388" opacity="0.40" text-anchor="middle">⣳</text>
+<text class="mc" x="777" y="117" fill="#993388" opacity="0.40" text-anchor="middle">⣺</text>
+<text class="mc" x="777" y="130" fill="#993388" opacity="0.40" text-anchor="middle">⠹</text>
+<text class="mc" x="777" y="143" fill="#cc44aa" opacity="0.65" text-anchor="middle">⣷</text>
+<text class="mc" x="777" y="156" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠗</text>
+<text class="mc" x="777" y="169" fill="#cc44aa" opacity="0.65" text-anchor="middle">⣼</text>
+<text class="mc" x="777" y="182" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠵</text>
+<text class="mc" x="777" y="195" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠧</text>
+<text class="mc" x="777" y="208" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠐</text>
+<text class="mc" x="777" y="221" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠼</text>
+<text class="mc" x="777" y="234" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠢</text>
+<text class="mc" x="777" y="247" fill="#ffffff" opacity="1.00" text-anchor="middle">⠼</text>
+<text class="mc" x="777" y="260" fill="#ffffff" opacity="1.00" text-anchor="middle">⠠</text>
+</g>
+<g class="c56">
+<text class="mc" x="791" y="13" fill="#1a001a" opacity="0.06" text-anchor="middle">⠘</text>
+<text class="mc" x="791" y="26" fill="#1a001a" opacity="0.06" text-anchor="middle">⠘</text>
+<text class="mc" x="791" y="39" fill="#330033" opacity="0.12" text-anchor="middle">⠔</text>
+<text class="mc" x="791" y="52" fill="#330033" opacity="0.12" text-anchor="middle">⠨</text>
+<text class="mc" x="791" y="65" fill="#661166" opacity="0.22" text-anchor="middle">⠁</text>
+<text class="mc" x="791" y="78" fill="#661166" opacity="0.22" text-anchor="middle">⣹</text>
+<text class="mc" x="791" y="91" fill="#661166" opacity="0.22" text-anchor="middle">⠢</text>
+<text class="mc" x="791" y="104" fill="#993388" opacity="0.40" text-anchor="middle">⠛</text>
+<text class="mc" x="791" y="117" fill="#993388" opacity="0.40" text-anchor="middle">⠭</text>
+<text class="mc" x="791" y="130" fill="#993388" opacity="0.40" text-anchor="middle">⠄</text>
+<text class="mc" x="791" y="143" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠉</text>
+<text class="mc" x="791" y="156" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠼</text>
+<text class="mc" x="791" y="169" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠴</text>
+<text class="mc" x="791" y="182" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠸</text>
+<text class="mc" x="791" y="195" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠅</text>
+<text class="mc" x="791" y="208" fill="#ff79c6" opacity="0.85" text-anchor="middle">⣴</text>
+<text class="mc" x="791" y="221" fill="#ff79c6" opacity="1.00" text-anchor="middle">⣹</text>
+<text class="mc" x="791" y="234" fill="#ff79c6" opacity="1.00" text-anchor="middle">⣵</text>
+<text class="mc" x="791" y="247" fill="#ffffff" opacity="1.00" text-anchor="middle">⠩</text>
+<text class="mc" x="791" y="260" fill="#ffffff" opacity="1.00" text-anchor="middle">⠏</text>
+</g>
+<g class="c57">
+<text class="mc" x="805" y="13" fill="#1a001a" opacity="0.06" text-anchor="middle">⠄</text>
+<text class="mc" x="805" y="26" fill="#1a001a" opacity="0.06" text-anchor="middle">⣷</text>
+<text class="mc" x="805" y="39" fill="#330033" opacity="0.12" text-anchor="middle">⠵</text>
+<text class="mc" x="805" y="52" fill="#330033" opacity="0.12" text-anchor="middle">⣾</text>
+<text class="mc" x="805" y="65" fill="#661166" opacity="0.22" text-anchor="middle">⠹</text>
+<text class="mc" x="805" y="78" fill="#661166" opacity="0.22" text-anchor="middle">⠩</text>
+<text class="mc" x="805" y="91" fill="#661166" opacity="0.22" text-anchor="middle">⠋</text>
+<text class="mc" x="805" y="104" fill="#993388" opacity="0.40" text-anchor="middle">⣸</text>
+<text class="mc" x="805" y="117" fill="#993388" opacity="0.40" text-anchor="middle">⠝</text>
+<text class="mc" x="805" y="130" fill="#993388" opacity="0.40" text-anchor="middle">⠑</text>
+<text class="mc" x="805" y="143" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠽</text>
+<text class="mc" x="805" y="156" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠬</text>
+<text class="mc" x="805" y="169" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠘</text>
+<text class="mc" x="805" y="182" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠰</text>
+<text class="mc" x="805" y="195" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠟</text>
+<text class="mc" x="805" y="208" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠧</text>
+<text class="mc" x="805" y="221" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠋</text>
+<text class="mc" x="805" y="234" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠭</text>
+<text class="mc" x="805" y="247" fill="#ffffff" opacity="1.00" text-anchor="middle">⠘</text>
+<text class="mc" x="805" y="260" fill="#ffffff" opacity="1.00" text-anchor="middle">⠈</text>
+</g>
+<g class="c58">
+<text class="mc" x="819" y="13" fill="#1a001a" opacity="0.06" text-anchor="middle">⣷</text>
+<text class="mc" x="819" y="26" fill="#1a001a" opacity="0.06" text-anchor="middle">⠶</text>
+<text class="mc" x="819" y="39" fill="#330033" opacity="0.12" text-anchor="middle">⠱</text>
+<text class="mc" x="819" y="52" fill="#330033" opacity="0.12" text-anchor="middle">⠸</text>
+<text class="mc" x="819" y="65" fill="#661166" opacity="0.22" text-anchor="middle">⣼</text>
+<text class="mc" x="819" y="78" fill="#661166" opacity="0.22" text-anchor="middle">⣵</text>
+<text class="mc" x="819" y="91" fill="#661166" opacity="0.22" text-anchor="middle">⠈</text>
+<text class="mc" x="819" y="104" fill="#993388" opacity="0.40" text-anchor="middle">⠱</text>
+<text class="mc" x="819" y="117" fill="#993388" opacity="0.40" text-anchor="middle">⠡</text>
+<text class="mc" x="819" y="130" fill="#993388" opacity="0.40" text-anchor="middle">⠗</text>
+<text class="mc" x="819" y="143" fill="#cc44aa" opacity="0.65" text-anchor="middle">⣶</text>
+<text class="mc" x="819" y="156" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠽</text>
+<text class="mc" x="819" y="169" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠙</text>
+<text class="mc" x="819" y="182" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠨</text>
+<text class="mc" x="819" y="195" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠗</text>
+<text class="mc" x="819" y="208" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠱</text>
+<text class="mc" x="819" y="221" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠗</text>
+<text class="mc" x="819" y="234" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠫</text>
+<text class="mc" x="819" y="247" fill="#ffffff" opacity="1.00" text-anchor="middle">⠒</text>
+<text class="mc" x="819" y="260" fill="#ffffff" opacity="1.00" text-anchor="middle">⠶</text>
+</g>
+<g class="c59">
+<text class="mc" x="833" y="13" fill="#1a001a" opacity="0.06" text-anchor="middle">⠾</text>
+<text class="mc" x="833" y="26" fill="#1a001a" opacity="0.06" text-anchor="middle">⠋</text>
+<text class="mc" x="833" y="39" fill="#330033" opacity="0.12" text-anchor="middle">⠡</text>
+<text class="mc" x="833" y="52" fill="#330033" opacity="0.12" text-anchor="middle">⠄</text>
+<text class="mc" x="833" y="65" fill="#661166" opacity="0.22" text-anchor="middle">⠿</text>
+<text class="mc" x="833" y="78" fill="#661166" opacity="0.22" text-anchor="middle">⠌</text>
+<text class="mc" x="833" y="91" fill="#661166" opacity="0.22" text-anchor="middle">⠿</text>
+<text class="mc" x="833" y="104" fill="#993388" opacity="0.40" text-anchor="middle">⠧</text>
+<text class="mc" x="833" y="117" fill="#993388" opacity="0.40" text-anchor="middle">⠏</text>
+<text class="mc" x="833" y="130" fill="#993388" opacity="0.40" text-anchor="middle">⠄</text>
+<text class="mc" x="833" y="143" fill="#cc44aa" opacity="0.65" text-anchor="middle">⣾</text>
+<text class="mc" x="833" y="156" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠏</text>
+<text class="mc" x="833" y="169" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠅</text>
+<text class="mc" x="833" y="182" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠖</text>
+<text class="mc" x="833" y="195" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠤</text>
+<text class="mc" x="833" y="208" fill="#ff79c6" opacity="0.85" text-anchor="middle">⣻</text>
+<text class="mc" x="833" y="221" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠝</text>
+<text class="mc" x="833" y="234" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠚</text>
+<text class="mc" x="833" y="247" fill="#ffffff" opacity="1.00" text-anchor="middle">⠪</text>
+<text class="mc" x="833" y="260" fill="#ffffff" opacity="1.00" text-anchor="middle">⠍</text>
+</g>
+<g class="c60">
+<text class="mc" x="847" y="13" fill="#1a001a" opacity="0.06" text-anchor="middle">⠘</text>
+<text class="mc" x="847" y="26" fill="#1a001a" opacity="0.06" text-anchor="middle">⠾</text>
+<text class="mc" x="847" y="39" fill="#330033" opacity="0.12" text-anchor="middle">⣳</text>
+<text class="mc" x="847" y="52" fill="#330033" opacity="0.12" text-anchor="middle">⠞</text>
+<text class="mc" x="847" y="65" fill="#661166" opacity="0.22" text-anchor="middle">⠭</text>
+<text class="mc" x="847" y="78" fill="#661166" opacity="0.22" text-anchor="middle">⠱</text>
+<text class="mc" x="847" y="91" fill="#661166" opacity="0.22" text-anchor="middle">⠟</text>
+<text class="mc" x="847" y="104" fill="#993388" opacity="0.40" text-anchor="middle">⠧</text>
+<text class="mc" x="847" y="117" fill="#993388" opacity="0.40" text-anchor="middle">⠬</text>
+<text class="mc" x="847" y="130" fill="#993388" opacity="0.40" text-anchor="middle">⠻</text>
+<text class="mc" x="847" y="143" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠻</text>
+<text class="mc" x="847" y="156" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠋</text>
+<text class="mc" x="847" y="169" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠹</text>
+<text class="mc" x="847" y="182" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠞</text>
+<text class="mc" x="847" y="195" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠌</text>
+<text class="mc" x="847" y="208" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠧</text>
+<text class="mc" x="847" y="221" fill="#ff79c6" opacity="1.00" text-anchor="middle">⣸</text>
+<text class="mc" x="847" y="234" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠗</text>
+<text class="mc" x="847" y="247" fill="#ffffff" opacity="1.00" text-anchor="middle">⠩</text>
+<text class="mc" x="847" y="260" fill="#ffffff" opacity="1.00" text-anchor="middle">⣾</text>
+</g>
+<g class="c61">
+<text class="mc" x="861" y="13" fill="#1a001a" opacity="0.06" text-anchor="middle">⠮</text>
+<text class="mc" x="861" y="26" fill="#1a001a" opacity="0.06" text-anchor="middle">⠜</text>
+<text class="mc" x="861" y="39" fill="#330033" opacity="0.12" text-anchor="middle">⣽</text>
+<text class="mc" x="861" y="52" fill="#330033" opacity="0.12" text-anchor="middle">⣶</text>
+<text class="mc" x="861" y="65" fill="#661166" opacity="0.22" text-anchor="middle">⠧</text>
+<text class="mc" x="861" y="78" fill="#661166" opacity="0.22" text-anchor="middle">⠪</text>
+<text class="mc" x="861" y="91" fill="#661166" opacity="0.22" text-anchor="middle">⠠</text>
+<text class="mc" x="861" y="104" fill="#993388" opacity="0.40" text-anchor="middle">⠭</text>
+<text class="mc" x="861" y="117" fill="#993388" opacity="0.40" text-anchor="middle">⠧</text>
+<text class="mc" x="861" y="130" fill="#993388" opacity="0.40" text-anchor="middle">⠿</text>
+<text class="mc" x="861" y="143" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠁</text>
+<text class="mc" x="861" y="156" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠕</text>
+<text class="mc" x="861" y="169" fill="#cc44aa" opacity="0.65" text-anchor="middle">⠖</text>
+<text class="mc" x="861" y="182" fill="#ff79c6" opacity="0.85" text-anchor="middle">⣷</text>
+<text class="mc" x="861" y="195" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠁</text>
+<text class="mc" x="861" y="208" fill="#ff79c6" opacity="0.85" text-anchor="middle">⠙</text>
+<text class="mc" x="861" y="221" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠕</text>
+<text class="mc" x="861" y="234" fill="#ff79c6" opacity="1.00" text-anchor="middle">⠰</text>
+<text class="mc" x="861" y="247" fill="#ffffff" opacity="1.00" text-anchor="middle">⠍</text>
+<text class="mc" x="861" y="260" fill="#ffffff" opacity="1.00" text-anchor="middle">⠬</text>
+</g>
+</g>
+<rect width="880" height="190" fill="url(#fadeT)"/>
+<rect width="880" height="190" fill="url(#fadeB)"/>
+<defs><pattern id="sl" x="0" y="0" width="880" height="3" patternUnits="userSpaceOnUse">
+  <rect width="880" height="1" y="1" fill="rgba(0,0,0,0.18)"/>
+</pattern></defs>
+<rect width="880" height="190" fill="url(#sl)"/>
+<text x="440" y="113" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="72" font-weight="bold" fill="#ffffff" filter="url(#textglow)" letter-spacing="6" opacity="0.97">goot27</text>
+<text x="440" y="137" text-anchor="middle" font-family="'Courier New',Courier,monospace" font-size="11" fill="#ff79c6" letter-spacing="8" opacity="0.65">the terminal is the canvas</text>
+<rect width="880" height="190" fill="none" stroke="#ff79c6" stroke-width="1.5" style="animation:borderPulse 3s ease-in-out infinite"/>
+</svg>

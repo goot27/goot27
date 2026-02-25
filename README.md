@@ -1,4 +1,4 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=20,24,12&height=160&section=header&text=goot27&fontSize=80&fontColor=ffffff&fontAlignY=52&animation=twinkling" width="100%"/>
+<img src="assets/rain.svg" width="100%"/>
 
 <div align="center">
 
@@ -13,22 +13,29 @@
 <br/>
 
 <div align="center">
-<img src="assets/terminal.svg" width="88%" alt="run_27.py"/>
+<img src="assets/terminal.svg" width="84%" alt="run_27.py"/>
 </div>
 
 <br/>
 
 <div align="center">
 
-```sh
-# linux · mac · wsl
-curl -s https://raw.githubusercontent.com/goot27/goot27/main/run_27.py | python3
+<img src="https://github-readme-stats.vercel.app/api?username=goot27&show_icons=true&theme=radical&hide_border=true&bg_color=0d0d1a&icon_color=ff79c6&title_color=ff79c6&text_color=c9d1d9" alt="goot27 stats" width="48%"/>
+&nbsp;
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=goot27&layout=compact&theme=radical&hide_border=true&bg_color=0d0d1a&title_color=ff79c6&text_color=c9d1d9" alt="top langs" width="36%"/>
+
+</div>
+
+<br/>
+
+<div align="center">
+
+```
+fire  ·  plasma  ·  matrix rain  ·  aurora  ·  black hole  ·  mandelbrot
+boids  ·  game of life  ·  lightning  ·  DNA helix  ·  langton's ant  ·  +31
 ```
 
-```powershell
-# windows
-irm https://raw.githubusercontent.com/goot27/goot27/main/run_27.py | python
-```
+[![termflix](https://img.shields.io/badge/termflix-43_procedural_animations-ff79c6?style=flat-square&logo=rust&logoColor=fff&labelColor=0d0d1a)](https://github.com/paulrobello/termflix)
 
 </div>
 
@@ -36,4 +43,3 @@ irm https://raw.githubusercontent.com/goot27/goot27/main/run_27.py | python
 
 <img src="assets/tiles.svg" width="100%" alt="2 7"/>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=20,24,12&height=100&section=footer&animation=twinkling" width="100%"/>
