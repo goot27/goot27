@@ -1,22 +1,36 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="880" height="48" viewBox="0 0 880 48">
-<defs><clipPath id="tc"><rect width="880" height="48"/></clipPath>
-<filter id="tglow" x="-5%" y="-50%" width="110%" height="200%">
-  <feGaussianBlur stdDeviation="3.5" result="b"/>
-  <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-</filter>
-<style>
-@keyframes fwd { from { transform:translateX(0) } to { transform:translateX(-1382px) } }
-@keyframes rev { from { transform:translateX(-1382px) } to { transform:translateX(0) } }
-.tA{ animation:fwd  9s linear infinite; }
-.tB{ animation:rev 15s linear infinite; }
-.tC{ animation:fwd 22s linear infinite; }
-</style>
+<defs>
+  <clipPath id="tc"><rect width="880" height="48"/></clipPath>
+  <filter id="tglow" x="-5%" y="-50%" width="110%" height="200%">
+    <feGaussianBlur stdDeviation="3.5" result="b"/>
+    <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <style>
+    @keyframes fwd { from{transform:translateX(0)} to{transform:translateX(-1320px)} }
+    @keyframes rev { from{transform:translateX(0)} to{transform:translateX(-1320px)} }
+    .tA{ animation:fwd  9s linear infinite; }
+    .tB{ animation:fwd 15s linear infinite; }
+    .tC{ animation:fwd 22s linear infinite; }
+  </style>
 </defs>
 <rect width="880" height="48" fill="#06000d"/>
-<line x1="0" y1="0.5"   x2="880" y2="0.5"   stroke="#ff79c6" stroke-width="1" opacity="0.35"/>
+<line x1="0" y1="0.5"  x2="880" y2="0.5"  stroke="#ff79c6" stroke-width="1" opacity="0.35"/>
 <line x1="0" y1="47.5" x2="880" y2="47.5" stroke="#ff79c6" stroke-width="1" opacity="0.35"/>
 <g clip-path="url(#tc)">
-<text class="tA" y="30" font-family="'Courier New',monospace" font-size="16" fill="#ff79c6" opacity="0.9" filter="url(#tglow)" letter-spacing="4">272727272727272727272727272727272727272727272727</text>
-<text class="tB" y="38" font-family="'Courier New',monospace" font-size="10" fill="#cc44aa" opacity="0.28" letter-spacing="6">272727272727272727272727272727272727272727272727</text>
-<text class="tC" y="16" font-family="'Courier New',monospace" font-size="9" fill="#661166" opacity="0.2" letter-spacing="10">272727272727272727272727272727272727272727272727</text>
-</g></svg>
+  <!-- layer A: foreground pink, fast -->
+  <g class="tA">
+    <text y="30" font-family="'Courier New',monospace" font-size="16" font-weight="bold" fill="#ff79c6" opacity="0.9" filter="url(#tglow)" textLength="1320" lengthAdjust="spacing">272727272727272727272727272727272727272727272727272727272727272727272727272727272727272727272727</text>
+    <text x="1320" y="30" font-family="'Courier New',monospace" font-size="16" font-weight="bold" fill="#ff79c6" opacity="0.9" filter="url(#tglow)" textLength="1320" lengthAdjust="spacing">272727272727272727272727272727272727272727272727272727272727272727272727272727272727272727272727</text>
+  </g>
+  <!-- layer B: mid pink, slow -->
+  <g class="tB">
+    <text y="38" font-family="'Courier New',monospace" font-size="10" fill="#cc44aa" opacity="0.28" textLength="1320" lengthAdjust="spacing">272727272727272727272727272727272727272727272727272727272727272727272727272727272727272727272727</text>
+    <text x="1320" y="38" font-family="'Courier New',monospace" font-size="10" fill="#cc44aa" opacity="0.28" textLength="1320" lengthAdjust="spacing">272727272727272727272727272727272727272727272727272727272727272727272727272727272727272727272727</text>
+  </g>
+  <!-- layer C: deep pink, slowest -->
+  <g class="tC">
+    <text y="16" font-family="'Courier New',monospace" font-size="9" fill="#661166" opacity="0.2" textLength="1320" lengthAdjust="spacing">272727272727272727272727272727272727272727272727272727272727272727272727272727272727272727272727</text>
+    <text x="1320" y="16" font-family="'Courier New',monospace" font-size="9" fill="#661166" opacity="0.2" textLength="1320" lengthAdjust="spacing">272727272727272727272727272727272727272727272727272727272727272727272727272727272727272727272727</text>
+  </g>
+</g>
+</svg>

@@ -69,19 +69,7 @@ python -c "import urllib.request as r; exec(r.urlopen('https://raw.githubusercon
 
 <div align="center">
 
-<pre>
-        🍗  🥒  🌶️
-    ┌─────────────────┐
-    │  ░░░░░░░░░░░░░  │
-    │  ░  rice rice░  │
-    │  ░░chicken░░░░  │
-    │  ░░░░░░░░░░░░░  │
-    └────────┬────────┘
-             │  🥢
-    singapore · hawker vibes
-</pre>
-
-*🍚 i love chicken rice*
+# 🍚 I LOVE CHICKEN RICE 🍗
 
 </div>
 
