@@ -28,8 +28,7 @@
 <table border="0" cellpadding="12" cellspacing="0">
 <tr>
 <td align="center" valign="top">
-<sub><b>&nbsp;IDE · EDITOR&nbsp;</b></sub><br/><br/>
-<a href="https://github.com/features/copilot"><img src="https://img.shields.io/badge/Copilot-000000?style=flat-square&logo=githubcopilot&logoColor=white"/></a>&nbsp;
+<sub><b>&nbsp;EDITOR&nbsp;</b></sub><br/><br/>
 <a href="https://neovim.io"><img src="https://img.shields.io/badge/Neovim-57A143?style=flat-square&logo=neovim&logoColor=white"/></a>&nbsp;
 <a href="https://zed.dev"><img src="https://img.shields.io/badge/Zed-000000?style=flat-square&logo=zedindustries&logoColor=09acf8"/></a>
 </td>
