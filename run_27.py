@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """goot27 — Ctrl+C to exit"""
-import os, sys, time, random, signal, shutil, math, curses
+import os, sys, time, random, signal, shutil, math
 from collections import deque
 
 # ── Windows ANSI ─────────────────────────────────────────────────────────────
@@ -459,157 +459,269 @@ def fireworks(bursts=5):
 
 # ── Snake game ────────────────────────────────────────────────────────────────
 def snake_game():
-    """Full-terminal Snake — arrow keys or WASD · R restart · Q quit."""
-    def _run(stdscr):
-        curses.curs_set(0)
-        curses.start_color()
-        curses.use_default_colors()
-        # base pairs (fallback)
-        curses.init_pair(1, curses.COLOR_MAGENTA, -1)
-        curses.init_pair(2, curses.COLOR_YELLOW,  -1)
-        curses.init_pair(3, curses.COLOR_WHITE,   -1)
-        curses.init_pair(4, curses.COLOR_CYAN,    -1)
-        curses.init_pair(5, curses.COLOR_RED,     -1)
-        if curses.COLORS >= 256:
-            curses.init_pair(1, 213, -1)   # hot pink — snake
-            curses.init_pair(2, 214, -1)   # gold     — food
-            curses.init_pair(4,  51, -1)   # cyan     — HUD
+    """Full-terminal Snake — arrow keys or WASD · R restart · Q quit.
+    Uses curses on Unix if available; falls back to pure ANSI (works on Windows).
+    """
+    try:
+        import curses as _c
+        _HAS_CURSES = True
+    except ImportError:
+        _HAS_CURSES = False
+
+    # ── curses path (Unix) ────────────────────────────────────────────────────
+    if _HAS_CURSES:
+        def _run(stdscr):
+            _c.curs_set(0)
+            _c.start_color()
+            _c.use_default_colors()
+            _c.init_pair(1, _c.COLOR_MAGENTA, -1)
+            _c.init_pair(2, _c.COLOR_YELLOW,  -1)
+            _c.init_pair(3, _c.COLOR_WHITE,   -1)
+            _c.init_pair(4, _c.COLOR_CYAN,    -1)
+            _c.init_pair(5, _c.COLOR_RED,     -1)
+            if _c.COLORS >= 256:
+                _c.init_pair(1, 213, -1)
+                _c.init_pair(2, 214, -1)
+                _c.init_pair(4,  51, -1)
+
+            high = 0
+            while True:
+                sh, sw = stdscr.getmaxyx()
+                PH = max(5, sh - 4)
+                PW = max(10, sw - 2)
+                TY = 2;  LX = 1
+
+                sy = TY + PH // 2;  sx = LX + PW // 4
+                snake     = deque([(sy, sx), (sy, sx - 1), (sy, sx - 2)])
+                snake_set = set(snake)
+
+                def place_food():
+                    while True:
+                        fy = random.randint(TY, TY + PH - 1)
+                        fx = random.randint(LX, LX + PW - 1)
+                        if (fy, fx) not in snake_set:
+                            return fy, fx
+
+                food      = place_food()
+                food_ch   = random.choice('27')
+                direction = (0, 1)
+                score     = 0;  speed = 120
+                stdscr.nodelay(True);  stdscr.timeout(speed);  stdscr.clear()
+
+                def draw():
+                    stdscr.erase()
+                    hud = f' goot27 · SNAKE   score: {score}   best: {high} '
+                    try:
+                        stdscr.addstr(0, max(0, (sw - len(hud)) // 2), hud,
+                                      _c.color_pair(4) | _c.A_BOLD)
+                    except _c.error: pass
+                    dim = _c.color_pair(3) | _c.A_DIM
+                    for x in range(LX, LX + PW):
+                        try: stdscr.addch(TY - 1, x, '─', dim)
+                        except _c.error: pass
+                        try: stdscr.addch(TY + PH, x, '─', dim)
+                        except _c.error: pass
+                    for y in range(TY, TY + PH):
+                        try: stdscr.addch(y, LX - 1,  '│', dim)
+                        except _c.error: pass
+                        try: stdscr.addch(y, LX + PW, '│', dim)
+                        except _c.error: pass
+                    try:
+                        stdscr.addch(food[0], food[1], food_ch,
+                                     _c.color_pair(2) | _c.A_BOLD)
+                    except _c.error: pass
+                    for i, (ry, rx) in enumerate(snake):
+                        try:
+                            stdscr.addch(ry, rx, '2' if i % 2 == 0 else '7',
+                                         _c.color_pair(1) | _c.A_BOLD)
+                        except _c.error: pass
+                    hint = ' wasd / ↑↓←→   r restart   q quit '
+                    try:
+                        stdscr.addstr(sh - 1, max(0, (sw - len(hint)) // 2), hint,
+                                      _c.color_pair(3) | _c.A_DIM)
+                    except _c.error: pass
+                    stdscr.refresh()
+
+                game_over = False
+                while not game_over:
+                    draw()
+                    key = stdscr.getch()
+                    dy, dx = direction
+                    if   key in (_c.KEY_UP,    ord('w'), ord('W')) and dy !=  1: direction = (-1,  0)
+                    elif key in (_c.KEY_DOWN,  ord('s'), ord('S')) and dy != -1: direction = ( 1,  0)
+                    elif key in (_c.KEY_LEFT,  ord('a'), ord('A')) and dx !=  1: direction = ( 0, -1)
+                    elif key in (_c.KEY_RIGHT, ord('d'), ord('D')) and dx != -1: direction = ( 0,  1)
+                    elif key in (ord('q'), ord('Q')): return
+
+                    head = (snake[0][0] + direction[0], snake[0][1] + direction[1])
+                    hy, hx = head
+                    if hy < TY or hy >= TY + PH or hx < LX or hx >= LX + PW or head in snake_set:
+                        game_over = True;  break
+
+                    snake.appendleft(head);  snake_set.add(head)
+                    if head == food:
+                        score += 1
+                        if score > high: high = score
+                        food    = place_food()
+                        food_ch = random.choice('27')
+                        speed   = max(45, 120 - score * 3)
+                        stdscr.timeout(speed)
+                    else:
+                        tail = snake.pop();  snake_set.discard(tail)
+
+                stdscr.nodelay(False);  stdscr.erase()
+                cy = sh // 2
+                for dy2, msg, pair, attr in [
+                    (-1, '  ── GAME OVER ──  ', 5, _c.A_BOLD),
+                    ( 0, f'  score: {score}   best: {high}  ', 4, _c.A_BOLD),
+                    ( 1, '  [r] restart   [q] quit  ', 3, _c.A_DIM),
+                ]:
+                    try:
+                        stdscr.addstr(cy + dy2, max(0, (sw - len(msg)) // 2), msg,
+                                      _c.color_pair(pair) | attr)
+                    except _c.error: pass
+                stdscr.refresh()
+                while True:
+                    k = stdscr.getch()
+                    if k in (ord('r'), ord('R')): break
+                    if k in (ord('q'), ord('Q'), 27, 3): return
+
+        try:
+            _c.wrapper(_run)
+        except KeyboardInterrupt:
+            pass
+        finally:
+            sys.stdout.write(HIDE);  sys.stdout.flush()
+
+    # ── pure-ANSI fallback (Windows / no _curses) ─────────────────────────────
+    else:
+        _old = [None];  _fd = [None]
+        if sys.platform != 'win32':
+            import tty, termios
+            _fd[0]  = sys.stdin.fileno()
+            _old[0] = termios.tcgetattr(_fd[0])
+            tty.setraw(_fd[0])
+
+        def _rk(secs):
+            """Read one key with timeout; returns str token or ''."""
+            if sys.platform == 'win32':
+                import msvcrt
+                end = time.time() + secs
+                while time.time() < end:
+                    if msvcrt.kbhit():
+                        ch = msvcrt.getwch()
+                        if ch in ('\x00', '\xe0'):
+                            ch2 = msvcrt.getwch()
+                            return {'H':'UP','P':'DOWN','K':'LEFT','M':'RIGHT'}.get(ch2, '')
+                        return ch
+                    time.sleep(0.010)
+                return ''
+            else:
+                import select as _s
+                r, _, _ = _s.select([sys.stdin], [], [], secs)
+                if not r: return ''
+                ch = os.read(_fd[0], 1).decode('utf-8', errors='ignore')
+                if ch == '\x1b':
+                    r2, _, _ = _s.select([sys.stdin], [], [], 0.05)
+                    if r2:
+                        seq = os.read(_fd[0], 2).decode('utf-8', errors='ignore')
+                        return {'[A':'UP','[B':'DOWN','[D':'LEFT','[C':'RIGHT'}.get(seq, '')
+                return ch
+
+        def _at(r, c):  return f'\033[{r};{c}H'
+        def _pk(s):     return f'\033[38;5;213m\033[1m{s}\033[0m'
+        def _gd(s):     return f'\033[38;5;214m\033[1m{s}\033[0m'
+        def _cy(s):     return f'\033[38;5;51m\033[1m{s}\033[0m'
+        def _dm(s):     return f'\033[2m{s}\033[0m'
+        def _rd(s):     return f'\033[38;5;196m\033[1m{s}\033[0m'
 
         high = 0
-        while True:   # restart loop
-            sh, sw = stdscr.getmaxyx()
-            PH = max(5, sh - 4)     # play-area height
-            PW = max(10, sw - 2)    # play-area width
-            TY = 2                  # top y of play area
-            LX = 1                  # left x of play area
+        sys.stdout.write(CLEAR + HIDE);  sys.stdout.flush()
+        try:
+            while True:  # restart loop
+                TW, TH = shutil.get_terminal_size((80, 24))
+                PH = max(5, TH - 4);  PW = max(10, TW - 2)
+                TY = 2;  LX = 1
+                sy = TY + PH // 2;  sx = LX + PW // 4
+                snake     = deque([(sy, sx), (sy, sx-1), (sy, sx-2)])
+                snake_set = set(snake)
 
-            # Init snake
-            sy = TY + PH // 2
-            sx = LX + PW // 4
-            snake     = deque([(sy, sx), (sy, sx - 1), (sy, sx - 2)])
-            snake_set = set(snake)
+                def place_food():
+                    while True:
+                        fy = random.randint(TY+1, TY+PH-1)
+                        fx = random.randint(LX+1, LX+PW-1)
+                        if (fy, fx) not in snake_set: return fy, fx
 
-            def place_food():
-                while True:
-                    fy = random.randint(TY, TY + PH - 1)
-                    fx = random.randint(LX, LX + PW - 1)
-                    if (fy, fx) not in snake_set:
-                        return fy, fx
+                food      = place_food()
+                food_ch   = random.choice('27')
+                direction = (0, 1);  score = 0;  speed = 0.120
 
-            food      = place_food()
-            food_ch   = random.choice('27')
-            direction = (0, 1)
-            score     = 0
-            speed     = 120
+                sys.stdout.write(CLEAR)
+                buf = []
+                for x in range(LX, LX+PW+1):
+                    buf += [_at(TY, x)+_dm('─'), _at(TY+PH, x)+_dm('─')]
+                for y in range(TY+1, TY+PH):
+                    buf += [_at(y, LX)+_dm('│'), _at(y, LX+PW)+_dm('│')]
+                sys.stdout.write(''.join(buf));  sys.stdout.flush()
 
-            stdscr.nodelay(True)
-            stdscr.timeout(speed)
-            stdscr.clear()
+                prev = list(snake)
+                game_over = False
+                while not game_over:
+                    buf = []
+                    for pos in prev[len(snake):]:
+                        buf.append(_at(pos[0], pos[1]) + ' ')
+                    hud = f' goot27 · SNAKE   score:{score}  best:{high} '
+                    buf.append(_at(1, max(1, (TW-len(hud))//2+1)) + _cy(hud))
+                    buf.append(_at(food[0], food[1]) + _gd(food_ch))
+                    for i, (ry, rx) in enumerate(snake):
+                        buf.append(_at(ry, rx) + _pk('2' if i%2==0 else '7'))
+                    hint = ' wasd/↑↓←→  r=restart  q=quit '
+                    buf.append(_at(TH, max(1, (TW-len(hint))//2+1)) + _dm(hint))
+                    sys.stdout.write(''.join(buf));  sys.stdout.flush()
+                    prev = list(snake)
 
-            def draw():
-                stdscr.erase()
-                # HUD
-                hud = f' goot27 · SNAKE   score: {score}   best: {high} '
-                try:
-                    stdscr.addstr(0, max(0, (sw - len(hud)) // 2), hud,
-                                  curses.color_pair(4) | curses.A_BOLD)
-                except curses.error:
-                    pass
-                # Border
-                dim = curses.color_pair(3) | curses.A_DIM
-                for x in range(LX, LX + PW):
-                    try: stdscr.addch(TY - 1, x, '─', dim)
-                    except curses.error: pass
-                    try: stdscr.addch(TY + PH, x, '─', dim)
-                    except curses.error: pass
-                for y in range(TY, TY + PH):
-                    try: stdscr.addch(y, LX - 1,  '│', dim)
-                    except curses.error: pass
-                    try: stdscr.addch(y, LX + PW, '│', dim)
-                    except curses.error: pass
-                # Food
-                try:
-                    stdscr.addch(food[0], food[1], food_ch,
-                                 curses.color_pair(2) | curses.A_BOLD)
-                except curses.error:
-                    pass
-                # Snake
-                for i, (ry, rx) in enumerate(snake):
-                    try:
-                        stdscr.addch(ry, rx, '2' if i % 2 == 0 else '7',
-                                     curses.color_pair(1) | curses.A_BOLD)
-                    except curses.error:
-                        pass
-                # Controls
-                hint = ' wasd / ↑↓←→   r restart   q quit '
-                try:
-                    stdscr.addstr(sh - 1, max(0, (sw - len(hint)) // 2), hint,
-                                  curses.color_pair(3) | curses.A_DIM)
-                except curses.error:
-                    pass
-                stdscr.refresh()
+                    k = _rk(speed)
+                    dy, dx = direction
+                    if   k in ('UP',   'w','W') and dy !=  1: direction = (-1,  0)
+                    elif k in ('DOWN', 's','S') and dy != -1: direction = ( 1,  0)
+                    elif k in ('LEFT', 'a','A') and dx !=  1: direction = ( 0, -1)
+                    elif k in ('RIGHT','d','D') and dx != -1: direction = ( 0,  1)
+                    elif k in ('q','Q','\x03'):  return
+                    elif k in ('r','R'):
+                        sys.stdout.write(CLEAR);  break
 
-            game_over = False
-            while not game_over:
-                draw()
-                key = stdscr.getch()
-                dy, dx = direction
-                if   key in (curses.KEY_UP,    ord('w'), ord('W')) and dy !=  1: direction = (-1,  0)
-                elif key in (curses.KEY_DOWN,  ord('s'), ord('S')) and dy != -1: direction = ( 1,  0)
-                elif key in (curses.KEY_LEFT,  ord('a'), ord('A')) and dx !=  1: direction = ( 0, -1)
-                elif key in (curses.KEY_RIGHT, ord('d'), ord('D')) and dx != -1: direction = ( 0,  1)
-                elif key in (ord('q'), ord('Q')):
-                    return
+                    head = (snake[0][0]+direction[0], snake[0][1]+direction[1])
+                    hy, hx = head
+                    if hy<=TY or hy>=TY+PH or hx<=LX or hx>=LX+PW or head in snake_set:
+                        game_over = True;  break
 
-                head = (snake[0][0] + direction[0], snake[0][1] + direction[1])
-                hy, hx = head
-                if hy < TY or hy >= TY + PH or hx < LX or hx >= LX + PW or head in snake_set:
-                    game_over = True
-                    break
+                    snake.appendleft(head);  snake_set.add(head)
+                    if head == food:
+                        score += 1
+                        if score > high: high = score
+                        food    = place_food();  food_ch = random.choice('27')
+                        speed   = max(0.045, 0.120 - score*0.003)
+                    else:
+                        tail = snake.pop();  snake_set.discard(tail)
 
-                snake.appendleft(head)
-                snake_set.add(head)
-                if head == food:
-                    score += 1
-                    if score > high:
-                        high = score
-                    food    = place_food()
-                    food_ch = random.choice('27')
-                    speed   = max(45, 120 - score * 3)
-                    stdscr.timeout(speed)
-                else:
-                    tail = snake.pop()
-                    snake_set.discard(tail)
-
-            # Game-over screen
-            stdscr.nodelay(False)
-            stdscr.erase()
-            cy = sh // 2
-            for dy2, msg, pair, attr in [
-                (-1, '  ── GAME OVER ──  ', 5, curses.A_BOLD),
-                ( 0, f'  score: {score}   best: {high}  ', 4, curses.A_BOLD),
-                ( 1, '  [r] restart   [q] quit  ', 3, curses.A_DIM),
-            ]:
-                try:
-                    stdscr.addstr(cy + dy2, max(0, (sw - len(msg)) // 2), msg,
-                                  curses.color_pair(pair) | attr)
-                except curses.error:
-                    pass
-            stdscr.refresh()
-            while True:
-                k = stdscr.getch()
-                if k in (ord('r'), ord('R')):
-                    break
-                if k in (ord('q'), ord('Q'), 27, 3):
-                    return
-
-    try:
-        curses.wrapper(_run)
-    except KeyboardInterrupt:
-        pass
-    finally:
-        sys.stdout.write(HIDE)
-        sys.stdout.flush()
+                if game_over:
+                    cy = TH // 2;  gc = max(1, (TW-20)//2+1)
+                    sys.stdout.write(
+                        _at(cy-1, gc) + _rd('  ── GAME OVER ──  ') +
+                        _at(cy,   gc) + _cy(f'  score:{score}  best:{high}  ') +
+                        _at(cy+1, gc) + _dm('  [r] restart   [q] quit  ')
+                    );  sys.stdout.flush()
+                    while True:
+                        k = _rk(10.0)
+                        if k in ('r','R'):
+                            sys.stdout.write(CLEAR);  break
+                        if k in ('q','Q','\x03','\x1b',''):  return
+        finally:
+            if _old[0] is not None:
+                import termios
+                try:   termios.tcsetattr(_fd[0], termios.TCSADRAIN, _old[0])
+                except Exception: pass
+            sys.stdout.write(SHOW);  sys.stdout.flush()
 
 
 # ── Prompt screen (between animation and game) ────────────────────────────────
