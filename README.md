@@ -82,7 +82,7 @@ python -c "import urllib.request as r; exec(r.urlopen('https://raw.githubusercon
 
 <div align="center">
 <a href="https://discord.gg/B7Bhuherkn">
-  <img src="https://img.shields.io/badge/Join-Egg%20Fried%20Rice-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Join Egg Fried Rice Discord"/>
+  <img src="assets/egg-fried-rice.png" width="220" alt="Join Egg Fried Rice Discord"/>
 </a>
 </div>
 
