@@ -2,11 +2,11 @@
 
 <div align="center">
 
-[![Profile Views](https://komarev.com/ghpvc/?username=goot27&style=flat-square&color=ff79c6&label=visitors&labelColor=0d0d1a)](https://github.com/goot27)
+<a href="https://github.com/goot27"><img src="https://komarev.com/ghpvc/?username=goot27&style=flat-square&color=ff79c6&label=visitors&labelColor=0d0d1a"/></a>
 &nbsp;
-[![X](https://img.shields.io/badge/@goot27-0d0d1a?style=flat-square&logo=x&logoColor=ffffff)](https://twitter.com/goot27)
+<a href="https://twitter.com/goot27"><img src="https://img.shields.io/badge/@goot27-0d0d1a?style=flat-square&logo=x&logoColor=ffffff"/></a>
 &nbsp;
-[![WokSpec](https://img.shields.io/badge/WokSpec-2d2d2d?style=flat-square&logo=github&logoColor=d4612a)](https://github.com/WokSpec)
+<a href="https://github.com/WokSpec"><img src="https://img.shields.io/badge/WokSpec-2d2d2d?style=flat-square&logo=github&logoColor=d4612a"/></a>
 
 </div>
 
@@ -81,16 +81,14 @@ python -c "import urllib.request as r; exec(r.urlopen('https://raw.githubusercon
 <br/>
 
 <div align="center">
-[![Join Egg Fried Rice](https://img.shields.io/badge/Join-Egg%20Fried%20Rice-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/B7Bhuherkn)
+<a href="https://discord.gg/B7Bhuherkn">
+  <img src="https://img.shields.io/badge/Join-Egg%20Fried%20Rice-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Join Egg Fried Rice Discord"/>
+</a>
 </div>
 
 <br/>
 
-<div align="center">
-
-# 🍚 I LOVE CHICKEN RICE 🍗
-
-</div>
+<h1 align="center">🍚 I LOVE CHICKEN RICE 🍗</h1>
 
 <img src="assets/ticker.svg" width="100%"/>
 
