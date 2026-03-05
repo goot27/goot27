@@ -8,95 +8,79 @@
 &nbsp;
 [![WokSpec](https://img.shields.io/badge/WokSpec-2d2d2d?style=flat-square&logo=github&logoColor=d4612a)](https://github.com/WokSpec)
 
-# goot27 terminal show
-### zero deps • pure python • full-screen ANSI art + snake
-
 </div>
+
+<br/>
 
 <div align="center">
 <img src="https://raw.githubusercontent.com/goot27/goot27/output/github-contribution-grid-snake-dark.svg" width="100%"/>
 </div>
 
+<br/>
+
 <div align="center">
-<img src="assets/terminal.svg" width="100%"/>
+<sub><b>STACK</b></sub>
+
+<br/><br/>
+
+<img src="https://skillicons.dev/icons?i=html,css,ts,js,react,nextjs,vue,tailwind,figma,py,nodejs,fastapi,postgres,mongodb,redis,docker,rust,go,pytorch,tensorflow,git,github,vscode,vercel,linux&perline=9&theme=dark"/>
 </div>
 
-## What this is
-`run_27.py` is a self-contained terminal experience made from Python standard library only.
+<br/>
 
-It runs a cinematic sequence built from animated `2` and `7` glyphs:
-- starfield warp
-- 3-2-1 countdown
-- shockwave pulse
-- ASCII logo reveals (`goot27`, `WokSpec`)
-- expanding/collapsing ring systems
-- white flash + glitchy transitions
-- interactive menu that can launch Snake
+<div align="center">
+<table border="0" cellpadding="12" cellspacing="0">
+<tr>
+<td align="center" valign="top">
+<sub><b>&nbsp;EDITOR&nbsp;</b></sub><br/><br/>
+<a href="https://neovim.io"><img src="https://img.shields.io/badge/Neovim-57A143?style=flat-square&logo=neovim&logoColor=white"/></a>&nbsp;
+<a href="https://zed.dev"><img src="https://img.shields.io/badge/Zed-000000?style=flat-square&logo=zedindustries&logoColor=09acf8"/></a>
+</td>
+<td align="center" valign="top">
+<sub><b>&nbsp;MODELS&nbsp;</b></sub><br/><br/>
+<a href="https://anthropic.com"><img src="https://img.shields.io/badge/Claude-CC785C?style=flat-square&logo=anthropic&logoColor=white"/></a>&nbsp;
+<a href="https://openai.com"><img src="https://img.shields.io/badge/GPT--4o-412991?style=flat-square&logo=openai&logoColor=white"/></a>&nbsp;
+<a href="https://gemini.google.com"><img src="https://img.shields.io/badge/Gemini-8E75B2?style=flat-square&logo=googlegemini&logoColor=white"/></a>&nbsp;
+<a href="https://grok.x.ai"><img src="https://img.shields.io/badge/Grok-000000?style=flat-square&logo=x&logoColor=white"/></a>
+</td>
+<td align="center" valign="top">
+<sub><b>&nbsp;SEARCH · THINK&nbsp;</b></sub><br/><br/>
+<a href="https://perplexity.ai"><img src="https://img.shields.io/badge/Perplexity-1FB8CD?style=flat-square&logo=perplexityai&logoColor=white"/></a>&nbsp;
+<a href="https://notion.so"><img src="https://img.shields.io/badge/Notion_AI-000000?style=flat-square&logo=notion&logoColor=white"/></a>
+</td>
+<td align="center" valign="top">
+<sub><b>&nbsp;RUN LOCAL&nbsp;</b></sub><br/><br/>
+<a href="https://ollama.com"><img src="https://img.shields.io/badge/Ollama-000000?style=flat-square&logo=ollama&logoColor=white"/></a>&nbsp;
+<a href="https://huggingface.co"><img src="https://img.shields.io/badge/HuggingFace-FFD21E?style=flat-square&logo=huggingface&logoColor=black"/></a>&nbsp;
+<a href="https://groq.com"><img src="https://img.shields.io/badge/Groq-F55036?style=flat-square&logoColor=white"/></a>
+</td>
+</tr>
+</table>
+</div>
 
-No external packages, no assets required at runtime, no install step.
+<br/>
 
-## Quick start
-### Local (recommended)
+<div align="center">
+<img src="assets/terminal.svg" width="100%"/>
+
+<sub>terminal art · run it yourself ↓</sub>
+</div>
+
+<br/>
+
 ```bash
-git clone https://github.com/goot27/goot27.git
-cd goot27
-python3 run_27.py
+# linux · mac · wsl
+curl -s https://raw.githubusercontent.com/goot27/goot27/main/run_27.py | python3
 ```
 
-### One-liner (Linux / macOS / WSL)
-```bash
-curl -fsSL https://raw.githubusercontent.com/goot27/goot27/main/run_27.py | python3
-```
-
-### One-liner (Windows PowerShell)
 ```powershell
-python -c "import urllib.request as r; exec(r.urlopen('https://raw.githubusercontent.com/goot27/goot27/main/run_27.py').read().decode())"
+# windows
+python -c "import urllib.request as r; exec(r.urlopen('https://raw.githubusercontent.com/goot27/goot27/main/run_27.py').read())"
 ```
 
-## Controls
-### During intro/menu
-- `s`: launch snake
-- `Enter`: replay animation loop
-- `Ctrl+C`: quit
+> starfield → countdown → shockwave → ascii reveal → rings → flash → snake game
 
-### In snake
-- move: `WASD` or arrow keys
-- `r`: restart
-- `q`: quit
-
-## Requirements
-- Python `3.8+`
-- A terminal with ANSI color support
-- UTF-8 capable font/terminal (box drawing glyphs look best in modern terminals)
-
-Works on:
-- Linux
-- macOS
-- WSL
-- Windows Terminal / PowerShell (with ANSI enabled)
-
-## Repo layout
-- `run_27.py`: animation engine + snake game
-- `assets/`: profile graphics used by this README
-- `.github/workflows/snake.yml`: regenerates contribution snake SVG to `output` branch
-
-## Tweak it
-Everything is in one file by design. Easy places to customize:
-- colors: `PINK_NC`, `PINK_RINGS`, `GOLD_RINGS`, `G_WAVE`, `W_WAVE`
-- timings: function args in the main loop at bottom of `run_27.py`
-- glyph art: `GLYPHS` map + `make_art(...)`
-- snake speed/feel: `speed` calculation inside `snake_game()`
-
-## Troubleshooting
-- Garbled characters:
-  - switch terminal encoding to UTF-8
-  - use a font with box-drawing support (JetBrains Mono, Cascadia Mono, Fira Code)
-- No color on Windows:
-  - run inside Windows Terminal or recent PowerShell
-- Controls not responding:
-  - run in a real terminal, not a limited IDE output pane
-- Very small terminal:
-  - maximize window for cleaner framing and gameplay space
+<br/>
 
 <div align="center">
 
@@ -105,4 +89,6 @@ Everything is in one file by design. Easy places to customize:
 </div>
 
 <img src="assets/ticker.svg" width="100%"/>
+
 <img src="assets/tiles.svg" width="100%" alt="2 7"/>
+
