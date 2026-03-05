@@ -1,3 +1,5 @@
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:ff79c6,100:2d2d2d&height=120&section=header&animation=twinkling" width="100%"/>
+
 <img src="assets/rain.svg" width="100%"/>
 
 <div align="center">
@@ -77,7 +79,7 @@ python -c "import urllib.request as r; exec(r.urlopen('https://raw.githubusercon
 ## Egg Fried Rice Community
 
 <div align="center">
-<sub>🥚 🍚 🥚 🍚 🥚</sub>
+<sub>• • • • •</sub>
 </div>
 
 <br/>
@@ -95,7 +97,7 @@ python -c "import urllib.request as r; exec(r.urlopen('https://raw.githubusercon
 <a href="https://discord.gg/B7Bhuherkn">
   <img src="https://img.shields.io/badge/CLICK_TO_JOIN_THE_FAMILY-EGG_FRIED_RICE-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Click to join the family"/>
 </a><br/>
-<sub>🥚 🍚 🥚 🍚 🥚 🍚</sub>
+<sub>fried rice family</sub>
 </td>
 </tr>
 </table>
@@ -103,7 +105,7 @@ python -c "import urllib.request as r; exec(r.urlopen('https://raw.githubusercon
 <br/>
 
 <div align="center">
-<sub>🍚 🥚 🍚 🥚 🍚</sub>
+<sub>• • • • •</sub>
 </div>
 
 <br/>
@@ -113,3 +115,5 @@ python -c "import urllib.request as r; exec(r.urlopen('https://raw.githubusercon
 <img src="assets/ticker.svg" width="100%"/>
 
 <img src="assets/tiles.svg" width="100%" alt="2 7"/>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:2d2d2d,50:ff79c6,100:0f0c29&height=120&section=footer&animation=twinkling" width="100%"/>
