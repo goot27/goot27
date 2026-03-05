@@ -1,5 +1,3 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:ff79c6,100:2d2d2d&height=120&section=header&animation=twinkling" width="100%"/>
-
 <img src="assets/rain.svg" width="100%"/>
 
 <div align="center">
@@ -58,10 +56,6 @@
 
 <br/>
 
-<div align="center">
-<sub><b>RUN IT</b></sub>
-</div>
-
 ```bash
 # linux · mac · wsl
 curl -s https://raw.githubusercontent.com/goot27/goot27/main/run_27.py | python3
@@ -77,10 +71,6 @@ python -c "import urllib.request as r; exec(r.urlopen('https://raw.githubusercon
 <br/>
 
 ## Egg Fried Rice Community
-
-<div align="center">
-<sub>• • • • •</sub>
-</div>
 
 <br/>
 
@@ -101,12 +91,6 @@ python -c "import urllib.request as r; exec(r.urlopen('https://raw.githubusercon
 </td>
 </tr>
 </table>
-
-<br/>
-
-<div align="center">
-<sub>• • • • •</sub>
-</div>
 
 <br/>
 
