@@ -19,6 +19,10 @@
 <br/>
 
 <div align="center">
+<sub><b>STACK</b></sub>
+
+<br/><br/>
+
 <img src="https://skillicons.dev/icons?i=html,css,ts,js,react,nextjs,vue,tailwind,figma,py,nodejs,fastapi,postgres,mongodb,redis,docker,rust,go,pytorch,tensorflow,git,github,vscode,vercel,linux&perline=9&theme=dark"/>
 </div>
 
@@ -56,6 +60,14 @@
 
 <br/>
 
+<div align="center">
+<img src="assets/terminal.svg" width="100%"/>
+
+<sub>terminal art · run it yourself ↓</sub>
+</div>
+
+<br/>
+
 ```bash
 # linux · mac · wsl
 curl -s https://raw.githubusercontent.com/goot27/goot27/main/run_27.py | python3
@@ -66,6 +78,10 @@ curl -s https://raw.githubusercontent.com/goot27/goot27/main/run_27.py | python3
 python -c "import urllib.request as r; exec(r.urlopen('https://raw.githubusercontent.com/goot27/goot27/main/run_27.py').read())"
 ```
 
+> starfield → countdown → shockwave → ascii reveal → rings → flash → snake game
+
+<br/>
+
 <div align="center">
 
 # 🍚 I LOVE CHICKEN RICE 🍗
@@ -75,3 +91,4 @@ python -c "import urllib.request as r; exec(r.urlopen('https://raw.githubusercon
 <img src="assets/ticker.svg" width="100%"/>
 
 <img src="assets/tiles.svg" width="100%" alt="2 7"/>
+
