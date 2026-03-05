@@ -77,33 +77,34 @@ python -c "import urllib.request as r; exec(r.urlopen('https://raw.githubusercon
 ## Egg Fried Rice Community
 
 <div align="center">
-<a href="https://discord.gg/B7Bhuherkn">
-  <img src="assets/egg-fried-rice.png" width="240" alt="Join Egg Fried Rice Discord"/>
-</a>
-<br/>
-<a href="https://discord.gg/B7Bhuherkn">
-  <img src="https://img.shields.io/badge/JOIN_DISCORD-EGG_FRIED_RICE-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Join Egg Fried Rice"/>
-</a>
-&nbsp;
-<a href="https://discord.gg/B7Bhuherkn">
-  <img src="https://img.shields.io/badge/CLICK_TO_JOIN-COMMUNITY-f59e0b?style=for-the-badge&logo=discourse&logoColor=white" alt="Click to Join Community"/>
-</a>
-<br/>
-<sub>builders • artists • terminal gremlins • good food energy</sub>
+<sub>🥚 🍚 🥚 🍚 🥚</sub>
 </div>
 
 <br/>
 
-<details>
-<summary><b>What happens in Egg Fried Rice?</b></summary>
+<table align="center" border="0" cellpadding="10" cellspacing="0">
+<tr>
+<td align="center" valign="middle">
+<a href="https://discord.gg/B7Bhuherkn">
+  <img src="assets/egg-fried-rice.png" width="220" alt="Join Egg Fried Rice Discord"/>
+</a>
+</td>
+<td align="left" valign="middle">
+<b>Egg Fried Rice</b><br/>
+<sub>builders • artists • terminal gremlins • good food energy</sub><br/><br/>
+<a href="https://discord.gg/B7Bhuherkn">
+  <img src="https://img.shields.io/badge/CLICK_TO_JOIN_THE_FAMILY-EGG_FRIED_RICE-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Click to join the family"/>
+</a><br/>
+<sub>🥚 🍚 🥚 🍚 🥚 🍚</sub>
+</td>
+</tr>
+</table>
 
-- live build drops and work-in-progress previews
-- code and prompt experiments
-- community challenges and collab threads
-- memes, music, and food talk
+<br/>
 
-Invite: <a href="https://discord.gg/B7Bhuherkn">discord.gg/B7Bhuherkn</a>
-</details>
+<div align="center">
+<sub>🍚 🥚 🍚 🥚 🍚</sub>
+</div>
 
 <br/>
 
