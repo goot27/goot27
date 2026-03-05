@@ -70,8 +70,6 @@ python -c "import urllib.request as r; exec(r.urlopen('https://raw.githubusercon
 
 <br/>
 
-## Egg Fried Rice Community
-
 <br/>
 
 <table align="center" border="0" cellpadding="10" cellspacing="0">
@@ -93,8 +91,6 @@ python -c "import urllib.request as r; exec(r.urlopen('https://raw.githubusercon
 </table>
 
 <br/>
-
-<h1 align="center">🍚 I LOVE CHICKEN RICE 🍗</h1>
 
 <img src="assets/ticker.svg" width="100%"/>
 
