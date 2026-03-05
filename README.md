@@ -19,11 +19,7 @@
 <br/>
 
 <div align="center">
-<sub><b>STACK</b></sub>
-
-<br/><br/>
-
-<img src="https://skillicons.dev/icons?i=html,css,ts,js,react,nextjs,vue,tailwind,figma,py,nodejs,fastapi,postgres,mongodb,redis,docker,rust,go,pytorch,tensorflow,git,github,vscode,vercel,linux&perline=9&theme=dark"/>
+<img src="https://skillicons.dev/icons?i=html,css,ts,js,react,nextjs,tailwind,py,nodejs,fastapi,postgres,docker,rust,go,git,github,vscode,linux&perline=9&theme=dark"/>
 </div>
 
 <br/>
@@ -61,12 +57,8 @@
 <br/>
 
 <div align="center">
-<img src="assets/terminal.svg" width="100%"/>
-
-<sub>terminal art · run it yourself ↓</sub>
+<sub><b>RUN IT</b></sub>
 </div>
-
-<br/>
 
 ```bash
 # linux · mac · wsl
@@ -83,6 +75,18 @@ python -c "import urllib.request as r; exec(r.urlopen('https://raw.githubusercon
 <br/>
 
 <div align="center">
+<img src="assets/pixel-art.png" width="220" alt="pixel art"/>
+</div>
+
+<br/>
+
+<div align="center">
+[![Join Egg Fried Rice](https://img.shields.io/badge/Join-Egg%20Fried%20Rice-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/B7Bhuherkn)
+</div>
+
+<br/>
+
+<div align="center">
 
 # 🍚 I LOVE CHICKEN RICE 🍗
 
@@ -91,4 +95,3 @@ python -c "import urllib.request as r; exec(r.urlopen('https://raw.githubusercon
 <img src="assets/ticker.svg" width="100%"/>
 
 <img src="assets/tiles.svg" width="100%" alt="2 7"/>
-
