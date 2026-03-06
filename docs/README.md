@@ -1,4 +1,4 @@
-<img src="assets/rain.svg" width="100%"/>
+<img src="../assets/svg/rain.svg" width="100%"/>
 
 <div align="center">
 
@@ -76,7 +76,7 @@ python -c "import urllib.request as r; exec(r.urlopen('https://raw.githubusercon
 <tr>
 <td align="center" valign="middle">
 <a href="https://discord.gg/B7Bhuherkn">
-  <img src="assets/egg-fried-rice.png" width="220" alt="Join Egg Fried Rice Discord"/>
+  <img src="../assets/images/egg-fried-rice.png" width="220" alt="Join Egg Fried Rice Discord"/>
 </a>
 </td>
 <td align="left" valign="middle">
@@ -92,8 +92,8 @@ python -c "import urllib.request as r; exec(r.urlopen('https://raw.githubusercon
 
 <br/>
 
-<img src="assets/ticker.svg" width="100%"/>
+<img src="../assets/svg/ticker.svg" width="100%"/>
 
-<img src="assets/tiles.svg" width="100%" alt="2 7"/>
+<img src="../assets/svg/tiles.svg" width="100%" alt="2 7"/>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:2d2d2d,50:ff79c6,100:0f0c29&height=120&section=footer&animation=twinkling" width="100%"/>
