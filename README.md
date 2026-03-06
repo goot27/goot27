@@ -85,7 +85,7 @@ python -c "import urllib.request as r; exec(r.urlopen('https://raw.githubusercon
 <a href="https://discord.gg/B7Bhuherkn">
   <img src="https://img.shields.io/badge/CLICK_TO_JOIN_THE_FAMILY-EGG_FRIED_RICE-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Click to join the family"/>
 </a><br/>
-<sub>Join up!</sub>
+<sub>😼🙀😻😹</sub>
 </td>
 </tr>
 </table>
