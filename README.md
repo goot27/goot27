@@ -76,7 +76,7 @@ python -c "import urllib.request as r; exec(r.urlopen('https://raw.githubusercon
 <tr>
 <td align="center" valign="middle">
 <a href="https://discord.gg/B7Bhuherkn">
-  <img src="assets/images/egg-fried-rice.png" width="220" alt="Join Egg Fried Rice Discord"/>
+  <img src="media/fried_egg_fried_rice.gif" width="220" alt="Join Egg Fried Rice Discord"/>
 </a>
 </td>
 <td align="left" valign="middle">
@@ -89,12 +89,6 @@ python -c "import urllib.request as r; exec(r.urlopen('https://raw.githubusercon
 </td>
 </tr>
 </table>
-
-<br/>
-
-<div align="center">
-  <img src="media/fried_egg_fried_rice.gif" width="310" alt="Fried Egg Fried Rice Animation"/>
-</div>
 
 <br/>
 
