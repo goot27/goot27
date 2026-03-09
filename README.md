@@ -93,7 +93,3 @@ python -c "import urllib.request as r; exec(r.urlopen('https://raw.githubusercon
 <br/>
 
 <img src="assets/svg/ticker.svg" width="100%"/>
-
-<img src="assets/svg/tiles.svg" width="100%" alt="2 7"/>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:2d2d2d,50:ff79c6,100:0f0c29&height=120&section=footer&animation=twinkling" width="100%"/>
