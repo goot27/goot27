@@ -19,7 +19,7 @@
 <br/>
 
 <div align="center">
-<img src="https://skillicons.dev/icons?i=html,css,ts,js,react,nextjs,tailwind,py,nodejs,fastapi,postgres,docker,rust,go,git,github,vscode,neovim,linux&perline=9&theme=dark"/>
+<img src="https://skillicons.dev/icons?i=html,css,ts,js,react,nodejs,docker,postgres,git&perline=9&theme=dark" alt="Key technologies"/>
 </div>
 
 <br/>
