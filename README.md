@@ -4,7 +4,7 @@
 
 <a href="https://github.com/goot27"><img src="https://komarev.com/ghpvc/?username=goot27&style=flat-square&color=ff79c6&label=visitors&labelColor=0d0d1a"/></a>
 &nbsp;
-<a href="https://twitter.com/goot27"><img src="https://img.shields.io/badge/@goot27-0d0d1a?style=flat-square&logo=x&logoColor=ffffff"/></a>
+<a href="https://twitter.com/27goot"><img src="https://img.shields.io/badge/@27goot-0d0d1a?style=flat-square&logo=x&logoColor=ffffff"/></a>
 &nbsp;
 <a href="https://github.com/WokSpec"><img src="https://img.shields.io/badge/WokSpec-2d2d2d?style=flat-square&logo=github&logoColor=d4612a"/></a>
 
