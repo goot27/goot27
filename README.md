@@ -65,9 +65,6 @@ curl -s https://raw.githubusercontent.com/goot27/goot27/main/run_27.py | python3
 # windows
 python -c "import urllib.request as r; exec(r.urlopen('https://raw.githubusercontent.com/goot27/goot27/main/run_27.py').read())"
 ```
-
-> starfield → countdown → shockwave → ascii reveal → rings → flash → snake game
-
 <br/>
 
 <br/>
